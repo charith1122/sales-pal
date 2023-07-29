@@ -131,9 +131,9 @@ class _LoginPageState extends State<LoginPage> {
                   margin: const EdgeInsets.only(
                       bottom: 50, top: 30, left: 50, right: 50),
                   decoration: BoxDecoration(
-                    color: AppColors.SECONDARY_COLOR,
+                    color: Color.fromARGB(255, 85, 20, 20),
                     border: Border.all(
-                      color: AppColors.SECONDARY_COLOR,
+                      color: Color.fromARGB(255, 3, 0, 0),
                     ),
                     borderRadius: BorderRadius.circular(25),
                   ),
@@ -142,19 +142,19 @@ class _LoginPageState extends State<LoginPage> {
                   child: InternationalPhoneInput(
                       decoration: InputDecoration(
                           focusColor: Colors.orange,
-                          counterStyle: TextStyle(color: Colors.pink),
-                          floatingLabelStyle: TextStyle(color: Colors.pink),
+                          counterStyle: TextStyle(color: Colors.black),
+                          floatingLabelStyle: TextStyle(color: Colors.black),
                           floatingLabelBehavior: FloatingLabelBehavior.never,
-                          prefixStyle: TextStyle(color: Colors.pink),
-                          suffixStyle: TextStyle(color: Colors.pink),
+                          prefixStyle: TextStyle(color: Colors.black),
+                          suffixStyle: TextStyle(color: Colors.black),
                           hoverColor: Colors.orange,
                           hintStyle:
                               TextStyle(fontSize: 14, color: Colors.black),
                           labelStyle:
                               TextStyle(fontSize: 14, color: Colors.black),
                           border: InputBorder.none,
-                          filled: true,
-                          fillColor: AppColors.SECONDARY_COLOR),
+                          filled: false,
+                          fillColor: Color.fromARGB(255, 92, 9, 9)),
                       labelStyle: TextStyle(
                           fontSize: 14,
                           color: Colors.black,

@@ -45,7 +45,7 @@ Drawer myDrawer({
                 style: AppStyles.drawerText,
               ),
             ),
-            SizedBox(
+            /*  SizedBox(
               height: 8,
             ),
             TextButton(
@@ -108,7 +108,7 @@ Drawer myDrawer({
                 'Payment',
                 style: AppStyles.drawerText,
               ),
-            ),
+            ), */
             SizedBox(
               height: 8,
             ),
@@ -127,7 +127,7 @@ Drawer myDrawer({
                 style: AppStyles.drawerText,
               ),
             ),
-            Spacer(),
+            /*  Spacer(),
             TextButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
@@ -138,6 +138,6 @@ Drawer myDrawer({
                 'Privacy Policy',
                 style: AppStyles.drawerText2,
               ),
-            ),
+            ), */
           ]));
 }

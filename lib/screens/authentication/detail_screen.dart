@@ -137,10 +137,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
           emailController.text == null ||
           addressController.text == "" ||
           addressController.text == null ||
-          myCompany == "" ||
+          /*    myCompany == "" ||
           myCompany == null ||
           positionController.text == "" ||
-          positionController.text == null ||
+          positionController.text == null || */
           countryController.text == "" ||
           countryController.text == null) {
         errorMessage(message: 'All Fields are required');
@@ -152,16 +152,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
         FocusScope.of(context).unfocus();
         await APIs()
             .postCustomerSignUp(
-                contactNo: phoneController.text,
-                name: nameController.text,
-                nic: nicController.text,
-                email: emailController.text,
-                address: addressController.text,
-                companyId: myCompany,
-                position: positionController.text,
-                country: countryController.text,
-                regNo: regNoController.text,
-                jobRole: _chosenValue)
+          contactNo: phoneController.text,
+          name: nameController.text,
+          nic: nicController.text,
+          email: emailController.text,
+          address: addressController.text,
+          /*   companyId: myCompany,
+                position: positionController.text, */
+          country: countryController.text,
+          /*   regNo: regNoController.text,
+                jobRole: _chosenValue */
+        )
             .then((value) async {
           if (value.done != null) {
             postCustomerSignUp =
@@ -544,7 +545,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     ),
                                   ),
                                   SizedBox(height: 15),
-                                  labelText(label: 'Company'),
+                                  /*          labelText(label: 'Company'),
                                   Container(
                                     width: size.width,
                                     decoration: BoxDecoration(
@@ -699,7 +700,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                       },
                                     ),
                                   ),
-                                  SizedBox(height: 20),
+                                  SizedBox(height: 20), */
                                   Row(
                                     children: [
                                       Spacer(),

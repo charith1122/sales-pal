@@ -111,11 +111,11 @@ class APIs {
     String nic,
     String email,
     String address,
-    String companyId,
-    String position,
+    /*    String companyId,
+    String position, */
     String country,
-    String regNo,
-    String jobRole,
+/*     String regNo,
+    String jobRole, */
   }) async {
     try {
       // await setCookie();
@@ -125,10 +125,10 @@ class APIs {
         "contact_no": contactNo,
         "email": email,
         "address": address,
-        "company_id": companyId,
+        /*   "company_id": companyId,
         "position": position,
         "reg_no": regNo,
-        "job_role": jobRole,
+        "job_role": jobRole, */
         "country": country,
       });
       return PostCustomerSignUp.fromJson(response.data);
@@ -277,7 +277,7 @@ class APIs {
   Future getMyCompany({String userId}) async {
     try {
       // await setCookie();
-      Response response = await dio.get('$baseUrl/users/companies/$userId');
+      Response response = await dio.get('$baseUrl/users/users/$userId');
       return response.data;
     } catch (e) {
       debugPrint("report post failed $e");
@@ -290,11 +290,11 @@ class APIs {
     String nic,
     String email,
     String address,
-    String companyId,
-    String position,
+    /*   String companyId,
+    String position, */
     String country,
-    String regNo,
-    String jobRole,
+    /*   String regNo,
+    String jobRole, */
   }) async {
     try {
       Response response = await dio.put('$baseUrl/users/users/$user_id', data: {
@@ -303,11 +303,11 @@ class APIs {
         "nic": nic,
         "email": email,
         "address": address,
-        "company_id": companyId,
-        "position": position,
+        /*    "company_id": companyId,
+        "position": position, */
         "country": country,
-        "reg_no": regNo,
-        "job_role": jobRole,
+        /*  "reg_no": regNo, */
+        /*  "job_role": jobRole, */
       });
       return PostCustomerSignUp.fromJson(response.data);
     } catch (e) {
@@ -396,28 +396,15 @@ class APIs {
       // var formData = jsonEncode(children);
 
       // await setCookie();
-      Response response = await dio.post('$baseUrl/users/prospects', data: {
+      Response response = await dio.post('$baseUrl/users/customer', data: {
         "user_id": user_id,
         "name": name,
         "nic": nic,
-        "date_of_birth": date_of_birth,
         "address": address,
         "contact": contact,
         "country_code": country_code,
-        "occupation": occupation,
-        "income": income,
         "email": email,
         "whatsapp": whatsapp,
-        "gender": gender,
-        "is_marrid": isMarried,
-        "spouse_name": spouseName,
-        "spouse_phone": spousePhone,
-        "spouse_dob": spouseDob,
-        "annivesary": annivesary,
-        "spouse_nic": spouseNic,
-        "spouse_address": spouseAddress,
-        "spouse_occupation": spouseOccupation,
-        "children": prosChildren
       });
       return PostCustomerSignUp.fromJson(response.data);
     } catch (e) {
@@ -487,20 +474,8 @@ class APIs {
         "address": address,
         "contact": contact,
         "country_code": country_code,
-        "occupation": occupation,
-        "income": income,
         "email": email,
         "whatsapp": whatsapp,
-        "gender": gender,
-        "is_marrid": isMarried,
-        "spouse_name": spouseName,
-        "spouse_phone": spousePhone,
-        "spouse_dob": spouseDob,
-        "annivesary": annivesary,
-        "spouse_nic": spouseNic,
-        "spouse_address": spouseAddress,
-        "spouse_occupation": spouseOccupation,
-        "children": prosChildren
       });
       return PostCustomerSignUp.fromJson(response.data);
     } catch (e) {
@@ -527,7 +502,8 @@ class APIs {
   Future<GetProspects> getProspects({String userId}) async {
     try {
       // await setCookie();
-      Response response = await dio.get('$baseUrl/users/prospects/$userId');
+      //Response response = await dio.get('$baseUrl/users/prospects/$userId');
+      Response response = await dio.get('$baseUrl/users/customer/$userId');
       return GetProspects.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -555,7 +531,7 @@ class APIs {
     try {
       // await setCookie();
       Response response =
-          await dio.get('$baseUrl/users/search_prospects/$userId/$search');
+          await dio.get('$baseUrl/users/search_customer/$userId/$search');
       return GetProspects.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -610,7 +586,7 @@ class APIs {
     try {
       // await setCookie();
       Response response =
-          await dio.get('$baseUrl/users/prospects/$userId/$prosId');
+          await dio.get('$baseUrl/users/customer/$userId/$prosId');
       return GetProspectById.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -669,7 +645,7 @@ class APIs {
     String time,
   }) async {
     try {
-      Response response = await dio.post('$baseUrl/users/appointments', data: {
+      Response response = await dio.post('$baseUrl/users/orders', data: {
         "user_id": user_id,
         "pros_id": pros_id,
         "date": date,
@@ -700,7 +676,7 @@ class APIs {
   Future<GetAppointments> getAppointments({String userId}) async {
     try {
       // await setCookie();
-      Response response = await dio.get('$baseUrl/users/appointments/$userId');
+      Response response = await dio.get('$baseUrl/users/orders/$userId');
       return GetAppointments.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -727,8 +703,7 @@ class APIs {
       {String userId, String id}) async {
     try {
       // await setCookie();
-      Response response =
-          await dio.get('$baseUrl/users/appointments/$userId/$id');
+      Response response = await dio.get('$baseUrl/users/orders/$userId/$id');
       return GetAppointmentById.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -754,7 +729,7 @@ class APIs {
   Future<PostCustomerSignUp> updateAppointment(
       {String id, String status, String prosId, String userId}) async {
     try {
-      Response response = await dio.put('$baseUrl/users/appointments', data: {
+      Response response = await dio.put('$baseUrl/users/orders', data: {
         "id": id,
         "status": status,
         "user_id": userId,
@@ -789,13 +764,12 @@ class APIs {
       String time,
       String status}) async {
     try {
-      Response response = await dio.put('$baseUrl/users/appointments/$id',
-          data: {
-            "pros_id": pros_id,
-            "date": date,
-            "time": time,
-            "status": status
-          });
+      Response response = await dio.put('$baseUrl/users/orders/$id', data: {
+        "pros_id": pros_id,
+        "date": date,
+        "time": time,
+        "status": status
+      });
       return PostCustomerSignUp.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -826,8 +800,7 @@ class APIs {
     String time,
   }) async {
     try {
-      Response response =
-          await dio.post('$baseUrl/users/sales_interview', data: {
+      Response response = await dio.post('$baseUrl/users/sales', data: {
         "user_id": user_id,
         "pros_id": pros_id,
         "date": date,
@@ -858,8 +831,7 @@ class APIs {
   Future<GetAppointments> getInterviews({String userId}) async {
     try {
       // await setCookie();
-      Response response =
-          await dio.get('$baseUrl/users/sales_interview/$userId');
+      Response response = await dio.get('$baseUrl/users/sales/$userId');
       return GetAppointments.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -885,8 +857,7 @@ class APIs {
   Future<PostCustomerSignUp> updateInterviews(
       {String id, String status}) async {
     try {
-      Response response =
-          await dio.put('$baseUrl/users/sales_interview', data: {
+      Response response = await dio.put('$baseUrl/users/sales', data: {
         "id": id,
         "status": status,
       });
@@ -916,8 +887,7 @@ class APIs {
       {String userId, String id}) async {
     try {
       // await setCookie();
-      Response response =
-          await dio.get('$baseUrl/users/sales_interview/$userId/$id');
+      Response response = await dio.get('$baseUrl/users/sales/$userId/$id');
       return GetAppointmentById.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {
@@ -947,13 +917,12 @@ class APIs {
       String time,
       String status}) async {
     try {
-      Response response = await dio.put('$baseUrl/users/sales_interview/$id',
-          data: {
-            "pros_id": prosId,
-            "date": date,
-            "time": time,
-            "status": status
-          });
+      Response response = await dio.put('$baseUrl/users/sales/$id', data: {
+        "pros_id": prosId,
+        "date": date,
+        "time": time,
+        "status": status
+      });
       return PostCustomerSignUp.fromJson(response.data);
     } catch (e) {
       if (e.response.statusCode == 400) {

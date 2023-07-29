@@ -321,7 +321,7 @@ class _HomePageState extends State<HomePage> {
                   // scaffoldKey.currentState.openDrawer(),
                   )
               : Container(),
-          FlatButton(
+          /*  FlatButton(
             minWidth: 20,
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(
@@ -338,7 +338,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-          ),
+          ), */
         ],
         centerTitle: true,
         title: Text(
@@ -382,7 +382,7 @@ class _HomePageState extends State<HomePage> {
                             ' | ' +
                             salesR.toString(),
                       ),
-                      homeTile(
+                      /*  homeTile(
                         size: size,
                         name: 'Follow \nUp',
                         value: follows.toString(),
@@ -391,7 +391,7 @@ class _HomePageState extends State<HomePage> {
                         size: size,
                         name: 'NOP',
                         value: nop.toString(),
-                      ),
+                      ), */
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
@@ -531,7 +531,7 @@ class _HomePageState extends State<HomePage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          menuTileCategoryContainer(
+                          /*  menuTileCategoryContainer(
                             size: size,
                             title: "Follow Up",
                             icon1: Icons.file_copy_outlined,
@@ -542,8 +542,8 @@ class _HomePageState extends State<HomePage> {
                                 builder: (BuildContext context) => FollowUp(),
                               ));
                             },
-                          ),
-                          menuTileCategoryContainer(
+                          ), */
+                          /* menuTileCategoryContainer(
                             size: size,
                             title: "NOP",
                             icon1: Icons.restore_page,
@@ -554,7 +554,7 @@ class _HomePageState extends State<HomePage> {
                                 builder: (BuildContext context) => NOPList(),
                               ));
                             },
-                          ),
+                          ), */
                           menuTileCategoryContainer(
                             size: size,
                             title: "Anual Plan",
@@ -596,7 +596,7 @@ class _HomePageState extends State<HomePage> {
                               ));
                             },
                           ),
-                          menuTileCategoryContainer(
+                          /*  menuTileCategoryContainer(
                             size: size,
                             title: "Detail \nSources",
                             icon1: Icons.file_present,
@@ -607,7 +607,7 @@ class _HomePageState extends State<HomePage> {
                             builder: (BuildContext context) => DetailResources(),
                           )); */
                             },
-                          ),
+                          ), */
                         ],
                       ),
                     ],

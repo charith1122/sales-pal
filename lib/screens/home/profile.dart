@@ -188,10 +188,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
           emailController.text == null ||
           addressController.text == "" ||
           addressController.text == null ||
-          myCompany == "" ||
+          /*   myCompany == "" ||
           myCompany == null ||
           positionController.text == "" ||
-          positionController.text == null ||
+          positionController.text == null || */
           countryController.text == "" ||
           countryController.text == null) {
         errorMessage(message: 'All Fields are required');
@@ -203,16 +203,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
         FocusScope.of(context).unfocus();
         await APIs()
             .updateUserDetails(
-                user_id: prospector.body.id,
-                name: nameController.text,
-                nic: nicController.text,
-                email: emailController.text,
-                address: addressController.text,
-                companyId: myCompany,
-                position: positionController.text,
-                country: countryController.text,
-                jobRole: _chosenValue,
-                regNo: regNoController.text)
+          user_id: prospector.body.id,
+          name: nameController.text,
+          nic: nicController.text,
+          email: emailController.text,
+          address: addressController.text,
+          /*     companyId: myCompany,
+                position: positionController.text, */
+          country: countryController.text,
+          /*  jobRole: _chosenValue,
+                regNo: regNoController.text */
+        )
             .then((value) async {
           if (value.done != null) {
             postCustomerSignUp =
@@ -542,7 +543,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
                                 ),
-                                SizedBox(height: 8),
+                                /*  SizedBox(height: 8),
                                 Text('Company',
                                     style: AppStyles.textFieldHeaderStyle),
                                 Container(
@@ -692,7 +693,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       });
                                     },
                                   ),
-                                ),
+                                ), */
                                 SizedBox(height: 8),
                                 Text('Country',
                                     style: AppStyles.textFieldHeaderStyle),
@@ -756,9 +757,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
-                                      width: 25,
-                                    )
+                                    Spacer(),
                                   ],
                                 ),
                                 SizedBox(height: 30),

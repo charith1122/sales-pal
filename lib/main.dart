@@ -100,15 +100,15 @@ class _MainSplashScreenState extends State<MainSplashScreen> {
       int _localVersion = getExtendedVersionNumber(localVersion);
       int _newVersion = getExtendedVersionNumber(newVersion);
       // print(_newVersion > _localVersion);
-      if (_newVersion > _localVersion) {
+      /*  if (_newVersion > _localVersion) {
         if (isUpdateAvailable) {
           showAppDetailDialogBox(newVersion: newVersion);
         } else {
           navigate();
-        }
-      } else {
-        navigate();
-      }
+        } */
+      // } else {
+      navigate();
+      // }
     } else {
       navigate();
     }
