@@ -152,7 +152,7 @@ class _ProspectingState extends State<Prospecting> {
                                       vertical: 12, horizontal: 15),
                                   decoration: BoxDecoration(
                                       color: AppColors.PRIMARY_COLOR,
-                                      borderRadius: BorderRadius.circular(30),
+                                      borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
                                           color: AppColors.SECONDARY_COLOR)),
                                   padding: const EdgeInsets.all(10),

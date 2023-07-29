@@ -5,6 +5,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:pros_bot/components/auth/textField.dart';
+import 'package:pros_bot/components/common/buttons.dart';
 import 'package:pros_bot/components/common/label.dart';
 import 'package:pros_bot/components/common/messages.dart';
 import 'package:pros_bot/components/todo/date_picker.dart';
@@ -455,7 +456,7 @@ class _NewToDoState extends State<NewToDo> {
                       child: SingleChildScrollView(
                         child: Column(
                           children: [
-                            labelText(label: 'Name'),
+                            /*   labelText(label: 'Name'),
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
@@ -490,7 +491,7 @@ class _NewToDoState extends State<NewToDo> {
                                   print(selected);
                                 },
                               ),
-                            ),
+                            ), */
                             SizedBox(height: 15),
                             labelText(label: 'Note'),
                             TextFormField(
@@ -500,20 +501,35 @@ class _NewToDoState extends State<NewToDo> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /*   filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.note_alt_outlined,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'Note',
                                 labelStyle: AppStyles.labelStyle,
@@ -543,9 +559,11 @@ class _NewToDoState extends State<NewToDo> {
                                   padding: const EdgeInsets.only(left: 15.0),
                                   width: size.width,
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      border: Border.all(width: 0.5),
-                                      color: AppColors.SECONDARY_COLOR),
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                          width: 1,
+                                          color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.PRIMARY_COLOR),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -555,7 +573,7 @@ class _NewToDoState extends State<NewToDo> {
                                           deliverDatePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.PRIMARY_COLOR),
+                                              color: AppColors.SECONDARY_COLOR),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -564,15 +582,15 @@ class _NewToDoState extends State<NewToDo> {
                                         height: 50,
                                         shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.only(
-                                              bottomRight: Radius.circular(50),
-                                              topRight: Radius.circular(50),
+                                              bottomRight: Radius.circular(10),
+                                              topRight: Radius.circular(10),
                                             ),
                                             side: BorderSide(
                                                 color:
                                                     AppColors.SECONDARY_COLOR,
                                                 width: 2)),
                                         onPressed: () => _selectDate(context),
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRYMARY_COLOR2,
                                         child: Text(
                                           "Change Date",
                                           style: TextStyle(
@@ -596,9 +614,11 @@ class _NewToDoState extends State<NewToDo> {
                                   padding: const EdgeInsets.only(left: 15.0),
                                   width: size.width,
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      border: Border.all(width: 0.5),
-                                      color: AppColors.SECONDARY_COLOR),
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                          width: 1,
+                                          color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.PRIMARY_COLOR),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -608,7 +628,7 @@ class _NewToDoState extends State<NewToDo> {
                                           deliverTimePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.PRIMARY_COLOR),
+                                              color: AppColors.SECONDARY_COLOR),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -617,15 +637,15 @@ class _NewToDoState extends State<NewToDo> {
                                         height: 50,
                                         shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.only(
-                                              bottomRight: Radius.circular(50),
-                                              topRight: Radius.circular(50),
+                                              bottomRight: Radius.circular(10),
+                                              topRight: Radius.circular(10),
                                             ),
                                             side: BorderSide(
                                                 color:
                                                     AppColors.SECONDARY_COLOR,
                                                 width: 2)),
                                         onPressed: () => selectTime(context),
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRYMARY_COLOR2,
                                         child: Text(
                                           "Change Time",
                                           style: TextStyle(
@@ -644,9 +664,11 @@ class _NewToDoState extends State<NewToDo> {
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                  border: Border.all(width: 0.5),
-                                  color: AppColors.SECONDARY_COLOR),
+                                  borderRadius: BorderRadius.circular(10),
+                                  border: Border.all(
+                                      width: 1,
+                                      color: AppColors.SECONDARY_COLOR),
+                                  color: AppColors.PRIMARY_COLOR),
                               padding:
                                   const EdgeInsets.only(left: 15.0, right: 15),
                               child: DropdownButton<String>(
@@ -655,7 +677,7 @@ class _NewToDoState extends State<NewToDo> {
                                 elevation: 5,
                                 underline: Container(color: Colors.transparent),
                                 style:
-                                    TextStyle(color: AppColors.PRIMARY_COLOR),
+                                    TextStyle(color: AppColors.SECONDARY_COLOR),
                                 // items: dropdownItems,
                                 items: <String>[
                                   'Prospecting',
@@ -673,10 +695,10 @@ class _NewToDoState extends State<NewToDo> {
                                 hint: Text(
                                   "Reason",
                                   style: TextStyle(
-                                      // color: Colors.black,
-                                      // fontSize: 16,
-                                      // fontWeight: FontWeight.w600
-                                      ),
+                                    color: AppColors.SECONDARY_COLOR,
+                                    // fontSize: 16,
+                                    // fontWeight: FontWeight.w600
+                                  ),
                                 ),
                                 onChanged: (String value) {
                                   setState(() {
@@ -686,7 +708,7 @@ class _NewToDoState extends State<NewToDo> {
                                 },
                               ),
                             ),
-                            SizedBox(height: 15),
+                            SizedBox(height: 25),
                             SizedBox(height: 20),
                             isSubmitting
                                 ? Container(
@@ -696,7 +718,14 @@ class _NewToDoState extends State<NewToDo> {
                                       size: 25.0,
                                     ),
                                   ))
-                                : Container(
+                                : submitButton(
+                                    context: context,
+                                    submit: () {
+                                      widget.id != null
+                                          ? updateAppointment()
+                                          : createTodo();
+                                    })
+                            /* Container(
                                     decoration: BoxDecoration(
                                         color: AppColors.PRIMARY_COLOR,
                                         borderRadius:
@@ -723,7 +752,7 @@ class _NewToDoState extends State<NewToDo> {
                                         ),
                                       ),
                                     ),
-                                  ),
+                                  ), */
                           ],
                         ),
                       ),

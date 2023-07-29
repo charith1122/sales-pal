@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:pros_bot/components/common/buttons.dart';
 import 'package:pros_bot/components/common/messages.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 import 'package:pros_bot/constants/styles.dart';
@@ -387,7 +388,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       shape: BoxShape.circle,
                                       color: Colors.white),
                                 ),
-                                SizedBox(height: 8),
+                                SizedBox(height: 30),
                                 Text('Name',
                                     style: AppStyles.textFieldHeaderStyle),
                                 TextFormField(
@@ -422,7 +423,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
                                 ),
-                                SizedBox(height: 8),
+                                SizedBox(height: 15),
                                 Text('ID',
                                     style: AppStyles.textFieldHeaderStyle),
                                 TextFormField(
@@ -451,7 +452,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
                                 ),
-                                SizedBox(height: 8),
+                                SizedBox(height: 15),
                                 Text('Phone Number',
                                     style: AppStyles.textFieldHeaderStyle),
                                 TextFormField(
@@ -484,7 +485,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
                                 ),
-                                SizedBox(height: 8),
+                                SizedBox(height: 15),
                                 Text('E mail',
                                     style: AppStyles.textFieldHeaderStyle),
                                 TextFormField(
@@ -513,7 +514,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
                                 ),
-                                SizedBox(height: 8),
+                                SizedBox(height: 15),
                                 Text('Address',
                                     style: AppStyles.textFieldHeaderStyle),
                                 TextFormField(
@@ -694,7 +695,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     },
                                   ),
                                 ), */
-                                SizedBox(height: 8),
+                                SizedBox(height: 15),
                                 Text('Country',
                                     style: AppStyles.textFieldHeaderStyle),
                                 TextFormField(
@@ -730,7 +731,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 Row(
                                   children: [
                                     Spacer(),
-                                    Container(
+                                    submitButton(
+                                        context: context,
+                                        submit: () {
+                                          register();
+                                        }),
+                                    /* Container(
                                       height: 35,
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 10),
@@ -756,7 +762,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                           ),
                                         ),
                                       ),
-                                    ),
+                                    ), */
                                     Spacer(),
                                   ],
                                 ),

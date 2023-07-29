@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:intl/intl.dart';
+import 'package:pros_bot/components/common/buttons.dart';
 import 'package:pros_bot/components/common/label.dart';
 import 'package:pros_bot/components/common/messages.dart';
 import 'package:pros_bot/constants/app_colors.dart';
@@ -708,20 +709,35 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /* filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.person,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'Name',
                                 labelStyle: AppStyles.labelStyle,
@@ -796,20 +812,35 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /*  filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.account_box_outlined,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'ID',
                                 labelStyle: AppStyles.labelStyle,
@@ -838,20 +869,35 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /*  filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.location_pin,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'Address',
                                 labelStyle: AppStyles.labelStyle,
@@ -880,20 +926,35 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /*         filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.phone,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'Phone',
                                 labelStyle: AppStyles.labelStyle,
@@ -1027,20 +1088,35 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /*  filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.comment_rounded,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'Whatsapp Number',
                                 labelStyle: AppStyles.labelStyle,
@@ -1069,20 +1145,35 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: InputDecoration(
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
-                                filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                /*       filled: true,
+                                fillColor: AppColors.SECONDARY_COLOR, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12,
                                     overflow: TextOverflow.fade),
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
+                                focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(50))),
+                                    borderSide: BorderSide(
+                                        color: AppColors.SECONDARY_COLOR),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    )),
                                 prefixIcon: Icon(
                                   Icons.mail,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR,
                                 ),
                                 labelText: 'Email',
                                 labelStyle: AppStyles.labelStyle,
@@ -1606,7 +1697,7 @@ class _NewProspectState extends State<NewProspect> {
                                     ],
                                   )
                                 : Container(), */
-                            SizedBox(height: 20),
+                            SizedBox(height: 30),
                             isSubmitting
                                 ? Container(
                                     child: Center(
@@ -1615,7 +1706,14 @@ class _NewProspectState extends State<NewProspect> {
                                       size: 25.0,
                                     ),
                                   ))
-                                : Container(
+                                : submitButton(
+                                    context: context,
+                                    submit: () {
+                                      widget.id == null
+                                          ? createNewProspect()
+                                          : updateProspect();
+                                    }),
+                            /* Container(
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 10),
                                     decoration: BoxDecoration(
@@ -1644,7 +1742,7 @@ class _NewProspectState extends State<NewProspect> {
                                         ),
                                       ),
                                     ),
-                                  ),
+                                  ), */
                             SizedBox(height: 20),
                           ],
                         ),
