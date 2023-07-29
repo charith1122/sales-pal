@@ -135,11 +135,13 @@ class _ToDoListState extends State<ToDoList> {
           .then((value) {
         todos.clear();
 
-        value.body.forEach((item) {
-          if (item.status == 'Active') {
-            todos.add(item);
-          }
-        });
+        value.body.isNotEmpty
+            ? value.body.forEach((item) {
+                if (item.status == 'Active') {
+                  todos.add(item);
+                }
+              })
+            : () {};
         print(todos);
       });
     } catch (e) {

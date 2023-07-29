@@ -394,9 +394,9 @@ class _HomePageState extends State<HomePage> {
                       ), */
                       InkWell(
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
+                          /*  Navigator.of(context).push(MaterialPageRoute(
                             builder: (BuildContext context) => Dob(),
-                          ));
+                          )); */
                         },
                         child: homeTile(
                           size: size,
@@ -406,9 +406,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                       InkWell(
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
+                          /*   Navigator.of(context).push(MaterialPageRoute(
                             builder: (BuildContext context) => Premium(),
-                          ));
+                          )); */
                         },
                         child: homeTile(
                           size: size,
