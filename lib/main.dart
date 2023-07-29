@@ -179,7 +179,8 @@ class _MainSplashScreenState extends State<MainSplashScreen> {
                 // height: size.width / 5,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/img/pros_bot_logo.png"),
+                    //image: AssetImage("assets/img/pros_bot_logo.png"),
+                    image: AssetImage("assets/logos/logo_with_text.png"),
                     fit: BoxFit.fitWidth,
                   ),
                 ),

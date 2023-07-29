@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:pinput/pin_put/pin_put.dart';
 import 'package:pros_bot/components/common/messages.dart';
+import 'package:pros_bot/components/common/submit_button.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -279,10 +280,11 @@ class _OtpScreenState extends State<OtpScreen> {
                 Center(
                   child: Container(
                     width: size.width / 1.5,
-                    height: 200,
+                    height: 150,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/img/pros_bot_logo.png"),
+                        // image: AssetImage("assets/img/pros_bot_logo.png"),
+                        image: AssetImage("assets/logos/2.png"),
                         fit: BoxFit.fitWidth,
                       ),
                     ),
@@ -294,19 +296,21 @@ class _OtpScreenState extends State<OtpScreen> {
                     vertical: 20,
                   ),
                   child: Text(
-                    "We have sent an OTP to your Mobile",
+                    "We have sent an OTP to " +
+                        widget.mobileNo.replaceRange(5, 10, 'XXXXX'),
                     style: TextStyle(
-                      fontSize: 22,
-                      color: AppColors.SECONDARY_COLOR,
+                      fontSize: 20,
+                      color: AppColors.SECONDARY_COLOR.withOpacity(0.8),
                       fontWeight: FontWeight.normal,
                     ),
                     textAlign: TextAlign.center,
                   ),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 30,
                 ),
-                SizedBox(
+                Text("Enter the OTP correctly"),
+                /* SizedBox(
                   width: 200,
                   child: Text(
                     "Please check your mobile number " +
@@ -319,7 +323,7 @@ class _OtpScreenState extends State<OtpScreen> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                ),
+                ), */
                 SizedBox(
                   height: 15,
                 ),
@@ -347,7 +351,15 @@ class _OtpScreenState extends State<OtpScreen> {
                     ),
                   ),
                 ),
-                Container(
+                SizedBox(
+                  height: 30,
+                ),
+                submitButton(
+                    context: context,
+                    submit: () {
+                      confirm();
+                    }),
+                /* Container(
                   decoration: BoxDecoration(
                       color: AppColors.SECONDARY_COLOR, shape: BoxShape.circle
                       // borderRadius: BorderRadius.circular(25.0),
@@ -365,9 +377,9 @@ class _OtpScreenState extends State<OtpScreen> {
                       color: AppColors.PRIMARY_COLOR,
                     ),
                   ),
-                ),
+                ), */
                 SizedBox(
-                  height: 15,
+                  height: 30,
                 ),
                 Container(
                   alignment: Alignment.center,

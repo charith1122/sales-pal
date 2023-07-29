@@ -4,6 +4,7 @@ import 'package:international_phone_input/international_phone_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:pros_bot/components/common/messages.dart';
+import 'package:pros_bot/components/common/submit_button.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 import 'package:pros_bot/services/api.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -101,26 +102,59 @@ class _LoginPageState extends State<LoginPage> {
                     height: 200,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/img/pros_bot_logo.png"),
+                        image: AssetImage("assets/logos/logo_with_text.png"),
+                        // image: AssetImage("assets/img/pros_bot_logo.png"),
                         fit: BoxFit.fitWidth,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 30,
-                ),
-                Text(
+
+                /*    Text(
                   'WELCOME',
                   style: TextStyle(
                       color: AppColors.SECONDARY_COLOR,
                       fontSize: 40,
                       fontWeight: FontWeight.bold),
+                ), */
+                SizedBox(
+                  height: 30,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(
+                      bottom: 50, top: 30, left: 50, right: 50),
+                  decoration: BoxDecoration(
+                      border: Border(bottom: BorderSide(color: Colors.white))),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Phone Number',
+                        style: TextStyle(
+                          color: AppColors.SECONDARY_COLOR,
+                          fontSize: 14,
+                        ),
+                      ),
+                      Container(
+                        child: InternationalPhoneInput(
+                          decoration: InputDecoration(
+                            focusColor: Colors.transparent,
+                            border: InputBorder.none,
+                          ),
+                          onPhoneNumberChange: onPhoneNumberChange,
+                          initialPhoneNumber: mobileNo,
+                          showCountryFlags: false,
+                          initialSelection: "+94",
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 30,
                 ),
-                Text(
+
+                /* Text(
                   'PHONE NUMBER',
                   style: TextStyle(
                       color: AppColors.SECONDARY_COLOR,
@@ -165,8 +199,13 @@ class _LoginPageState extends State<LoginPage> {
                       // showCountryCodes: false,
                       initialSelection: "+94",
                       enabledCountries: ['+94']),
-                ),
-                Container(
+                ), */
+                submitButton(
+                    submit: () {
+                      login(context, "");
+                    },
+                    context: context),
+                /*  Container(
                   decoration: BoxDecoration(
                       color: Colors.white,
                       shape: BoxShape.circle,
@@ -183,7 +222,7 @@ class _LoginPageState extends State<LoginPage> {
                       color: AppColors.PRIMARY_COLOR,
                     ),
                   ),
-                ),
+                ), */
                 SizedBox(
                   height: 50,
                 ),

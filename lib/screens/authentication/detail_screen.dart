@@ -4,6 +4,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:pros_bot/components/common/label.dart';
 import 'package:pros_bot/components/common/messages.dart';
+import 'package:pros_bot/components/common/submit_button.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 import 'package:pros_bot/constants/styles.dart';
 import 'package:pros_bot/models/auth/PostCustomerSignUp.dart';
@@ -322,50 +323,88 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(
-                                top: 40.0, left: 15, right: 15),
+                                top: 40.0, left: 30, right: 30),
                             child: SingleChildScrollView(
                               child: Column(
                                 children: [
+                                  Text(
+                                    "Create profile Details",
+                                    style: TextStyle(
+                                        fontSize: 26,
+                                        color: AppColors.PRYMARY_COLOR2,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                  Text(
+                                    "Your Profile",
+                                    style: TextStyle(
+                                        color: AppColors.SECONDARY_COLOR
+                                            .withOpacity(0.6)),
+                                  ),
+                                  SizedBox(
+                                    height: 15,
+                                  ),
                                   Container(
                                     width: 75,
                                     height: 75,
                                     child: Icon(
-                                      Icons.person_outline,
+                                      Icons.person_outline_outlined,
                                       size: 60,
-                                      color: Colors.black54,
+                                      color: AppColors.SECONDARY_COLOR,
                                     ),
                                     decoration: BoxDecoration(
                                         border: Border.all(
-                                            color: Colors.black54, width: 3),
+                                            color: /* AppColors.SECONDARY_COLOR, */ Colors
+                                                .transparent,
+                                            width: 3),
                                         shape: BoxShape.circle,
-                                        color: Colors.white),
+                                        color: AppColors.PRYMARY_COLOR2),
                                   ),
-                                  SizedBox(height: 15),
-                                  labelText(label: 'Name'),
+                                  SizedBox(height: 30),
+                                  labelText(label: 'Your Name'),
                                   TextFormField(
                                     controller: nameController,
                                     style: AppStyles.textFieldStyle,
                                     decoration: InputDecoration(
+                                      labelText: '  Name ',
+                                      labelStyle: AppStyles.labelStyle,
                                       floatingLabelBehavior:
                                           FloatingLabelBehavior.never,
-                                      filled: true,
+                                      filled: false,
                                       fillColor: AppColors.SECONDARY_COLOR,
                                       errorMaxLines: 2,
                                       errorStyle: AppStyles.errorTextStyle,
-                                      border: OutlineInputBorder(
+                                      focusColor: AppColors.SECONDARY_COLOR,
+                                      enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
                                           borderRadius: BorderRadius.all(
-                                        Radius.circular(50),
-                                      )),
-                                      prefixIcon: Icon(
+                                            Radius.circular(10),
+                                          )),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      border: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      /*  prefixIcon: Icon(
                                         Icons.person,
                                         color: AppColors.PRIMARY_COLOR,
-                                      ),
-                                      labelText: ' Name ',
-                                      labelStyle: AppStyles.labelStyle,
-                                      floatingLabelStyle:
-                                          AppStyles.floatingLabelStyle,
+                                      ), */
+                                      //labelText: ' Name ',
+                                      // labelStyle: AppStyles.labelStyle,
+                                      /* floatingLabelStyle:
+                                          AppStyles.floatingLabelStyle, */
                                       contentPadding:
-                                          EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                          EdgeInsets.fromLTRB(12, 0, 8, 0),
                                     ),
                                     onEditingComplete: () {
                                       FocusScope.of(context).unfocus();
@@ -382,23 +421,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     decoration: InputDecoration(
                                       floatingLabelBehavior:
                                           FloatingLabelBehavior.never,
-                                      filled: true,
-                                      fillColor: AppColors.SECONDARY_COLOR,
+                                      /* filled: true,
+                                      fillColor: AppColors.SECONDARY_COLOR, */
                                       errorMaxLines: 2,
                                       errorStyle: AppStyles.errorTextStyle,
-                                      border: OutlineInputBorder(
+                                      enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
                                           borderRadius: BorderRadius.all(
-                                              Radius.circular(50))),
-                                      prefixIcon: Icon(
+                                            Radius.circular(10),
+                                          )),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      border: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      /* prefixIcon: Icon(
                                         Icons.account_box_outlined,
                                         color: AppColors.PRIMARY_COLOR,
-                                      ),
+                                      ), */
                                       labelText: '  ID ',
                                       labelStyle: AppStyles.labelStyle,
                                       floatingLabelStyle:
                                           AppStyles.floatingLabelStyle,
                                       contentPadding:
-                                          EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                          EdgeInsets.fromLTRB(12, 0, 8, 0),
                                     ),
                                     onEditingComplete: () {
                                       FocusScope.of(context).unfocus();
@@ -418,23 +472,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     decoration: InputDecoration(
                                       floatingLabelBehavior:
                                           FloatingLabelBehavior.never,
-                                      filled: true,
-                                      fillColor: AppColors.SECONDARY_COLOR,
+                                      /*  filled: true,
+                                      fillColor: AppColors.SECONDARY_COLOR, */
                                       errorMaxLines: 2,
                                       errorStyle: AppStyles.errorTextStyle,
-                                      border: OutlineInputBorder(
+                                      enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
                                           borderRadius: BorderRadius.all(
-                                              Radius.circular(50))),
-                                      prefixIcon: Icon(
+                                            Radius.circular(10),
+                                          )),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      border: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      /*  prefixIcon: Icon(
                                         Icons.phone,
                                         color: AppColors.PRIMARY_COLOR,
-                                      ),
+                                      ), */
                                       labelText: '  Phone Number ',
                                       labelStyle: AppStyles.labelStyle,
                                       floatingLabelStyle:
                                           AppStyles.floatingLabelStyle,
                                       contentPadding:
-                                          EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                          EdgeInsets.fromLTRB(12, 0, 8, 0),
                                     ),
 
                                     onEditingComplete: () {
@@ -452,23 +521,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     decoration: InputDecoration(
                                       floatingLabelBehavior:
                                           FloatingLabelBehavior.never,
-                                      filled: true,
-                                      fillColor: AppColors.SECONDARY_COLOR,
+                                      /*  filled: true,
+                                      fillColor: AppColors.SECONDARY_COLOR, */
                                       errorMaxLines: 2,
                                       errorStyle: AppStyles.errorTextStyle,
-                                      border: OutlineInputBorder(
+                                      enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
                                           borderRadius: BorderRadius.all(
-                                              Radius.circular(50))),
-                                      prefixIcon: Icon(
+                                            Radius.circular(10),
+                                          )),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      border: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      /*   prefixIcon: Icon(
                                         Icons.email,
                                         color: AppColors.PRIMARY_COLOR,
-                                      ),
+                                      ), */
                                       labelText: '  E mail ',
                                       labelStyle: AppStyles.labelStyle,
                                       floatingLabelStyle:
                                           AppStyles.floatingLabelStyle,
                                       contentPadding:
-                                          EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                          EdgeInsets.fromLTRB(12, 0, 8, 0),
                                     ),
                                     onEditingComplete: () {
                                       FocusScope.of(context).unfocus();
@@ -485,23 +569,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     decoration: InputDecoration(
                                       floatingLabelBehavior:
                                           FloatingLabelBehavior.never,
-                                      filled: true,
-                                      fillColor: AppColors.SECONDARY_COLOR,
+                                      /* filled: true,
+                                      fillColor: AppColors.SECONDARY_COLOR, */
                                       errorMaxLines: 2,
                                       errorStyle: AppStyles.errorTextStyle,
-                                      border: OutlineInputBorder(
+                                      enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
                                           borderRadius: BorderRadius.all(
-                                              Radius.circular(50))),
-                                      prefixIcon: Icon(
+                                            Radius.circular(10),
+                                          )),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      border: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      /*   prefixIcon: Icon(
                                         Icons.home_work_outlined,
                                         color: AppColors.PRIMARY_COLOR,
-                                      ),
+                                      ), */
                                       labelText: '  Address ',
                                       labelStyle: AppStyles.labelStyle,
                                       floatingLabelStyle:
                                           AppStyles.floatingLabelStyle,
                                       contentPadding:
-                                          EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                          EdgeInsets.fromLTRB(12, 0, 8, 0),
                                     ),
                                     onEditingComplete: () {
                                       FocusScope.of(context).unfocus();
@@ -523,28 +622,43 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     decoration: InputDecoration(
                                       floatingLabelBehavior:
                                           FloatingLabelBehavior.never,
-                                      filled: true,
-                                      fillColor: AppColors.SECONDARY_COLOR,
+                                      /*  filled: true,
+                                      fillColor: AppColors.SECONDARY_COLOR, */
 
                                       errorMaxLines: 2,
                                       errorStyle: AppStyles.errorTextStyle,
-                                      border: OutlineInputBorder(
+                                      enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
                                           borderRadius: BorderRadius.all(
-                                              Radius.circular(50))),
-                                      prefixIcon: Icon(
+                                            Radius.circular(10),
+                                          )),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      border: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.SECONDARY_COLOR),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(10),
+                                          )),
+                                      /*  prefixIcon: Icon(
                                         Icons.location_pin,
                                         color: AppColors.PRIMARY_COLOR,
-                                      ),
+                                      ), */
                                       labelText: '  Country ',
                                       labelStyle: AppStyles.labelStyle,
                                       floatingLabelStyle:
                                           AppStyles.floatingLabelStyle,
                                       contentPadding:
-                                          EdgeInsets.fromLTRB(8, 0, 8, 0),
+                                          EdgeInsets.fromLTRB(12, 0, 8, 0),
                                       // hintText: country
                                     ),
                                   ),
-                                  SizedBox(height: 15),
+                                  SizedBox(height: 35),
                                   /*          labelText(label: 'Company'),
                                   Container(
                                     width: size.width,
@@ -701,7 +815,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     ),
                                   ),
                                   SizedBox(height: 20), */
-                                  Row(
+                                  submitButton(
+                                    context: context,
+                                    submit: () {
+                                      register();
+                                    },
+                                  ),
+                                  /* Row(
                                     children: [
                                       Spacer(),
                                       Container(
@@ -729,7 +849,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                         ),
                                       ),
                                     ],
-                                  ),
+                                  ), */
                                   SizedBox(height: 20),
                                 ],
                               ),
