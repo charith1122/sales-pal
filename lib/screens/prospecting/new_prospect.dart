@@ -437,27 +437,15 @@ class _NewProspectState extends State<NewProspect> {
         isSubmitting = true;
       });
       var result = await APIs().createProspect(
-          user_id: selectedUser["body"]["id"],
-          name: nameController.text,
-          nic: nicController.text,
-          date_of_birth: dateofBirthController.text,
-          address: addressController.text,
-          contact: phoneController.text,
-          country_code: '+94',
-          occupation: occupation,
-          income: incomeController.text,
-          email: emailController.text,
-          whatsapp: whatsappController.text,
-          gender: _chosenGender,
-          isMarried: isMarried,
-          spouseName: spouseNameController.text,
-          spouseDob: spouseDobController.text,
-          annivesary: annivesaryController.text,
-          spousePhone: spousephoneController.text,
-          spouseNic: spouseNicController.text,
-          spouseAddress: spouseAddressController.text,
-          spouseOccupation: spouseOccupation,
-          children: haveChildren ? children : []);
+        user_id: selectedUser["body"]["id"],
+        name: nameController.text,
+        nic: nicController.text,
+        address: addressController.text,
+        contact: phoneController.text,
+        country_code: '+94',
+        email: emailController.text,
+        whatsapp: whatsappController.text,
+      );
       // print(result);
       if (result.done != null) {
         if (result.done) {
@@ -517,28 +505,16 @@ class _NewProspectState extends State<NewProspect> {
         isSubmitting = true;
       });
       var result = await APIs().updateProspect(
-          pros_id: prospector.body.id,
-          user_id: selectedUser["body"]["id"],
-          name: nameController.text,
-          nic: nicController.text,
-          date_of_birth: dateofBirthController.text,
-          address: addressController.text,
-          contact: phoneController.text,
-          country_code: '+94',
-          occupation: occupation,
-          income: incomeController.text,
-          email: emailController.text,
-          whatsapp: whatsappController.text,
-          gender: _chosenGender,
-          isMarried: isMarried,
-          spouseName: spouseNameController.text,
-          spousePhone: spousephoneController.text,
-          spouseDob: spouseDobController.text,
-          annivesary: annivesaryController.text,
-          spouseNic: spouseNicController.text,
-          spouseAddress: spouseAddressController.text,
-          spouseOccupation: spouseOccupation,
-          children: haveChildren ? children : []);
+        pros_id: prospector.body.id,
+        user_id: selectedUser["body"]["id"],
+        name: nameController.text,
+        nic: nicController.text,
+        address: addressController.text,
+        contact: phoneController.text,
+        country_code: '+94',
+        email: emailController.text,
+        whatsapp: whatsappController.text,
+      );
       // print(result);
       if (result.done != null) {
         if (result.done) {
@@ -656,7 +632,7 @@ class _NewProspectState extends State<NewProspect> {
                                     fontSize: 24,
                                     color: AppColors.SECONDARY_COLOR)),
                             SizedBox(height: 15),
-                            Row(
+                            /* Row(
                               children: [
                                 Container(
                                   width: 170,
@@ -720,7 +696,7 @@ class _NewProspectState extends State<NewProspect> {
                                   ),
                                 ),
                               ],
-                            ),
+                            ), */
 
                             SizedBox(height: 15),
                             labelText(label: 'Name'),
@@ -765,8 +741,8 @@ class _NewProspectState extends State<NewProspect> {
                               autovalidateMode:
                                   AutovalidateMode.onUserInteraction,
                             ),
-                            SizedBox(height: 15),
-                            labelText(label: 'Birthday'),
+                            //  SizedBox(height: 15),
+                            /* labelText(label: 'Birthday'),
                             TextFormField(
                               controller: dateofBirthController,
                               onTap: () {
@@ -810,7 +786,7 @@ class _NewProspectState extends State<NewProspect> {
                               },
                               autovalidateMode:
                                   AutovalidateMode.onUserInteraction,
-                            ),
+                            ), */
                             SizedBox(height: 15),
                             labelText(label: 'NIC'),
                             TextFormField(
@@ -937,7 +913,7 @@ class _NewProspectState extends State<NewProspect> {
                               autovalidateMode:
                                   AutovalidateMode.onUserInteraction,
                             ),
-                            SizedBox(height: 15),
+                            /*  SizedBox(height: 15),
                             labelText(label: 'Occupation'),
                             Container(
                               width: size.width,
@@ -1041,7 +1017,7 @@ class _NewProspectState extends State<NewProspect> {
                               },
                               autovalidateMode:
                                   AutovalidateMode.onUserInteraction,
-                            ),
+                            ), */
                             SizedBox(height: 15),
                             labelText(label: 'Whatsapp Number'),
                             TextFormField(
@@ -1085,8 +1061,6 @@ class _NewProspectState extends State<NewProspect> {
                                   AutovalidateMode.onUserInteraction,
                             ),
                             SizedBox(height: 15),
-
-                            SizedBox(height: 15),
                             labelText(label: 'Email'),
                             TextFormField(
                               controller: emailController,
@@ -1129,7 +1103,7 @@ class _NewProspectState extends State<NewProspect> {
                                   AutovalidateMode.onUserInteraction,
                             ),
                             SizedBox(height: 10),
-                            Row(
+                            /* Row(
                               mainAxisAlignment: isMarried
                                   ? MainAxisAlignment.spaceEvenly
                                   : MainAxisAlignment.center,
@@ -1631,7 +1605,7 @@ class _NewProspectState extends State<NewProspect> {
                                             ))
                                     ],
                                   )
-                                : Container(),
+                                : Container(), */
                             SizedBox(height: 20),
                             isSubmitting
                                 ? Container(

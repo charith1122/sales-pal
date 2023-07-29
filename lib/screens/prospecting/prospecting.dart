@@ -160,7 +160,7 @@ class _ProspectingState extends State<Prospecting> {
                                     SizedBox(
                                       width: 60,
                                       child: Text(
-                                        prospects[i].prosNo,
+                                        prospects[i].prosNo ?? "",
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             color: AppColors.SECONDARY_COLOR),

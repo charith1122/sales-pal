@@ -383,14 +383,14 @@ class APIs {
       String spouseOccupation,
       List<dynamic> children}) async {
     try {
-      List<Child> prosChildren = new List();
+      /*  List<Child> prosChildren = new List();
       children.forEach((element) {
         Child child = Child.fromJson({
           'name': element.name,
           'dob': element.dob,
         });
         prosChildren.add(child);
-      });
+      }); */
 
       // var formData = FormData.fromMap({'data': json.encode(children)});
       // var formData = jsonEncode(children);

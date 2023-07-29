@@ -191,7 +191,8 @@ class _AppointmentState extends State<Appointment> {
                                                 SizedBox(
                                                   width: size.width - 120,
                                                   child: Text(
-                                                    appointments[k].prosName,
+                                                    appointments[k].prosName ??
+                                                        "",
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                         fontSize: 16,

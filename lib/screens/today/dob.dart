@@ -184,47 +184,52 @@ class _DobState extends State<Dob> {
                 ))
             : Container(
                 child: Stack(children: [
-                  prospects.isNotEmpty
-                      ? Container(
-                          color: AppColors.PRIMARY_COLOR,
-                          padding: EdgeInsets.only(
-                              top: 6, left: 0, right: 0, bottom: 2),
-                          child: Container(
-                            margin: const EdgeInsets.only(top: 68),
-                            child: ListView(
-                              children: [
-                                for (int i = 0; i < prospects.length; i++)
-                                  Container(
-                                    margin: const EdgeInsets.symmetric(
-                                        vertical: 12, horizontal: 15),
-                                    padding: const EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
-                                            width: 2)),
-                                    child: Row(
-                                        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                          SizedBox(
-                                            width: 55,
-                                            child: Text(
-                                              prospects[i].prosNum.toString(),
-                                              textAlign: TextAlign.center,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                              width: size.width - 110,
-                                              child: Column(
-                                                children: [
-                                                  Text(prospects[i].name),
-                                                  Text(dateFormat.format(
-                                                      DateTime.parse(
-                                                          prospects[i]
-                                                              .dateOfBirth))),
-                                                ],
-                                              )),
-                                          /*  Spacer(),
+                  prospects != null
+                      ? prospects.isNotEmpty
+                          ? Container(
+                              color: AppColors.PRIMARY_COLOR,
+                              padding: EdgeInsets.only(
+                                  top: 6, left: 0, right: 0, bottom: 2),
+                              child: Container(
+                                margin: const EdgeInsets.only(top: 68),
+                                child: ListView(
+                                  children: [
+                                    for (int i = 0; i < prospects.length; i++)
+                                      Container(
+                                        margin: const EdgeInsets.symmetric(
+                                            vertical: 12, horizontal: 15),
+                                        padding: const EdgeInsets.all(10),
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(10),
+                                            border: Border.all(
+                                                color:
+                                                    AppColors.SECONDARY_COLOR,
+                                                width: 2)),
+                                        child: Row(
+                                            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              SizedBox(
+                                                width: 55,
+                                                child: Text(
+                                                  prospects[i]
+                                                      .prosNum
+                                                      .toString(),
+                                                  textAlign: TextAlign.center,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                  width: size.width - 110,
+                                                  child: Column(
+                                                    children: [
+                                                      Text(prospects[i].name),
+                                                      Text(dateFormat.format(
+                                                          DateTime.parse(
+                                                              prospects[i]
+                                                                  .dateOfBirth))),
+                                                    ],
+                                                  )),
+                                              /*  Spacer(),
                                           FlatButton(
                                               onPressed: () {
                                                 Navigator.of(context)
@@ -255,11 +260,14 @@ class _DobState extends State<Dob> {
                                                           .PRIMARY_COLOR),
                                                 ),
                                               )) */
-                                        ]),
-                                  ),
-                              ],
-                            ),
-                          ))
+                                            ]),
+                                      ),
+                                  ],
+                                ),
+                              ))
+                          : Center(
+                              child: Text('No Birthdays for selected date.'),
+                            )
                       : Center(
                           child: Text('No Birthdays for selected date.'),
                         ),
