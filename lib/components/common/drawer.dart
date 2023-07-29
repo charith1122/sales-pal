@@ -35,17 +35,32 @@ Drawer myDrawer({
             SizedBox(
               height: 40,
             ),
-            TextButton(
+            SizedBox(
+              width: size.width / 1.5,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: AppColors.BUTTON_BG),
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => ProfileScreen(),
+                    ));
+                  },
+                  child: Text(
+                    "Profile",
+                    style: TextStyle(
+                        color: AppColors.SECONDARY_COLOR, fontSize: 18),
+                  )),
+            ),
+            /*  TextButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => ProfileScreen(),
                 ));
               },
               child: Text(
-                'Profile',
+                '',
                 style: AppStyles.drawerText,
               ),
-            ),
+            ), */
             /*  SizedBox(
               height: 8,
             ),
@@ -113,7 +128,27 @@ Drawer myDrawer({
             SizedBox(
               height: 8,
             ),
-            TextButton(
+            SizedBox(
+              width: size.width / 1.5,
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: AppColors.BUTTON_BG),
+                  onPressed: () {
+                    SendUser().deleteDeviceToken();
+                    removeUserAuthPref(key: "userAuth");
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MainSplashScreen()),
+                      (Route<dynamic> route) => false,
+                    );
+                  },
+                  child: Text(
+                    "Logout",
+                    style: TextStyle(
+                        color: AppColors.SECONDARY_COLOR, fontSize: 18),
+                  )),
+            ),
+            /*  TextButton(
               onPressed: () {
                 SendUser().deleteDeviceToken();
                 removeUserAuthPref(key: "userAuth");
@@ -127,7 +162,7 @@ Drawer myDrawer({
                 'Logout',
                 style: AppStyles.drawerText,
               ),
-            ),
+            ), */
             /*  Spacer(),
             TextButton(
               onPressed: () {

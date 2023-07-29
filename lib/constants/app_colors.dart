@@ -10,4 +10,5 @@ class AppColors {
   static const Color SECONDARY_COLOR = Color(0xFFFFFFFF);
   static const Color SECONDARY_COLOR2 = Color(0xFF000000);
   static const Color PRYMARY_COLOR2 = Color.fromARGB(255, 0, 209, 104);
+  static const Color BUTTON_BG = Color(0xff21222D);
 }

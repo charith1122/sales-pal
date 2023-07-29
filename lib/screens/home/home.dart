@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:pros_bot/components/common/buttons.dart';
 import 'package:pros_bot/components/common/drawer.dart';
 import 'package:pros_bot/components/common/menu_icon.dart';
 import 'package:pros_bot/components/common/messages.dart';
@@ -66,7 +67,7 @@ class _HomePageState extends State<HomePage> {
   int todos = 0;
   int dob = 0;
   int requsts = 0;
-
+  DateTime today = DateTime.now();
   String notificationTitle = 'No Title';
   String notificationBody = 'No Body';
   String notificationData = 'No Data';
@@ -292,7 +293,8 @@ class _HomePageState extends State<HomePage> {
                 ),
               ])), */
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        toolbarHeight: 100,
+        backgroundColor: AppColors.PRYMARY_COLOR2,
         leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -342,304 +344,466 @@ class _HomePageState extends State<HomePage> {
         ],
         centerTitle: true,
         title: Text(
-          'ProsBot',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          'Home',
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 28,
+              color: AppColors.PRIMARY_COLOR),
         ),
         automaticallyImplyLeading: false,
       ),
       backgroundColor: AppColors.PRIMARY_COLOR,
-      body: Container(
-          padding: EdgeInsets.only(top: 6, left: 0, right: 0, bottom: 2),
-          child: SingleChildScrollView(
-            child: Column(
+      body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 15),
+        children: [
+          SizedBox(
+            height: 15,
+          ),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.black,
+            ),
+            height: size.height * 0.2,
+            width: size.width,
+            child: Center(
+                child: Column(
               children: [
-                Container(
-                  padding: const EdgeInsets.all(10),
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceEvenly,
-                    children: [
-                      // for (int i = 0; i < tiles.length; i++)
-                      homeTile(
-                        size: size,
-                        name: 'Prospects',
-                        value: pros.toString(),
-                      ),
-                      homeTile(
-                        size: size,
-                        name: 'Appointment',
-                        value: appoint.toString() +
-                            ' | ' +
-                            appointOk.toString() +
-                            ' | ' +
-                            appointR.toString(),
-                      ),
-                      homeTile(
-                        size: size,
-                        name: 'Sales \nInterview',
-                        value: sales.toString() +
-                            ' | ' +
-                            salesOk.toString() +
-                            ' | ' +
-                            salesR.toString(),
-                      ),
-                      /*  homeTile(
-                        size: size,
-                        name: 'Follow \nUp',
-                        value: follows.toString(),
-                      ),
-                      homeTile(
-                        size: size,
-                        name: 'NOP',
-                        value: nop.toString(),
-                      ), */
-                      InkWell(
-                        onTap: () {
-                          /*  Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => Dob(),
-                          )); */
-                        },
-                        child: homeTile(
-                          size: size,
-                          name: 'DOB',
-                          value: dob.toString(),
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          /*   Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => Premium(),
-                          )); */
-                        },
-                        child: homeTile(
-                          size: size,
-                          name: 'Premium',
-                          value: premium.toString(),
-                        ),
-                      ),
-                      homeTile(
-                        size: size,
-                        name: 'To Do List',
-                        value: todos.toString(),
-                      ),
+                Spacer(),
+                Text("Hey, " +
+                    (today.hour >= 1 && today.hour <= 12
+                        ? "Good Morning"
+                        : today.hour >= 12 && today.hour <= 16
+                            ? "Good Afternoon"
+                            : today.hour >= 16 && today.hour <= 21
+                                ? "Good Evening"
+                                : today.hour >= 21 && today.hour <= 24
+                                    ? "Good Night"
+                                    : "")),
+                Text(
+                  "Today is " +
+                      (today.weekday == 1
+                          ? "Monday"
+                          : today.weekday == 2
+                              ? "Tuesday"
+                              : today.weekday == 3
+                                  ? "Wednesday"
+                                  : today.weekday == 4
+                                      ? "Thursday"
+                                      : today.weekday == 5
+                                          ? "Friday"
+                                          : today.weekday == 6
+                                              ? "Saturday"
+                                              : "Sunday") +
+                      ",  " +
+                      (today.month == 1
+                          ? "January"
+                          : today.month == 2
+                              ? "February"
+                              : today.month == 3
+                                  ? "March"
+                                  : today.month == 4
+                                      ? "April"
+                                      : today.month == 5
+                                          ? "May"
+                                          : today.month == 6
+                                              ? "june"
+                                              : today.month == 7
+                                                  ? "July"
+                                                  : today.month == 8
+                                                      ? "Auguest"
+                                                      : today.month == 9
+                                                          ? "September"
+                                                          : today.month == 10
+                                                              ? "October"
+                                                              : today.month ==
+                                                                      11
+                                                                  ? "November"
+                                                                  : today.month ==
+                                                                          12
+                                                                      ? "December"
+                                                                      : "") +
+                      "  " +
+                      today.day.toString() +
+                      ",  " +
+                      today.year.toString(),
+                  style:
+                      TextStyle(color: AppColors.PRYMARY_COLOR2, fontSize: 16),
+                ),
+                Spacer()
+              ],
+            )),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
+              prefixImage: AssetImage("assets/logos/inter2.png"),
+              title: "Prospecting",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      Prospecting(),
+                ));
+              }),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
+              prefixImage: AssetImage("assets/logos/appoi.png"),
+              title: "Appointment",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      AppointmentMain(),
+                ));
+              }),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
+              prefixImage: AssetImage("assets/logos/inter2.png"),
+              title: "Sales Interview",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      SalesInterviewMain(),
+                ));
+              }),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
+              prefixImage: AssetImage("assets/logos/planner.png"),
+              title: "Anual Plan",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      AnualPlan(),
+                ));
+              }),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
+              prefixImage: AssetImage("assets/logos/To do list.png"),
+              title: "To Do",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      ToDoList(),
+                ));
+              }),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
+              prefixImage: AssetImage("assets/logos/appoi.png"),
+              title: "Report",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      ReportMain(),
+                ));
+              }),
+          /*  Container(
+            padding: const EdgeInsets.all(10),
+            child: Wrap(
+              alignment: WrapAlignment.spaceEvenly,
+              children: [
+                // for (int i = 0; i < tiles.length; i++)
+                homeTile(
+                  size: size,
+                  name: 'Prospects',
+                  value: pros.toString(),
+                ),
+                homeTile(
+                  size: size,
+                  name: 'Appointment',
+                  value: appoint.toString() +
+                      ' | ' +
+                      appointOk.toString() +
+                      ' | ' +
+                      appointR.toString(),
+                ),
+                homeTile(
+                  size: size,
+                  name: 'Sales \nInterview',
+                  value: sales.toString() +
+                      ' | ' +
+                      salesOk.toString() +
+                      ' | ' +
+                      salesR.toString(),
+                ),
+                /*  homeTile(
+                  size: size,
+                  name: 'Follow \nUp',
+                  value: follows.toString(),
+                ),
+                homeTile(
+                  size: size,
+                  name: 'NOP',
+                  value: nop.toString(),
+                ), */
+                InkWell(
+                  onTap: () {
+                    /*  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => Dob(),
+                    )); */
+                  },
+                  child: homeTile(
+                    size: size,
+                    name: 'DOB',
+                    value: dob.toString(),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    /*   Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => Premium(),
+                    )); */
+                  },
+                  child: homeTile(
+                    size: size,
+                    name: 'Premium',
+                    value: premium.toString(),
+                  ),
+                ),
+                homeTile(
+                  size: size,
+                  name: 'To Do List',
+                  value: todos.toString(),
+                ),
 
-                      SizedBox(
+                SizedBox(
+                  width: size.width,
+                  height: 15,
+                ),
+
+                /* Divider(
+                  indent: 15,
+                  endIndent: 15,
+                  thickness: 2,
+                ), */
+                selectedUser == null ||
+                        selectedUser["body"]["job_role"] != "Team Leader"
+                    ? Container()
+                    : Container(
                         width: size.width,
-                        height: 15,
-                      ),
-
-                      /* Divider(
-                        indent: 15,
-                        endIndent: 15,
-                        thickness: 2,
-                      ), */
-                      selectedUser == null ||
-                              selectedUser["body"]["job_role"] != "Team Leader"
-                          ? Container()
-                          : Container(
-                              width: size.width,
-                              margin:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              decoration: BoxDecoration(
-                                  color: AppColors.PRIMARY_COLOR,
-                                  borderRadius: BorderRadius.circular(10.0),
-                                  border: Border.all(
-                                      color: AppColors.SECONDARY_COLOR,
-                                      width: 2)),
-                              child: FlatButton(
-                                height: 50,
-                                onPressed: () {
-                                  // login(context, "");
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (BuildContext context) =>
-                                        LeaderBoard(
-                                            // id: null,
-                                            ),
-                                    // builder: (BuildContext context) => DropDownDemo(),
-                                  ));
-                                },
-                                child: Text(
-                                  "Leader's Dashboard",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
+                        margin:
+                            const EdgeInsets.symmetric(horizontal: 10),
+                        decoration: BoxDecoration(
+                            color: AppColors.PRIMARY_COLOR,
+                            borderRadius: BorderRadius.circular(10.0),
+                            border: Border.all(
+                                color: AppColors.SECONDARY_COLOR,
+                                width: 2)),
+                        child: FlatButton(
+                          height: 50,
+                          onPressed: () {
+                            // login(context, "");
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  LeaderBoard(
+                                      // id: null,
+                                      ),
+                              // builder: (BuildContext context) => DropDownDemo(),
+                            ));
+                          },
+                          child: Text(
+                            "Leader's Dashboard",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
                             ),
+                          ),
+                        ),
+                      ),
 
-                      /* Divider(
-                        indent: 15,
-                        endIndent: 15,
-                        thickness: 2,
-                      ) */
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(10),
-
-                  child: Column(
-                    // alignment: WrapAlignment.spaceEvenly,
-
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          menuTileCategoryContainer(
-                            size: size,
-                            title: "Prospecting",
-                            icon1: Icons.person_search,
-                            image: "assets/icons/06.png",
-                            color1: Colors.green[800],
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    Prospecting(),
-                              ));
-                            },
-                          ),
-                          menuTileCategoryContainer(
-                            size: size,
-                            title: "Appointment",
-                            icon1: Icons.pending_actions_outlined,
-                            image: "assets/icons/02.png",
-                            color1: Colors.orange[700],
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    AppointmentMain(),
-                              ));
-                            },
-                          ),
-                          menuTileCategoryContainer(
-                            size: size,
-                            title: "Sales \nInterview",
-                            icon1: Icons.people,
-                            image: "assets/icons/12.png",
-                            color1: Colors.blue,
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    // SalesInterview(),
-                                    SalesInterviewMain(),
-                              ));
-                            },
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          /*  menuTileCategoryContainer(
-                            size: size,
-                            title: "Follow Up",
-                            icon1: Icons.file_copy_outlined,
-                            image: "assets/icons/03.png",
-                            color1: Colors.pink,
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) => FollowUp(),
-                              ));
-                            },
-                          ), */
-                          /* menuTileCategoryContainer(
-                            size: size,
-                            title: "NOP",
-                            icon1: Icons.restore_page,
-                            image: "assets/icons/04.png",
-                            color1: Colors.cyan,
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) => NOPList(),
-                              ));
-                            },
-                          ), */
-                          menuTileCategoryContainer(
-                            size: size,
-                            title: "Anual Plan",
-                            image: "assets/icons/01.png",
-                            icon1: Icons.moving,
-                            color1: Colors.purple,
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) => AnualPlan(),
-                              ));
-                            },
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          menuTileCategoryContainer(
-                            size: size,
-                            title: "To Do \nList",
-                            icon1: Icons.playlist_add_check,
-                            image: "assets/icons/09.png",
-                            color1: Colors.red,
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) => ToDoList(),
-                              ));
-                            },
-                          ),
-                          menuTileCategoryContainer(
-                            size: size,
-                            title: "Reports",
-                            icon1: Icons.request_page,
-                            image: "assets/icons/07.png",
-                            color1: Colors.black54,
-                            function: () {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) => ReportMain(),
-                              ));
-                            },
-                          ),
-                          /*  menuTileCategoryContainer(
-                            size: size,
-                            title: "Detail \nSources",
-                            icon1: Icons.file_present,
-                            image: "assets/icons/13.png",
-                            color1: Colors.yellow[900],
-                            function: () {
-                              /*  Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => DetailResources(),
-                          )); */
-                            },
-                          ), */
-                        ],
-                      ),
-                    ],
-                  ),
-                  // alignment: WrapAlignment.spaceEvenly,
-                ),
-                /* Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    TextButton(
-                      onPressed: () {
-                        SendUser().saveDeviceToken();
-                      },
-                      child: Text(
-                        'Add',
-                        style: AppStyles.drawerText,
-                      ),
-                    ),
-                    TextButton(
-                      onPressed: () {
-                        SendUser().deleteDeviceToken();
-                      },
-                      child: Text(
-                        'remov',
-                        style: AppStyles.drawerText,
-                      ),
-                    ),
-                  ],
+                /* Divider(
+                  indent: 15,
+                  endIndent: 15,
+                  thickness: 2,
                 ) */
               ],
             ),
-          )),
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+
+            child: Column(
+              // alignment: WrapAlignment.spaceEvenly,
+
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    menuTileCategoryContainer(
+                      size: size,
+                      title: "Prospecting",
+                      icon1: Icons.person_search,
+                      image: "assets/icons/06.png",
+                      color1: Colors.green[800],
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              Prospecting(),
+                        ));
+                      },
+                    ),
+                    menuTileCategoryContainer(
+                      size: size,
+                      title: "Appointment",
+                      icon1: Icons.pending_actions_outlined,
+                      image: "assets/icons/02.png",
+                      color1: Colors.orange[700],
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              AppointmentMain(),
+                        ));
+                      },
+                    ),
+                    menuTileCategoryContainer(
+                      size: size,
+                      title: "Sales \nInterview",
+                      icon1: Icons.people,
+                      image: "assets/icons/12.png",
+                      color1: Colors.blue,
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              // SalesInterview(),
+                              SalesInterviewMain(),
+                        ));
+                      },
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    /*  menuTileCategoryContainer(
+                      size: size,
+                      title: "Follow Up",
+                      icon1: Icons.file_copy_outlined,
+                      image: "assets/icons/03.png",
+                      color1: Colors.pink,
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => FollowUp(),
+                        ));
+                      },
+                    ), */
+                    /* menuTileCategoryContainer(
+                      size: size,
+                      title: "NOP",
+                      icon1: Icons.restore_page,
+                      image: "assets/icons/04.png",
+                      color1: Colors.cyan,
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => NOPList(),
+                        ));
+                      },
+                    ), */
+                    menuTileCategoryContainer(
+                      size: size,
+                      title: "Anual Plan",
+                      image: "assets/icons/01.png",
+                      icon1: Icons.moving,
+                      color1: Colors.purple,
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => AnualPlan(),
+                        ));
+                      },
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    menuTileCategoryContainer(
+                      size: size,
+                      title: "To Do \nList",
+                      icon1: Icons.playlist_add_check,
+                      image: "assets/icons/09.png",
+                      color1: Colors.red,
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => ToDoList(),
+                        ));
+                      },
+                    ),
+                    menuTileCategoryContainer(
+                      size: size,
+                      title: "Reports",
+                      icon1: Icons.request_page,
+                      image: "assets/icons/07.png",
+                      color1: Colors.black54,
+                      function: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => ReportMain(),
+                        ));
+                      },
+                    ),
+                    /*  menuTileCategoryContainer(
+                      size: size,
+                      title: "Detail \nSources",
+                      icon1: Icons.file_present,
+                      image: "assets/icons/13.png",
+                      color1: Colors.yellow[900],
+                      function: () {
+                        /*  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => DetailResources(),
+                    )); */
+                      },
+                    ), */
+                  ],
+                ),
+              ],
+            ),
+            // alignment: WrapAlignment.spaceEvenly,
+          ), */
+          /* Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              TextButton(
+                onPressed: () {
+                  SendUser().saveDeviceToken();
+                },
+                child: Text(
+                  'Add',
+                  style: AppStyles.drawerText,
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  SendUser().deleteDeviceToken();
+                },
+                child: Text(
+                  'remov',
+                  style: AppStyles.drawerText,
+                ),
+              ),
+            ],
+          ) */
+        ],
+      ),
     );
   }
 }

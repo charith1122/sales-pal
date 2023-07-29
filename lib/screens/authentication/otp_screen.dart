@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:pinput/pin_put/pin_put.dart';
 import 'package:pros_bot/components/common/messages.dart';
-import 'package:pros_bot/components/common/submit_button.dart';
+import 'package:pros_bot/components/common/buttons.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

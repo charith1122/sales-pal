@@ -4,7 +4,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:pros_bot/components/common/label.dart';
 import 'package:pros_bot/components/common/messages.dart';
-import 'package:pros_bot/components/common/submit_button.dart';
+import 'package:pros_bot/components/common/buttons.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 import 'package:pros_bot/constants/styles.dart';
 import 'package:pros_bot/models/auth/PostCustomerSignUp.dart';
