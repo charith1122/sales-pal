@@ -456,7 +456,7 @@ class _NewToDoState extends State<NewToDo> {
                       child: SingleChildScrollView(
                         child: Column(
                           children: [
-                            /*   labelText(label: 'Name'),
+                            labelText(label: 'Name'),
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
@@ -491,7 +491,7 @@ class _NewToDoState extends State<NewToDo> {
                                   print(selected);
                                 },
                               ),
-                            ), */
+                            ),
                             SizedBox(height: 15),
                             labelText(label: 'Note'),
                             TextFormField(
@@ -672,6 +672,7 @@ class _NewToDoState extends State<NewToDo> {
                               padding:
                                   const EdgeInsets.only(left: 15.0, right: 15),
                               child: DropdownButton<String>(
+                                dropdownColor: AppColors.PRIMARY_COLOR,
                                 isExpanded: true,
                                 value: _chosenValue,
                                 elevation: 5,
@@ -683,8 +684,6 @@ class _NewToDoState extends State<NewToDo> {
                                   'Prospecting',
                                   'Appointment',
                                   'Sales Interview',
-                                  'Follow Up',
-                                  'Premium',
                                   'Other',
                                 ].map<DropdownMenuItem<String>>((String value) {
                                   return DropdownMenuItem<String>(
@@ -695,7 +694,7 @@ class _NewToDoState extends State<NewToDo> {
                                 hint: Text(
                                   "Reason",
                                   style: TextStyle(
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.PRIMARY_COLOR,
                                     // fontSize: 16,
                                     // fontWeight: FontWeight.w600
                                   ),

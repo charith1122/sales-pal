@@ -95,7 +95,8 @@ class _NewAppointmentState extends State<NewAppointment> {
   getProspects() async {
     try {
       await APIs()
-          .getProspectsWithNoAppoints(userId: selectedUser["body"]["id"])
+          //.getProspectsWithNoAppoints(userId: selectedUser["body"]["id"])
+          .getProspects(userId: selectedUser["body"]["id"])
           .then((value) {
         if (value.done) {
           value.body.forEach((item) {
@@ -467,7 +468,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                       child: SingleChildScrollView(
                         child: Column(
                           children: [
-                            /*  labelText(label: 'Name'),
+                            labelText(label: 'Name'),
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
@@ -501,7 +502,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                   }
                                 },
                               ),
-                            ), */
+                            ),
                             SizedBox(height: 15),
                             labelText(label: 'Date'),
                             DatePickerContainer(

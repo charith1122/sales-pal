@@ -831,11 +831,11 @@ class _ReportsState extends State<Reports> {
                                 columnWidths: const <int, TableColumnWidth>{
                                   0: IntrinsicColumnWidth(),
                                   // 1: FlexColumnWidth(25),
-                                  1: FixedColumnWidth(40),
-                                  2: FixedColumnWidth(40),
-                                  3: FixedColumnWidth(40),
-                                  4: FixedColumnWidth(40),
-                                  5: FixedColumnWidth(40),
+                                  //1: FixedColumnWidth(40),
+                                  //2: FixedColumnWidth(40),
+                                  //3: FixedColumnWidth(40),
+                                  //4: FixedColumnWidth(40),
+                                  // 5: FixedColumnWidth(40),
                                 },
                                 defaultVerticalAlignment:
                                     TableCellVerticalAlignment.middle,
@@ -857,12 +857,12 @@ class _ReportsState extends State<Reports> {
                                       TableCell(
                                         child: Center(child: Text('S.I:')),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Center(child: Text('F.Up')),
                                       ),
                                       TableCell(
                                         child: Center(child: Text('NOP')),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   // January
@@ -888,7 +888,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: janSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: janFuController,
                                               function: () {},
@@ -897,7 +897,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: janNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //February
@@ -923,7 +923,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: febSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: febFuController,
                                               function: () {},
@@ -932,7 +932,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: febNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //March
@@ -958,7 +958,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: marSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: marFuController,
                                               function: () {},
@@ -967,7 +967,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: marNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //April
@@ -993,7 +993,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: aprlSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /*   TableCell(
                                           child: reportText(
                                               txtControl: aprlFuController,
                                               function: () {},
@@ -1002,7 +1002,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: aprlNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //May
@@ -1028,7 +1028,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: maySiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: mayFuController,
                                               function: () {},
@@ -1037,7 +1037,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: mayNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //June
@@ -1063,7 +1063,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: junSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: junFuController,
                                               function: () {},
@@ -1072,7 +1072,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: junNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //July
@@ -1098,7 +1098,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: julSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: julFuController,
                                               function: () {},
@@ -1107,7 +1107,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: julNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   //August
@@ -1133,7 +1133,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: augSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: augFuController,
                                               function: () {},
@@ -1142,7 +1142,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: augNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   // September
@@ -1168,7 +1168,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: sepSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: sepFuController,
                                               function: () {},
@@ -1177,7 +1177,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: sepNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   // October
@@ -1203,7 +1203,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: octSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: octFuController,
                                               function: () {},
@@ -1212,7 +1212,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: octNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   // November
@@ -1238,7 +1238,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: novSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: novFuController,
                                               function: () {},
@@ -1247,7 +1247,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: novNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                   // December
@@ -1273,7 +1273,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: decSiController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: decFuController,
                                               function: () {},
@@ -1282,7 +1282,7 @@ class _ReportsState extends State<Reports> {
                                           child: reportText(
                                               txtControl: decNopController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                     ],
                                   ),
                                 ],
@@ -1767,11 +1767,11 @@ class _ReportsState extends State<Reports> {
                                 columnWidths: const <int, TableColumnWidth>{
                                   0: IntrinsicColumnWidth(),
                                   // 1: FlexColumnWidth(25),
-                                  1: FixedColumnWidth(40),
-                                  2: FixedColumnWidth(40),
-                                  3: FixedColumnWidth(40),
-                                  4: FixedColumnWidth(40),
-                                  5: FixedColumnWidth(40),
+                                  //1: FixedColumnWidth(40),
+                                  //2: FixedColumnWidth(40),
+                                  //3: FixedColumnWidth(40),
+                                  // 4: FixedColumnWidth(40),
+                                  // 5: FixedColumnWidth(40),
                                 },
                                 defaultVerticalAlignment:
                                     TableCellVerticalAlignment.middle,
@@ -1793,12 +1793,12 @@ class _ReportsState extends State<Reports> {
                                       TableCell(
                                         child: Center(child: Text('S.I:')),
                                       ),
-                                      TableCell(
+                                      /*     TableCell(
                                         child: Center(child: Text('F.Up')),
                                       ),
                                       TableCell(
                                         child: Center(child: Text('NOP')),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   // January
@@ -1827,7 +1827,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Text(
                                           rprtJanFup,
                                           textAlign: TextAlign.center,
@@ -1838,7 +1838,7 @@ class _ReportsState extends State<Reports> {
                                           rprtJanNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //February
@@ -1867,7 +1867,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /* TableCell(
                                         child: Text(
                                           rprtFebFup,
                                           textAlign: TextAlign.center,
@@ -1878,7 +1878,7 @@ class _ReportsState extends State<Reports> {
                                           rprtFebNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //March
@@ -1907,7 +1907,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Text(
                                           rprtMarFup,
                                           textAlign: TextAlign.center,
@@ -1918,7 +1918,7 @@ class _ReportsState extends State<Reports> {
                                           rprtMarNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //April
@@ -1947,7 +1947,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /* TableCell(
                                         child: Text(
                                           rprtAprlFup,
                                           textAlign: TextAlign.center,
@@ -1958,7 +1958,7 @@ class _ReportsState extends State<Reports> {
                                           rprtAprlNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //May
@@ -1987,7 +1987,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Text(
                                           rprtMayFup,
                                           textAlign: TextAlign.center,
@@ -1998,7 +1998,7 @@ class _ReportsState extends State<Reports> {
                                           rprtMayNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //June
@@ -2027,7 +2027,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /* TableCell(
                                         child: Text(
                                           rprtJunFup,
                                           textAlign: TextAlign.center,
@@ -2038,7 +2038,7 @@ class _ReportsState extends State<Reports> {
                                           rprtJunNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //July
@@ -2067,7 +2067,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Text(
                                           rprtJulFup,
                                           textAlign: TextAlign.center,
@@ -2078,7 +2078,7 @@ class _ReportsState extends State<Reports> {
                                           rprtJulNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   //August
@@ -2107,7 +2107,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Text(
                                           rprtAugFup,
                                           textAlign: TextAlign.center,
@@ -2118,7 +2118,7 @@ class _ReportsState extends State<Reports> {
                                           rprtAugNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   // September
@@ -2147,7 +2147,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*  TableCell(
                                         child: Text(
                                           rprtSepFup,
                                           textAlign: TextAlign.center,
@@ -2158,7 +2158,7 @@ class _ReportsState extends State<Reports> {
                                           rprtSepNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   // October
@@ -2187,7 +2187,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /* TableCell(
                                         child: Text(
                                           rprtOctFup,
                                           textAlign: TextAlign.center,
@@ -2198,7 +2198,7 @@ class _ReportsState extends State<Reports> {
                                           rprtOctNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   // November
@@ -2227,7 +2227,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /*   TableCell(
                                         child: Text(
                                           rprtNovFup,
                                           textAlign: TextAlign.center,
@@ -2238,7 +2238,7 @@ class _ReportsState extends State<Reports> {
                                           rprtNovNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                   // December
@@ -2267,7 +2267,7 @@ class _ReportsState extends State<Reports> {
                                           textAlign: TextAlign.center,
                                         ),
                                       ),
-                                      TableCell(
+                                      /* TableCell(
                                         child: Text(
                                           rprtDecFup,
                                           textAlign: TextAlign.center,
@@ -2278,7 +2278,7 @@ class _ReportsState extends State<Reports> {
                                           rprtDecNop,
                                           textAlign: TextAlign.center,
                                         ),
-                                      ),
+                                      ), */
                                     ],
                                   ),
                                 ],

@@ -114,6 +114,7 @@ class _ToDoListState extends State<ToDoList> {
         endDate = dateFormatted;
       } else {}
       EasyLoading.show();
+
       getTodo();
       getAppointments();
       getInterviews();
@@ -145,7 +146,7 @@ class _ToDoListState extends State<ToDoList> {
         print(todos);
       });
     } catch (e) {
-      errorMessage(message: 'Something went wrong');
+      // errorMessage(message: 'Something went wrong');
     }
     setState(() {
       isLoading = false;
@@ -171,7 +172,7 @@ class _ToDoListState extends State<ToDoList> {
         print(salesInterviews);
       });
     } catch (e) {
-      errorMessage(message: 'Something went wrong');
+      // errorMessage(message: 'Something went wrong');
     }
     setState(() {
       isSalesLoading = false;
@@ -197,7 +198,7 @@ class _ToDoListState extends State<ToDoList> {
         print(appointments);
       });
     } catch (e) {
-      errorMessage(message: 'Something went wrong');
+      // errorMessage(message: 'Something went wrong');
     }
     setState(() {
       isAppointLoading = false;
@@ -479,11 +480,12 @@ class _ToDoListState extends State<ToDoList> {
                                                             SizedBox(
                                                               height: 10,
                                                             ),
-                                                            Text(
+                                                            /* Text(
                                                               'Reason :- ' +
-                                                                  todos[i]
-                                                                      .reason,
-                                                            ),
+                                                                      todos[i]
+                                                                          .reason ??
+                                                                  "",
+                                                            ), */
                                                             SizedBox(
                                                               height: 10,
                                                             ),
@@ -749,7 +751,8 @@ class _ToDoListState extends State<ToDoList> {
                                                           ),
                                                           Text('Time : ' +
                                                               (appointments[k]
-                                                                  .time))
+                                                                      .time ??
+                                                                  ""))
                                                         ],
                                                       ),
                                                       Row(

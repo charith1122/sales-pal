@@ -18,11 +18,11 @@ class GetAppointments {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['done'] = this.done;
-    if (this.body != null) {
-      data['body'] = this.body.map((v) => v.toJson()).toList();
+    data['done'] = done;
+    if (body != null) {
+      data['body'] = body.map((v) => v.toJson()).toList();
     }
-    data['message'] = this.message;
+    data['message'] = message;
     return data;
   }
 }
@@ -54,28 +54,28 @@ class BodyOfGetAppointments {
   BodyOfGetAppointments.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     userId = json['user_id'];
-    prospectId = json['prospect_id'];
+    prospectId = json['customer_id'];
     date = json['date'];
     time = json['time'];
     status = json['status'];
     reason = json['reason'];
     note = json['note'];
-    prosName = json['pros_name'];
-    prosNum = json['pros_no'];
+    prosName = json['customer_name'];
+    prosNum = json['cus_no'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['user_id'] = this.userId;
-    data['prospect_id'] = this.prospectId;
-    data['date'] = this.date;
-    data['time'] = this.time;
-    data['status'] = this.status;
-    data['reason'] = this.reason;
-    data['note'] = this.note;
-    data['pros_name'] = this.prosName;
-    data['pros_no'] = this.prosNum;
+    data['id'] = id;
+    data['user_id'] = userId;
+    data['customer_id'] = prospectId;
+    data['date'] = date;
+    data['time'] = time;
+    data['status'] = status;
+    data['reason'] = reason;
+    data['note'] = note;
+    data['customer_name'] = prosName;
+    data['cus_no'] = prosNum;
     return data;
   }
 }

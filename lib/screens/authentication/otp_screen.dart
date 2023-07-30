@@ -398,7 +398,7 @@ class _OtpScreenState extends State<OtpScreen> {
                       isResendButton
                           ? InkWell(
                               onTap: () {
-                                // resendOTP();
+                                //resendOTP();
                               },
                               child: Text(
                                 "Resend",
@@ -413,7 +413,8 @@ class _OtpScreenState extends State<OtpScreen> {
                               countSecond.toString(),
                               style: TextStyle(
                                 fontSize: 18,
-                                color: AppColors.PRIMARY_COLOR,
+                                color:
+                                    AppColors.SECONDARY_COLOR.withOpacity(0.3),
                                 fontWeight: FontWeight.w900,
                               ),
                             ),

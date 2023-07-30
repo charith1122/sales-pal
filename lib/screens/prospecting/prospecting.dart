@@ -168,7 +168,7 @@ class _ProspectingState extends State<Prospecting> {
                                     ),
                                     SizedBox(
                                       width: size.width - 165,
-                                      child: Text(prospects[i].name,
+                                      child: Text(prospects[i].name ?? "",
                                           maxLines: 2,
                                           overflow: TextOverflow.ellipsis,
                                           style: TextStyle(
@@ -206,7 +206,7 @@ class _ProspectingState extends State<Prospecting> {
                           vertical: 10, horizontal: 20),
                       decoration: BoxDecoration(
                           // color: AppColors.SECONDARY_COLOR,
-                          borderRadius: BorderRadius.circular(50),
+                          borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                               width: 1, color: AppColors.SECONDARY_COLOR)),
                       child: Row(children: [
@@ -230,6 +230,11 @@ class _ProspectingState extends State<Prospecting> {
                             style: TextStyle(fontSize: 12),
                             // obscureText: obsecure,
                             decoration: InputDecoration(
+                              hintText: "Search here...",
+                              hintStyle: TextStyle(
+                                  color: AppColors.SECONDARY_COLOR
+                                      .withOpacity(0.5),
+                                  fontSize: 16),
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.never,
                               errorMaxLines: 2,
@@ -241,7 +246,8 @@ class _ProspectingState extends State<Prospecting> {
                               border: InputBorder.none,
                               contentPadding: EdgeInsets.fromLTRB(8, 0, 8, 0),
                             ),
-
+                            cursorHeight: 18,
+                            cursorColor: AppColors.SECONDARY_COLOR,
                             onEditingComplete: () {
                               FocusScope.of(context).unfocus();
                               setState(() {});

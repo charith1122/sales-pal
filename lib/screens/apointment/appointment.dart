@@ -220,7 +220,8 @@ class _AppointmentState extends State<Appointment> {
                                                       width: 20,
                                                     ),
                                                     Text('Time : ' +
-                                                        (appointments[k].time))
+                                                        (appointments[k].time ??
+                                                            ""))
                                                   ],
                                                 ),
                                                 Row(

@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
   String notificationTitle = 'No Title';
   String notificationBody = 'No Body';
   String notificationData = 'No Data';
+  String userName = "";
 
   @override
   void initState() {
@@ -93,7 +94,12 @@ class _HomePageState extends State<HomePage> {
   getuser() async {
     selectedUser = await getUserAuthPref(key: "userAuth");
     print(selectedUser);
-    getAnalyse();
+    if (selectedUser != null) {
+      setState(() {
+        userName = selectedUser["body"]["name"];
+      });
+    }
+    // getAnalyse();
     timer = Timer.periodic(Duration(seconds: 10), (Timer t) => getAnalyse());
   }
 
@@ -307,7 +313,7 @@ class _HomePageState extends State<HomePage> {
             //
             ),
         actions: [
-          requsts > 0
+          /*  requsts > 0
               ? IconButton(
                   icon: Icon(
                     Icons.notifications,
@@ -322,7 +328,7 @@ class _HomePageState extends State<HomePage> {
                   }
                   // scaffoldKey.currentState.openDrawer(),
                   )
-              : Container(),
+              : Container(), */
           /*  FlatButton(
             minWidth: 20,
             onPressed: () {
@@ -371,6 +377,8 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Spacer(),
                 Text("Hey, " +
+                    userName +
+                    " " +
                     (today.hour >= 1 && today.hour <= 12
                         ? "Good Morning"
                         : today.hour >= 12 && today.hour <= 16

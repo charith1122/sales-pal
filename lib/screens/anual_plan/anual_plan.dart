@@ -795,11 +795,11 @@ class _AnualPlanState extends State<AnualPlan> {
                             columnWidths: const <int, TableColumnWidth>{
                               0: IntrinsicColumnWidth(),
                               // 1: FlexColumnWidth(25),
-                              1: FixedColumnWidth(40),
-                              2: FixedColumnWidth(40),
-                              3: FixedColumnWidth(40),
-                              4: FixedColumnWidth(40),
-                              5: FixedColumnWidth(40),
+                              //1: FixedColumnWidth(40),
+                              //2: FixedColumnWidth(40),
+                              // 3: FixedColumnWidth(40),
+                              //4: FixedColumnWidth(40),
+                              //5: FixedColumnWidth(40),
                             },
                             defaultVerticalAlignment:
                                 TableCellVerticalAlignment.middle,
@@ -820,12 +820,12 @@ class _AnualPlanState extends State<AnualPlan> {
                                   TableCell(
                                     child: Center(child: Text('S.I:')),
                                   ),
-                                  TableCell(
+                                  /*  TableCell(
                                     child: Center(child: Text('F.Up')),
-                                  ),
-                                  TableCell(
+                                  ), */
+                                  /* TableCell(
                                     child: Center(child: Text('NOP')),
-                                  ),
+                                  ), */
                                 ],
                               ),
                               // January
@@ -863,7 +863,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: janSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: janFuController,
                                           function: () {
@@ -871,8 +871,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: janFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: janNopController,
                                           function: () {
@@ -880,7 +880,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: janNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //February
@@ -918,7 +918,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: febSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: febFuController,
                                           function: () {
@@ -926,8 +926,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: febFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: febNopController,
                                           function: () {
@@ -935,7 +935,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: febNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //March
@@ -973,7 +973,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: marSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: marFuController,
                                           function: () {
@@ -981,8 +981,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: marFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: marNopController,
                                           function: () {
@@ -990,7 +990,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: marNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //April
@@ -1028,7 +1028,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: aprlSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: aprlFuController,
                                           function: () {
@@ -1036,8 +1036,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: aprlFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: aprlNopController,
                                           function: () {
@@ -1045,7 +1045,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: aprlNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //May
@@ -1083,7 +1083,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: maySiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: mayFuController,
                                           function: () {
@@ -1091,8 +1091,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: mayFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*   TableCell(
                                       child: reportText(
                                           txtControl: mayNopController,
                                           function: () {
@@ -1100,7 +1100,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: mayNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //June
@@ -1138,7 +1138,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: junSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: junFuController,
                                           function: () {
@@ -1146,8 +1146,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: junFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*   TableCell(
                                       child: reportText(
                                           txtControl: junNopController,
                                           function: () {
@@ -1155,7 +1155,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: junNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //July
@@ -1193,7 +1193,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: julSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: julFuController,
                                           function: () {
@@ -1201,8 +1201,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: julFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: julNopController,
                                           function: () {
@@ -1210,7 +1210,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: julNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               //August
@@ -1248,7 +1248,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: augSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: augFuController,
                                           function: () {
@@ -1256,8 +1256,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: augFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: augNopController,
                                           function: () {
@@ -1265,7 +1265,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: augNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               // September
@@ -1303,7 +1303,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: sepSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*   TableCell(
                                       child: reportText(
                                           txtControl: sepFuController,
                                           function: () {
@@ -1311,8 +1311,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: sepFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*   TableCell(
                                       child: reportText(
                                           txtControl: sepNopController,
                                           function: () {
@@ -1320,7 +1320,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: sepNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               // October
@@ -1358,7 +1358,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: octSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: octFuController,
                                           function: () {
@@ -1366,8 +1366,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: octFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*   TableCell(
                                       child: reportText(
                                           txtControl: octNopController,
                                           function: () {
@@ -1375,7 +1375,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: octNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               // November
@@ -1413,7 +1413,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: novSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: novFuController,
                                           function: () {
@@ -1421,8 +1421,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: novFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /* TableCell(
                                       child: reportText(
                                           txtControl: novNopController,
                                           function: () {
@@ -1430,7 +1430,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: novNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                               // December
@@ -1468,7 +1468,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 txtControl: decSiController);
                                           },
                                           context: context)),
-                                  TableCell(
+                                  /*  TableCell(
                                       child: reportText(
                                           txtControl: decFuController,
                                           function: () {
@@ -1476,8 +1476,8 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: decFuController);
                                           },
-                                          context: context)),
-                                  TableCell(
+                                          context: context)), */
+                                  /*   TableCell(
                                       child: reportText(
                                           txtControl: decNopController,
                                           function: () {
@@ -1485,7 +1485,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                                 context: context,
                                                 txtControl: decNopController);
                                           },
-                                          context: context)),
+                                          context: context)), */
                                 ],
                               ),
                             ],
