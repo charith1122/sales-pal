@@ -809,7 +809,7 @@ class APIs {
     try {
       Response response = await dio.post('$baseUrl/users/sales', data: {
         "user_id": user_id,
-        "pros_id": pros_id,
+        "customer_id": pros_id,
         "date": date,
         // "time": time,
       });
