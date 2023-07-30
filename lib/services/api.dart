@@ -642,7 +642,7 @@ class APIs {
     String user_id,
     String pros_id,
     String date,
-    String time,
+    // String time,
     String detail = "",
   }) async {
     try {
@@ -650,7 +650,7 @@ class APIs {
         "user_id": user_id,
         "customer_id": pros_id,
         "date": date,
-        "time": time,
+        //"time": time,
         "detail": detail
       });
       return PostCustomerSignUp.fromJson(response.data);
@@ -804,14 +804,14 @@ class APIs {
     String user_id,
     String pros_id,
     String date,
-    String time,
+    //String time,
   }) async {
     try {
       Response response = await dio.post('$baseUrl/users/sales', data: {
         "user_id": user_id,
         "pros_id": pros_id,
         "date": date,
-        "time": time,
+        // "time": time,
       });
       return PostCustomerSignUp.fromJson(response.data);
     } catch (e) {

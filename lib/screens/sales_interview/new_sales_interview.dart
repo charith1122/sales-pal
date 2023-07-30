@@ -244,7 +244,7 @@ class _NewInterviewsState extends State<NewInterviews> {
       var result = await APIs().createSalesInterview(
           user_id: selectedUser["body"]["id"],
           pros_id: selected,
-          time: deliverTimePickController.text,
+          //time: deliverTimePickController.text,
           date: deliverDatePickController.text);
       // print(result);
       if (result.done != null) {
@@ -473,11 +473,11 @@ class _NewInterviewsState extends State<NewInterviews> {
                         child: Column(
                           children: [
                             labelText(label: 'Name'),
-                            Container(
+                            /*  Container(
                               width: size.width,
                               decoration: BoxDecoration(
                                   color: AppColors.SECONDARY_COLOR,
-                                  borderRadius: BorderRadius.circular(50),
+                                  borderRadius: BorderRadius.circular(10),
                                   border: Border.all(width: 0.5)),
                               padding:
                                   const EdgeInsets.only(left: 15.0, right: 15),
@@ -512,6 +512,40 @@ class _NewInterviewsState extends State<NewInterviews> {
                                   print(selected);
                                 },
                               ),
+                            ), */
+                            Container(
+                              width: size.width,
+                              decoration: BoxDecoration(
+                                  color: AppColors.SECONDARY_COLOR,
+                                  borderRadius: BorderRadius.circular(10),
+                                  border: Border.all(width: 0.5)),
+                              padding:
+                                  const EdgeInsets.only(left: 15.0, right: 15),
+                              child: CustomSearchableDropDown(
+                                dropdownHintText: 'Search For Name Here... ',
+                                showLabelInMenu: false,
+                                primaryColor: AppColors.PRIMARY_COLOR,
+                                menuMode: false,
+                                items: prospects,
+                                label: selectedName,
+                                labelStyle:
+                                    TextStyle(color: AppColors.PRIMARY_COLOR),
+                                prefixIcon: Padding(
+                                  padding: const EdgeInsets.all(0.0),
+                                  child: Icon(Icons.search),
+                                ),
+                                dropDownMenuItems: prospects?.map((item) {
+                                      return item.name;
+                                    })?.toList() ??
+                                    [],
+                                onChanged: (value) {
+                                  if (value != null) {
+                                    selected = value.id.toString();
+                                  } else {
+                                    selected = null;
+                                  }
+                                },
+                              ),
                             ),
                             SizedBox(height: 15),
                             labelText(label: 'Date'),
@@ -523,9 +557,11 @@ class _NewInterviewsState extends State<NewInterviews> {
                                   padding: const EdgeInsets.only(left: 15.0),
                                   width: size.width,
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      border: Border.all(width: 0.5),
-                                      color: AppColors.SECONDARY_COLOR),
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                          width: 1,
+                                          color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.PRIMARY_COLOR),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -535,7 +571,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                                           deliverDatePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.PRIMARY_COLOR),
+                                              color: AppColors.SECONDARY_COLOR),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -544,15 +580,15 @@ class _NewInterviewsState extends State<NewInterviews> {
                                         height: 50,
                                         shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.only(
-                                              bottomRight: Radius.circular(50),
-                                              topRight: Radius.circular(50),
+                                              bottomRight: Radius.circular(10),
+                                              topRight: Radius.circular(10),
                                             ),
                                             side: BorderSide(
                                                 color:
                                                     AppColors.SECONDARY_COLOR,
                                                 width: 2)),
                                         onPressed: () => _selectDate(context),
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRYMARY_COLOR2,
                                         child: Text(
                                           "Change Date",
                                           style: TextStyle(
@@ -567,7 +603,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                               ),
                             ),
                             SizedBox(height: 15),
-                            labelText(label: 'Time'),
+                            /*  labelText(label: 'Time'),
                             DatePickerContainer(
                               child: GestureDetector(
                                 onTap: () => selectTime(context),
@@ -618,7 +654,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                                   ),
                                 ),
                               ),
-                            ),
+                            ), */
                             SizedBox(height: 15),
                             SizedBox(height: 20),
                             isSubmitting

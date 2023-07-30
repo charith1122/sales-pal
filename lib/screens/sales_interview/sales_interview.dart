@@ -344,7 +344,7 @@ class _AppointmentState extends State<SalesInterview> {
                     ),
                   ),
                 ), */
-                /*  Positioned(
+                Positioned(
                   bottom: 10,
                   width: size.width,
                   child: Container(
@@ -375,7 +375,7 @@ class _AppointmentState extends State<SalesInterview> {
                       ),
                     ),
                   ),
-                ) */
+                )
               ],
             )),
     );

@@ -169,7 +169,7 @@ class _NewAppointmentState extends State<NewAppointment> {
     var result = await APIs().createAppointment(
         user_id: selectedUser["body"]["id"],
         pros_id: selected,
-        time: deliverTimePickController.text,
+        // time: deliverTimePickController.text,
         date: deliverDatePickController.text);
     if (result.done != null) {
       if (result.done) {
@@ -473,7 +473,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                               width: size.width,
                               decoration: BoxDecoration(
                                   color: AppColors.SECONDARY_COLOR,
-                                  borderRadius: BorderRadius.circular(50),
+                                  borderRadius: BorderRadius.circular(10),
                                   border: Border.all(width: 0.5)),
                               padding:
                                   const EdgeInsets.only(left: 15.0, right: 15),
@@ -558,7 +558,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                               ),
                             ),
                             SizedBox(height: 15),
-                            labelText(label: 'Time'),
+                            /* labelText(label: 'Time'),
                             DatePickerContainer(
                               child: GestureDetector(
                                 onTap: () => selectTime(context),
@@ -610,7 +610,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                   ),
                                 ),
                               ),
-                            ),
+                            ), */
                             SizedBox(height: 15),
                             SizedBox(height: 20),
                             isSubmitting
