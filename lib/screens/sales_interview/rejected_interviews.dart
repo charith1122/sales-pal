@@ -208,7 +208,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                             SizedBox(
                                               width: 20,
                                             ),
-                                            Text(
+                                            /*  Text(
                                               appointments[k].time != null
                                                   ? 'Time : ' +
                                                       appointments[k].time
@@ -216,7 +216,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                               style: TextStyle(
                                                   color: AppColors
                                                       .SECONDARY_COLOR),
-                                            )
+                                            ) */
                                           ],
                                         ),
                                         Row(

@@ -741,7 +741,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                 "Submit",
                                 style: TextStyle(
                                   fontSize: 18,
-                                  color: Colors.white,
+                                  color: AppColors.PRYMARY_COLOR2,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -2026,7 +2026,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                 "Submit",
                                 style: TextStyle(
                                   fontSize: 18,
-                                  color: Colors.white,
+                                  color: AppColors.PRYMARY_COLOR2,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),

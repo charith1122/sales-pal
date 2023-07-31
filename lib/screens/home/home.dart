@@ -461,6 +461,20 @@ class _HomePageState extends State<HomePage> {
           ),
           homeMenuButton(
               context: context,
+              prefixImage: AssetImage("assets/logos/To do list.png"),
+              title: "To Do",
+              submit: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) =>
+                      // SalesInterview(),
+                      ToDoList(),
+                ));
+              }),
+          SizedBox(
+            height: 15,
+          ),
+          homeMenuButton(
+              context: context,
               prefixImage: AssetImage("assets/logos/appoi.png"),
               title: "Appointment",
               submit: () {
@@ -496,20 +510,6 @@ class _HomePageState extends State<HomePage> {
                   builder: (BuildContext context) =>
                       // SalesInterview(),
                       AnualPlan(),
-                ));
-              }),
-          SizedBox(
-            height: 15,
-          ),
-          homeMenuButton(
-              context: context,
-              prefixImage: AssetImage("assets/logos/To do list.png"),
-              title: "To Do",
-              submit: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) =>
-                      // SalesInterview(),
-                      ToDoList(),
                 ));
               }),
           SizedBox(

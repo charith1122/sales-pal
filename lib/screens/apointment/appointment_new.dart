@@ -57,7 +57,9 @@ class AppointmentNewState extends State<AppointmentMain> {
           child: Column(
             children: [
               TabBar(
-                indicatorColor: AppColors.SECONDARY_COLOR,
+                labelColor: AppColors.PRYMARY_COLOR2,
+                unselectedLabelColor: AppColors.SECONDARY_COLOR,
+                indicatorColor: AppColors.PRYMARY_COLOR2,
                 tabs: <Widget>[
                   Tab(
                     text: 'Active',

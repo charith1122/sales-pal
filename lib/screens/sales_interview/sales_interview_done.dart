@@ -212,10 +212,10 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                             SizedBox(
                                               width: 20,
                                             ),
-                                            Text(appointments[k].time != null
+                                            /*    Text(appointments[k].time != null
                                                 ? 'Time : ' +
                                                     (appointments[k].time)
-                                                : '')
+                                                : '') */
                                           ],
                                         ),
                                         /* Row(

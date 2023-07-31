@@ -19,7 +19,7 @@ class SalesInterviewMainState extends State<SalesInterviewMain> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR,
@@ -60,11 +60,13 @@ class SalesInterviewMainState extends State<SalesInterviewMain> {
           child: Column(
             children: [
               TabBar(
-                indicatorColor: AppColors.SECONDARY_COLOR,
+                labelColor: AppColors.PRYMARY_COLOR2,
+                unselectedLabelColor: AppColors.SECONDARY_COLOR,
+                indicatorColor: AppColors.PRYMARY_COLOR2,
                 tabs: <Widget>[
-                  Tab(
+                  /*  Tab(
                     text: 'Pending',
-                  ),
+                  ), */
                   Tab(
                     text: 'Active',
                   ),
@@ -80,7 +82,7 @@ class SalesInterviewMainState extends State<SalesInterviewMain> {
                 child: TabBarView(
                     physics: NeverScrollableScrollPhysics(),
                     children: [
-                      PendingSalesInterview(),
+                      // PendingSalesInterview(),
                       SalesInterview(),
                       RejectedInterviews(),
                       DoneSalesInterview(),

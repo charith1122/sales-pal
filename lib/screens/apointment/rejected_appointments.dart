@@ -209,12 +209,17 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                             SizedBox(
                                               width: 20,
                                             ),
-                                            Text(
-                                              'Time : ' + appointments[k].time,
+                                            /* Text(
+                                              'Time : ' +
+                                                          appointments[k]
+                                                              .time ==
+                                                      null
+                                                  ? ""
+                                                  : appointments[k].time,
                                               style: TextStyle(
                                                   color: AppColors
                                                       .SECONDARY_COLOR),
-                                            )
+                                            ) */
                                           ],
                                         ),
                                         Row(

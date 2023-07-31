@@ -219,8 +219,8 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                                                     SizedBox(
                                                       width: 20,
                                                     ),
-                                                    Text('Time : ' +
-                                                        (appointments[k].time))
+                                                    /*  Text('Time : ' +
+                                                        (appointments[k].time)) */
                                                   ],
                                                 ),
                                                 /* Row(

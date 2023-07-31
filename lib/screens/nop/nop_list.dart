@@ -244,7 +244,7 @@ class _NOPListState extends State<NOPList> {
                             "Add +",
                             style: TextStyle(
                               fontSize: 18,
-                              color: Colors.white,
+                              color: AppColors.PRYMARY_COLOR2,
                               fontWeight: FontWeight.bold,
                             ),
                           ),

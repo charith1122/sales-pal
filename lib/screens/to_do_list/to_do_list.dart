@@ -370,8 +370,10 @@ class _ToDoListState extends State<ToDoList> {
                     ],
                   ),
                 ),
-                TabBar(
-                  indicatorColor: AppColors.SECONDARY_COLOR,
+                /*   TabBar(
+                  labelColor: AppColors.PRYMARY_COLOR2,
+                  unselectedLabelColor: AppColors.SECONDARY_COLOR,
+                  indicatorColor: AppColors.PRYMARY_COLOR2,
                   tabs: <Widget>[
                     Tab(
                       text: 'To Do',
@@ -383,7 +385,7 @@ class _ToDoListState extends State<ToDoList> {
                       text: 'S. Interviews',
                     )
                   ],
-                ),
+                ), */
                 Expanded(
                   child: TabBarView(
                       physics: NeverScrollableScrollPhysics(),
@@ -652,7 +654,8 @@ class _ToDoListState extends State<ToDoList> {
                                                 "Add +",
                                                 style: TextStyle(
                                                   fontSize: 18,
-                                                  color: Colors.white,
+                                                  color:
+                                                      AppColors.PRYMARY_COLOR2,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -749,10 +752,10 @@ class _ToDoListState extends State<ToDoList> {
                                                           SizedBox(
                                                             width: 20,
                                                           ),
-                                                          Text('Time : ' +
+                                                          /*  Text('Time : ' +
                                                               (appointments[k]
                                                                       .time ??
-                                                                  ""))
+                                                                  "")) */
                                                         ],
                                                       ),
                                                       Row(
@@ -984,7 +987,7 @@ class _ToDoListState extends State<ToDoList> {
                                                               SizedBox(
                                                                 width: 20,
                                                               ),
-                                                              Text(salesInterviews[
+                                                              /*   Text(salesInterviews[
                                                                               k]
                                                                           .time !=
                                                                       null
@@ -992,7 +995,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                       (salesInterviews[
                                                                               k]
                                                                           .time)
-                                                                  : '')
+                                                                  : '') */
                                                             ],
                                                           ),
                                                           Row(

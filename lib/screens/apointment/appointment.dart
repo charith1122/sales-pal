@@ -219,9 +219,9 @@ class _AppointmentState extends State<Appointment> {
                                                     SizedBox(
                                                       width: 20,
                                                     ),
-                                                    Text('Time : ' +
+                                                    /*  Text('Time : ' +
                                                         (appointments[k].time ??
-                                                            ""))
+                                                            "")) */
                                                   ],
                                                 ),
                                                 Row(
@@ -409,7 +409,7 @@ class _AppointmentState extends State<Appointment> {
                               "Add +",
                               style: TextStyle(
                                 fontSize: 18,
-                                color: Colors.white,
+                                color: AppColors.PRYMARY_COLOR2,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),

@@ -299,7 +299,7 @@ class _ProspectingState extends State<Prospecting> {
                               "Add +",
                               style: TextStyle(
                                 fontSize: 18,
-                                color: Colors.white,
+                                color: AppColors.PRYMARY_COLOR2,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
