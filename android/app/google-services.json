@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:333538891983:android:1f161e51473c9049537fba",
         "android_client_info": {
-          "package_name": "com.bdi.pros_bot"
+          "package_name": "com.charith.sales_pal"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "333538891983-dfv317j0ck2hhe87fmdipc5s4tjc783m.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.bdi.pros_bot",
+            "package_name": "com.charith.sales_pal",
             "certificate_hash": "86b03f41ea87220b3f3404c3363b63f81c0e414e"
           }
         },

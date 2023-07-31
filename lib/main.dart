@@ -129,7 +129,7 @@ class _MainSplashScreenState extends State<MainSplashScreen> {
             actions: <Widget>[
               TextButton(
                 onPressed: () async {
-                  StoreRedirect.redirect(androidAppId: "com.bdi.pros_bot");
+                  StoreRedirect.redirect(androidAppId: "com.charith.sales_pal");
                 },
                 child: Text("Update"),
               )
