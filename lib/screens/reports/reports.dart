@@ -849,7 +849,7 @@ class _ReportsState extends State<Reports> {
                                                 Center(child: Text('Month'))),
                                       ),
                                       TableCell(
-                                        child: Center(child: Text('Pros:')),
+                                        child: Center(child: Text('Cust:')),
                                       ),
                                       TableCell(
                                         child: Center(child: Text('App:')),

@@ -352,6 +352,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
       child: SafeArea(
         child: Scaffold(
             backgroundColor: AppColors.PRIMARY_COLOR,
+            appBar: AppBar(
+              centerTitle: true,
+              title: Text(
+                "Profile",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              backgroundColor: AppColors.PRIMARY_COLOR,
+              actions: [
+                IconButton(
+                    icon: Icon(
+                      Icons.home_filled,
+                      size: 30,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                        (Route<dynamic> route) => false,
+                      );
+                    }
+                    // scaffoldKey.currentState.openDrawer(),
+                    )
+              ],
+            ),
             body: isLoading
                 ? Container(
                     child: Center(
@@ -370,10 +395,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(
-                              top: 40.0, left: 15, right: 15),
+                              top: 0.0, left: 15, right: 15),
                           child: SingleChildScrollView(
                             child: Column(
                               children: [
+                                SizedBox(
+                                  height: 15,
+                                ),
                                 Container(
                                   width: 75,
                                   height: 75,

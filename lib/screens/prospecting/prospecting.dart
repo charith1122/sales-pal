@@ -114,7 +114,7 @@ class _ProspectingState extends State<Prospecting> {
               )
         ],
         centerTitle: true,
-        title: Text('Prospecting',
+        title: Text('Customers',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             )),

@@ -367,10 +367,21 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: today.hour >= 1 && today.hour <= 12
+                      ? AssetImage("assets/img/morning.png")
+                      : today.hour >= 12 && today.hour <= 16
+                          ? AssetImage("assets/img/afternoon.png")
+                          : today.hour >= 16 && today.hour <= 21
+                              ? AssetImage("assets/img/Evening.png")
+                              : today.hour >= 21 && today.hour <= 24
+                                  ? AssetImage("assets/img/night.png")
+                                  : AssetImage(""),
+                  fit: BoxFit.fill),
               borderRadius: BorderRadius.circular(10),
               color: Colors.black,
             ),
-            height: size.height * 0.2,
+            height: size.width * 0.4,
             width: size.width,
             child: Center(
                 child: Column(
@@ -435,10 +446,15 @@ class _HomePageState extends State<HomePage> {
                       today.day.toString() +
                       ",  " +
                       today.year.toString(),
-                  style:
-                      TextStyle(color: AppColors.PRYMARY_COLOR2, fontSize: 16),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16),
                 ),
-                Spacer()
+                SizedBox(
+                  height: 30,
+                )
+                // Spacer()
               ],
             )),
           ),
@@ -448,7 +464,7 @@ class _HomePageState extends State<HomePage> {
           homeMenuButton(
               context: context,
               prefixImage: AssetImage("assets/logos/inter2.png"),
-              title: "Prospecting",
+              title: "Customers",
               submit: () {
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) =>
@@ -489,7 +505,7 @@ class _HomePageState extends State<HomePage> {
           ),
           homeMenuButton(
               context: context,
-              prefixImage: AssetImage("assets/logos/inter2.png"),
+              prefixImage: AssetImage("assets/img/interview.png"),
               title: "Sales Interview",
               submit: () {
                 Navigator.of(context).push(MaterialPageRoute(

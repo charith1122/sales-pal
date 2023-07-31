@@ -812,7 +812,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                         child: Center(child: Text('Month'))),
                                   ),
                                   TableCell(
-                                    child: Center(child: Text('Pros:')),
+                                    child: Center(child: Text('Cust:')),
                                   ),
                                   TableCell(
                                     child: Center(child: Text('App:')),

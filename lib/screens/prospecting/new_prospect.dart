@@ -599,7 +599,7 @@ class _NewProspectState extends State<NewProspect> {
                 )
           ],
           centerTitle: true,
-          title: Text('New Prospect',
+          title: Text('New Customer',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               )),
