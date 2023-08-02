@@ -50,85 +50,61 @@ class _ReportsState extends State<Reports> {
 
   TextEditingController janProsController = TextEditingController();
   TextEditingController janAppController = TextEditingController();
-  TextEditingController janSiController = TextEditingController();
-  TextEditingController janFuController = TextEditingController();
   TextEditingController janNopController = TextEditingController();
   TextEditingController janAnbpController = TextEditingController();
 
   TextEditingController febProsController = TextEditingController();
   TextEditingController febAppController = TextEditingController();
-  TextEditingController febSiController = TextEditingController();
-  TextEditingController febFuController = TextEditingController();
   TextEditingController febNopController = TextEditingController();
   TextEditingController febAnbpController = TextEditingController();
 
   TextEditingController marProsController = TextEditingController();
   TextEditingController marAppController = TextEditingController();
-  TextEditingController marSiController = TextEditingController();
-  TextEditingController marFuController = TextEditingController();
   TextEditingController marNopController = TextEditingController();
   TextEditingController marAnbpController = TextEditingController();
 
   TextEditingController aprlProsController = TextEditingController();
   TextEditingController aprlAppController = TextEditingController();
-  TextEditingController aprlSiController = TextEditingController();
-  TextEditingController aprlFuController = TextEditingController();
   TextEditingController aprlNopController = TextEditingController();
   TextEditingController aprlAnbpController = TextEditingController();
 
   TextEditingController mayProsController = TextEditingController();
   TextEditingController mayAppController = TextEditingController();
-  TextEditingController maySiController = TextEditingController();
-  TextEditingController mayFuController = TextEditingController();
   TextEditingController mayNopController = TextEditingController();
   TextEditingController mayAnbpController = TextEditingController();
 
   TextEditingController junProsController = TextEditingController();
   TextEditingController junAppController = TextEditingController();
-  TextEditingController junSiController = TextEditingController();
-  TextEditingController junFuController = TextEditingController();
   TextEditingController junNopController = TextEditingController();
   TextEditingController junAnbpController = TextEditingController();
 
   TextEditingController julProsController = TextEditingController();
   TextEditingController julAppController = TextEditingController();
-  TextEditingController julSiController = TextEditingController();
-  TextEditingController julFuController = TextEditingController();
   TextEditingController julNopController = TextEditingController();
   TextEditingController julAnbpController = TextEditingController();
 
   TextEditingController augProsController = TextEditingController();
   TextEditingController augAppController = TextEditingController();
-  TextEditingController augSiController = TextEditingController();
-  TextEditingController augFuController = TextEditingController();
   TextEditingController augNopController = TextEditingController();
   TextEditingController augAnbpController = TextEditingController();
 
   TextEditingController sepProsController = TextEditingController();
   TextEditingController sepAppController = TextEditingController();
-  TextEditingController sepSiController = TextEditingController();
-  TextEditingController sepFuController = TextEditingController();
   TextEditingController sepNopController = TextEditingController();
   TextEditingController sepAnbpController = TextEditingController();
 
   TextEditingController octProsController = TextEditingController();
   TextEditingController octAppController = TextEditingController();
-  TextEditingController octSiController = TextEditingController();
-  TextEditingController octFuController = TextEditingController();
   TextEditingController octNopController = TextEditingController();
   TextEditingController octAnbpController = TextEditingController();
 
   TextEditingController novProsController = TextEditingController();
   TextEditingController novAppController = TextEditingController();
-  TextEditingController novSiController = TextEditingController();
-  TextEditingController novFuController = TextEditingController();
   TextEditingController novNopController = TextEditingController();
   TextEditingController novAnbpController = TextEditingController();
 
   TextEditingController decProsController = TextEditingController();
   TextEditingController decAppController = TextEditingController();
-  TextEditingController decSiController = TextEditingController();
-  TextEditingController decFuController = TextEditingController();
   TextEditingController decNopController = TextEditingController();
   TextEditingController decAnbpController = TextEditingController();
 
@@ -168,30 +144,7 @@ class _ReportsState extends State<Reports> {
   String rprtOctSale = '0';
   String rprtNovSale = '0';
   String rprtDecSale = '0';
-  String rprtJanFup = '0';
-  String rprtFebFup = '0';
-  String rprtMarFup = '0';
-  String rprtAprlFup = '0';
-  String rprtMayFup = '0';
-  String rprtJunFup = '0';
-  String rprtJulFup = '0';
-  String rprtAugFup = '0';
-  String rprtSepFup = '0';
-  String rprtOctFup = '0';
-  String rprtNovFup = '0';
-  String rprtDecFup = '0';
-  String rprtJanNop = '0';
-  String rprtFebNop = '0';
-  String rprtMarNop = '0';
-  String rprtAprlNop = '0';
-  String rprtMayNop = '0';
-  String rprtJunNop = '0';
-  String rprtJulNop = '0';
-  String rprtAugNop = '0';
-  String rprtSepNop = '0';
-  String rprtOctNop = '0';
-  String rprtNovNop = '0';
-  String rprtDecNop = '0';
+  
   String rprtJanAnbp = '0';
   String rprtFebAnbp = '0';
   String rprtMarAnbp = '0';
@@ -312,8 +265,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           janProsController.text = savedPlans[a].pros;
           janAppController.text = savedPlans[a].app;
-          janSiController.text = savedPlans[a].sale;
-          janFuController.text = savedPlans[a].follow;
+          
           janNopController.text = savedPlans[a].nop;
           janAnbpController.text = savedPlans[a].anbp;
         });
@@ -321,8 +273,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           febProsController.text = savedPlans[a].pros;
           febAppController.text = savedPlans[a].app;
-          febSiController.text = savedPlans[a].sale;
-          febFuController.text = savedPlans[a].follow;
+          
           febNopController.text = savedPlans[a].nop;
           febAnbpController.text = savedPlans[a].anbp;
         });
@@ -330,8 +281,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           marProsController.text = savedPlans[a].pros;
           marAppController.text = savedPlans[a].app;
-          marSiController.text = savedPlans[a].sale;
-          marFuController.text = savedPlans[a].follow;
+          
           marNopController.text = savedPlans[a].nop;
           marAnbpController.text = savedPlans[a].anbp;
         });
@@ -339,8 +289,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           aprlProsController.text = savedPlans[a].pros;
           aprlAppController.text = savedPlans[a].app;
-          aprlSiController.text = savedPlans[a].sale;
-          aprlFuController.text = savedPlans[a].follow;
+          
           aprlNopController.text = savedPlans[a].nop;
           aprlAnbpController.text = savedPlans[a].anbp;
         });
@@ -348,8 +297,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           mayProsController.text = savedPlans[a].pros;
           mayAppController.text = savedPlans[a].app;
-          maySiController.text = savedPlans[a].sale;
-          mayFuController.text = savedPlans[a].follow;
+          
           mayNopController.text = savedPlans[a].nop;
           mayAnbpController.text = savedPlans[a].anbp;
         });
@@ -357,8 +305,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           junProsController.text = savedPlans[a].pros;
           junAppController.text = savedPlans[a].app;
-          junSiController.text = savedPlans[a].sale;
-          junFuController.text = savedPlans[a].follow;
+          
           junNopController.text = savedPlans[a].nop;
           junAnbpController.text = savedPlans[a].anbp;
         });
@@ -366,8 +313,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           julProsController.text = savedPlans[a].pros;
           julAppController.text = savedPlans[a].app;
-          julSiController.text = savedPlans[a].sale;
-          julFuController.text = savedPlans[a].follow;
+          
           julNopController.text = savedPlans[a].nop;
           julAnbpController.text = savedPlans[a].anbp;
         });
@@ -375,8 +321,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           augProsController.text = savedPlans[a].pros;
           augAppController.text = savedPlans[a].app;
-          augSiController.text = savedPlans[a].sale;
-          augFuController.text = savedPlans[a].follow;
+          
           augNopController.text = savedPlans[a].nop;
           augAnbpController.text = savedPlans[a].anbp;
         });
@@ -384,8 +329,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           sepProsController.text = savedPlans[a].pros;
           sepAppController.text = savedPlans[a].app;
-          sepSiController.text = savedPlans[a].sale;
-          sepFuController.text = savedPlans[a].follow;
+          
           sepNopController.text = savedPlans[a].nop;
           sepAnbpController.text = savedPlans[a].anbp;
         });
@@ -393,8 +337,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           octProsController.text = savedPlans[a].pros;
           octAppController.text = savedPlans[a].app;
-          octSiController.text = savedPlans[a].sale;
-          octFuController.text = savedPlans[a].follow;
+          
           octNopController.text = savedPlans[a].nop;
           octAnbpController.text = savedPlans[a].anbp;
         });
@@ -402,8 +345,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           novProsController.text = savedPlans[a].pros;
           novAppController.text = savedPlans[a].app;
-          novSiController.text = savedPlans[a].sale;
-          novFuController.text = savedPlans[a].follow;
+          
           novNopController.text = savedPlans[a].nop;
           novAnbpController.text = savedPlans[a].anbp;
         });
@@ -411,8 +353,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           decProsController.text = savedPlans[a].pros;
           decAppController.text = savedPlans[a].app;
-          decSiController.text = savedPlans[a].sale;
-          decFuController.text = savedPlans[a].follow;
+          
           decNopController.text = savedPlans[a].nop;
           decAnbpController.text = savedPlans[a].anbp;
         });
@@ -426,74 +367,62 @@ class _ReportsState extends State<Reports> {
     setState(() {
       janProsController.text = '0';
       janAppController.text = '0';
-      janSiController.text = '0';
-      janFuController.text = '0';
+      
       janNopController.text = '0';
       janAnbpController.text = '0';
       febProsController.text = '0';
       febAppController.text = '0';
-      febSiController.text = '0';
-      febFuController.text = '0';
+      
       febNopController.text = '0';
       febAnbpController.text = '0';
       marProsController.text = '0';
       marAppController.text = '0';
-      marSiController.text = '0';
-      marFuController.text = '0';
+      
       marNopController.text = '0';
       marAnbpController.text = '0';
       aprlProsController.text = '0';
       aprlAppController.text = '0';
-      aprlSiController.text = '0';
-      aprlFuController.text = '0';
+      
       aprlNopController.text = '0';
       aprlAnbpController.text = '0';
       mayProsController.text = '0';
       mayAppController.text = '0';
-      maySiController.text = '0';
-      mayFuController.text = '0';
+      
       mayNopController.text = '0';
       mayAnbpController.text = '0';
       junProsController.text = '0';
       junAppController.text = '0';
-      junSiController.text = '0';
-      junFuController.text = '0';
+      
       junNopController.text = '0';
       junAnbpController.text = '0';
       julProsController.text = '0';
       julAppController.text = '0';
-      julSiController.text = '0';
-      julFuController.text = '0';
+      
       julNopController.text = '0';
       julAnbpController.text = '0';
       augProsController.text = '0';
       augAppController.text = '0';
-      augSiController.text = '0';
-      augFuController.text = '0';
+      
       augNopController.text = '0';
       augAnbpController.text = '0';
       sepProsController.text = '0';
       sepAppController.text = '0';
-      sepSiController.text = '0';
-      sepFuController.text = '0';
+      
       sepNopController.text = '0';
       sepAnbpController.text = '0';
       octProsController.text = '0';
       octAppController.text = '0';
-      octSiController.text = '0';
-      octFuController.text = '0';
+      
       octNopController.text = '0';
       octAnbpController.text = '0';
       novProsController.text = '0';
       novAppController.text = '0';
-      novSiController.text = '0';
-      novFuController.text = '0';
+      
       novNopController.text = '0';
       novAnbpController.text = '0';
       decProsController.text = '0';
       decAppController.text = '0';
-      decSiController.text = '0';
-      decFuController.text = '0';
+      
       decNopController.text = '0';
       decAnbpController.text = '0';
     });
@@ -537,30 +466,7 @@ class _ReportsState extends State<Reports> {
       rprtOctSale = anualReport.rprtOctSale.toString();
       rprtNovSale = anualReport.rprtNovSale.toString();
       rprtDecSale = anualReport.rprtDecSale.toString();
-      rprtJanFup = anualReport.rprtJanFup.toString();
-      rprtFebFup = anualReport.rprtFebFup.toString();
-      rprtMarFup = anualReport.rprtMarFup.toString();
-      rprtAprlFup = anualReport.rprtAprlFup.toString();
-      rprtMayFup = anualReport.rprtMayFup.toString();
-      rprtJunFup = anualReport.rprtJunFup.toString();
-      rprtJulFup = anualReport.rprtJulFup.toString();
-      rprtAugFup = anualReport.rprtAugFup.toString();
-      rprtSepFup = anualReport.rprtSepFup.toString();
-      rprtOctFup = anualReport.rprtOctFup.toString();
-      rprtNovFup = anualReport.rprtNovFup.toString();
-      rprtDecFup = anualReport.rprtDecFup.toString();
-      rprtJanNop = anualReport.rprtJanNop.toString();
-      rprtFebNop = anualReport.rprtFebNop.toString();
-      rprtMarNop = anualReport.rprtMarNop.toString();
-      rprtAprlNop = anualReport.rprtAprlNop.toString();
-      rprtMayNop = anualReport.rprtMayNop.toString();
-      rprtJunNop = anualReport.rprtJunNop.toString();
-      rprtJulNop = anualReport.rprtJulNop.toString();
-      rprtAugNop = anualReport.rprtAugNop.toString();
-      rprtSepNop = anualReport.rprtSepNop.toString();
-      rprtOctNop = anualReport.rprtOctNop.toString();
-      rprtNovNop = anualReport.rprtNovNop.toString();
-      rprtDecNop = anualReport.rprtDecNop.toString();
+
       rprtJanAnbp = (anualReport.rprtJanAnbp * 12).toString();
       rprtFebAnbp = (anualReport.rprtFebAnbp * 12).toString();
       rprtMarAnbp = (anualReport.rprtMarAnbp * 12).toString();
@@ -883,11 +789,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: janAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: janSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: janFuController,
@@ -918,11 +824,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: febAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                     /*  TableCell(
                                           child: reportText(
                                               txtControl: febSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: febFuController,
@@ -953,11 +859,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: marAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: marSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /*  TableCell(
                                           child: reportText(
                                               txtControl: marFuController,
@@ -988,11 +894,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: aprlAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: aprlSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /*   TableCell(
                                           child: reportText(
                                               txtControl: aprlFuController,
@@ -1023,11 +929,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: mayAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: maySiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /*  TableCell(
                                           child: reportText(
                                               txtControl: mayFuController,
@@ -1058,11 +964,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: junAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: junSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: junFuController,
@@ -1093,11 +999,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: julAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: julSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: julFuController,
@@ -1128,11 +1034,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: augAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                     /*  TableCell(
                                           child: reportText(
                                               txtControl: augSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: augFuController,
@@ -1163,11 +1069,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: sepAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: sepSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: sepFuController,
@@ -1198,11 +1104,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: octAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                      /* TableCell(
                                           child: reportText(
                                               txtControl: octSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /*  TableCell(
                                           child: reportText(
                                               txtControl: octFuController,
@@ -1233,11 +1139,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: novAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                     /*  TableCell(
                                           child: reportText(
                                               txtControl: novSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /* TableCell(
                                           child: reportText(
                                               txtControl: novFuController,
@@ -1268,11 +1174,11 @@ class _ReportsState extends State<Reports> {
                                               txtControl: decAppController,
                                               function: () {},
                                               context: context)),
-                                      TableCell(
+                                     /*  TableCell(
                                           child: reportText(
                                               txtControl: decSiController,
                                               function: () {},
-                                              context: context)),
+                                              context: context)), */
                                       /*  TableCell(
                                           child: reportText(
                                               txtControl: decFuController,
