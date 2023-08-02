@@ -124,43 +124,31 @@ class _WeeklyReportsState extends State<WeeklyReports> {
   TextEditingController janProsController = TextEditingController();
   TextEditingController janAppController = TextEditingController();
   TextEditingController janSiController = TextEditingController();
-  TextEditingController janFuController = TextEditingController();
-  TextEditingController janNopController = TextEditingController();
   TextEditingController janAnbpController = TextEditingController();
 
   TextEditingController febProsController = TextEditingController();
   TextEditingController febAppController = TextEditingController();
   TextEditingController febSiController = TextEditingController();
-  TextEditingController febFuController = TextEditingController();
-  TextEditingController febNopController = TextEditingController();
   TextEditingController febAnbpController = TextEditingController();
 
   TextEditingController marProsController = TextEditingController();
   TextEditingController marAppController = TextEditingController();
   TextEditingController marSiController = TextEditingController();
-  TextEditingController marFuController = TextEditingController();
-  TextEditingController marNopController = TextEditingController();
   TextEditingController marAnbpController = TextEditingController();
 
   TextEditingController aprlProsController = TextEditingController();
   TextEditingController aprlAppController = TextEditingController();
   TextEditingController aprlSiController = TextEditingController();
-  TextEditingController aprlFuController = TextEditingController();
-  TextEditingController aprlNopController = TextEditingController();
   TextEditingController aprlAnbpController = TextEditingController();
 
   TextEditingController mayProsController = TextEditingController();
   TextEditingController mayAppController = TextEditingController();
   TextEditingController maySiController = TextEditingController();
-  TextEditingController mayFuController = TextEditingController();
-  TextEditingController mayNopController = TextEditingController();
   TextEditingController mayAnbpController = TextEditingController();
 
   TextEditingController junProsController = TextEditingController();
   TextEditingController junAppController = TextEditingController();
   TextEditingController junSiController = TextEditingController();
-  TextEditingController junFuController = TextEditingController();
-  TextEditingController junNopController = TextEditingController();
   TextEditingController junAnbpController = TextEditingController();
 
   @override
@@ -238,16 +226,7 @@ class _WeeklyReportsState extends State<WeeklyReports> {
       thirdSale = monthReport.thirdSale.toString();
       forthSale = monthReport.forthSale.toString();
       fifthSale = monthReport.fifthSale.toString();
-      firstFup = monthReport.firstFup.toString();
-      secondFup = monthReport.secondFup.toString();
-      thirdFup = monthReport.thirdFup.toString();
-      forthFup = monthReport.forthFup.toString();
-      fifthFup = monthReport.fifthFup.toString();
-      firstNop = monthReport.firstNop.toString();
-      secondNop = monthReport.secondNop.toString();
-      thirdNop = monthReport.thirdNop.toString();
-      forthNop = monthReport.forthNop.toString();
-      fifthNop = monthReport.fifthNop.toString();
+      
       firstAnbp = (monthReport.firstAnbp * 12).toString();
       secondAnbp = (monthReport.secondAnbp * 12).toString();
       thirdAnbp = (monthReport.thirdAnbp * 12).toString();
@@ -256,8 +235,6 @@ class _WeeklyReportsState extends State<WeeklyReports> {
       monthPros = monthReport.monthPros.toString();
       monthApp = monthReport.monthApp.toString();
       monthSale = monthReport.monthSale.toString();
-      monthFup = monthReport.monthFup.toString();
-      monthNop = monthReport.monthNop.toString();
       monthAnbp = monthReport.monthAnbp.toString();
     });
   }
@@ -267,38 +244,26 @@ class _WeeklyReportsState extends State<WeeklyReports> {
       janProsController.text = '0';
       janAppController.text = '0';
       janSiController.text = '0';
-      janFuController.text = '0';
-      janNopController.text = '0';
       janAnbpController.text = '0';
       febProsController.text = '0';
       febAppController.text = '0';
       febSiController.text = '0';
-      febFuController.text = '0';
-      febNopController.text = '0';
       febAnbpController.text = '0';
       marProsController.text = '0';
       marAppController.text = '0';
       marSiController.text = '0';
-      marFuController.text = '0';
-      marNopController.text = '0';
       marAnbpController.text = '0';
       aprlProsController.text = '0';
       aprlAppController.text = '0';
       aprlSiController.text = '0';
-      aprlFuController.text = '0';
-      aprlNopController.text = '0';
       aprlAnbpController.text = '0';
       mayProsController.text = '0';
       mayAppController.text = '0';
       maySiController.text = '0';
-      mayFuController.text = '0';
-      mayNopController.text = '0';
       mayAnbpController.text = '0';
       junProsController.text = '0';
       junAppController.text = '0';
       junSiController.text = '0';
-      junFuController.text = '0';
-      junNopController.text = '0';
       junAnbpController.text = '0';
     });
   }

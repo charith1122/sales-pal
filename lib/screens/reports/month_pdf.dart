@@ -167,20 +167,7 @@ Future<Uint8List> makePdfMonth(
                                           .ceil()
                                           .toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthFup) *
-                                              2 /
-                                              9)
-                                          .ceil()
-                                          .toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthNop) *
-                                              2 /
-                                              9)
-                                          .ceil()
-                                          .toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 // second
@@ -208,20 +195,7 @@ Future<Uint8List> makePdfMonth(
                                           .ceil()
                                           .toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthFup) *
-                                              2 /
-                                              9)
-                                          .ceil()
-                                          .toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthNop) *
-                                              2 /
-                                              9)
-                                          .ceil()
-                                          .toString(),
-                                    ),
+                                   
                                   ],
                                 ),
                                 //third
@@ -249,20 +223,7 @@ Future<Uint8List> makePdfMonth(
                                           .floor()
                                           .toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthFup) *
-                                              2 /
-                                              9)
-                                          .floor()
-                                          .toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthNop) *
-                                              2 /
-                                              9)
-                                          .floor()
-                                          .toString(),
-                                    ),
+                                   
                                   ],
                                 ),
                                 //4th
@@ -290,20 +251,7 @@ Future<Uint8List> makePdfMonth(
                                           .floor()
                                           .toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthFup) *
-                                              2 /
-                                              9)
-                                          .floor()
-                                          .toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: (int.parse(monthReport.monthNop) *
-                                              2 /
-                                              9)
-                                          .floor()
-                                          .toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 //5th
@@ -374,7 +322,7 @@ Future<Uint8List> makePdfMonth(
                                                           2)))
                                               .toString(),
                                     ),
-                                    reportFieldWeek(
+                                    /* reportFieldWeek(
                                       value:
                                           /* (int.parse(monthReport.monthFup) -
                                                   int.parse(monthReport.monthFup) *
@@ -397,8 +345,8 @@ Future<Uint8List> makePdfMonth(
                                                               .floor() *
                                                           2)))
                                               .toString(),
-                                    ),
-                                    reportFieldWeek(
+                                    ), */
+                                    /* reportFieldWeek(
                                       value:
                                           /*  (int.parse(monthReport.monthNop) -
                                                   int.parse(monthReport.monthNop) *
@@ -421,7 +369,7 @@ Future<Uint8List> makePdfMonth(
                                                               .floor() *
                                                           2)))
                                               .toString(),
-                                    ),
+                                    ), */
                                   ],
                                 ),
                                 // total
@@ -437,12 +385,7 @@ Future<Uint8List> makePdfMonth(
                                     reportFieldWeek(
                                       value: monthReport.monthSale,
                                     ),
-                                    reportFieldWeek(
-                                      value: monthReport.monthFup,
-                                    ),
-                                    reportFieldWeek(
-                                      value: monthReport.monthNop,
-                                    ),
+                                    
                                   ],
                                 ),
                               ],
@@ -694,12 +637,7 @@ Future<Uint8List> makePdfMonth(
                                     reportFieldWeek(
                                       value: monthReport.firstSale.toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: monthReport.firstFup.toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: monthReport.firstNop.toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 // second
@@ -715,12 +653,7 @@ Future<Uint8List> makePdfMonth(
                                     reportFieldWeek(
                                       value: monthReport.secondSale.toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: monthReport.secondFup.toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: monthReport.secondNop.toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 //third
@@ -736,12 +669,7 @@ Future<Uint8List> makePdfMonth(
                                     reportFieldWeek(
                                       value: monthReport.thirdSale.toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: monthReport.thirdFup.toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: monthReport.thirdNop.toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 //4th
@@ -757,12 +685,7 @@ Future<Uint8List> makePdfMonth(
                                     reportFieldWeek(
                                       value: monthReport.forthSale.toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: monthReport.forthFup.toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: monthReport.forthNop.toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 //5th
@@ -778,12 +701,7 @@ Future<Uint8List> makePdfMonth(
                                     reportFieldWeek(
                                       value: monthReport.fifthSale.toString(),
                                     ),
-                                    reportFieldWeek(
-                                      value: monthReport.fifthFup.toString(),
-                                    ),
-                                    reportFieldWeek(
-                                      value: monthReport.fifthNop.toString(),
-                                    ),
+                                    
                                   ],
                                 ),
                                 // total
@@ -814,22 +732,22 @@ Future<Uint8List> makePdfMonth(
                                               monthReport.fifthSale)
                                           .toString(),
                                     ),
-                                    reportFieldWeek(
+                                    /* reportFieldWeek(
                                       value: (monthReport.firstFup +
                                               monthReport.secondFup +
                                               monthReport.thirdFup +
                                               monthReport.forthFup +
                                               monthReport.fifthFup)
                                           .toString(),
-                                    ),
-                                    reportFieldWeek(
+                                    ), */
+                                    /* reportFieldWeek(
                                       value: (monthReport.firstNop +
                                               monthReport.secondNop +
                                               monthReport.thirdNop +
                                               monthReport.forthNop +
                                               monthReport.fifthNop)
                                           .toString(),
-                                    ),
+                                    ), */
                                   ],
                                 ),
                               ],
