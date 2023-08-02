@@ -699,7 +699,7 @@ class _ReportsState extends State<Reports> {
                                       anualReport: anualReport,
                                       year: _lodedYear,
                                       name: selectedUser["body"]["name"],
-                                      company: myCompany,
+                                      // company: myCompany,
                                       phone: selectedUser["body"]["contactNo"]),
                                 ),
                               );

@@ -518,7 +518,7 @@ class _WeeklyReportsState extends State<WeeklyReports> {
                                     year: _lodedYear,
                                     month: _loadMonth,
                                     name: selectedUser["body"]["name"],
-                                    company: myCompany,
+                                    // company: myCompany,
                                     phone: selectedUser["body"]["contactNo"]),
                               ),
                             );

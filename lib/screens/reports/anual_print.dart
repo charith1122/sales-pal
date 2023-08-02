@@ -12,7 +12,7 @@ class AnnualPrint extends StatelessWidget {
   final BodyOfAnualReport anualReport;
   final String year;
   final String name;
-  final String company;
+  // final String company;
   final String phone;
 
   const AnnualPrint(
@@ -21,7 +21,7 @@ class AnnualPrint extends StatelessWidget {
       this.anualReport,
       this.year,
       this.name,
-      this.company,
+      // this.company,
       this.phone})
       : super(key: key);
 
@@ -37,7 +37,7 @@ class AnnualPrint extends StatelessWidget {
             anualReport: anualReport,
             year: year,
             name: name,
-            company: company,
+            // company: company,
             phone: phone),
       ),
     );

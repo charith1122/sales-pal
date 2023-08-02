@@ -14,7 +14,7 @@ class MonthlyPrint extends StatelessWidget {
   final String year;
   final String month;
   final String name;
-  final String company;
+  // final String company;
   final String phone;
 
   const MonthlyPrint(
@@ -24,7 +24,7 @@ class MonthlyPrint extends StatelessWidget {
       this.year,
       this.month,
       this.name,
-      this.company,
+      // this.company,
       this.phone})
       : super(key: key);
 
@@ -41,7 +41,7 @@ class MonthlyPrint extends StatelessWidget {
             year: year,
             month: month,
             name: name,
-            company: company,
+            // company: company,
             phone: phone),
       ),
     );

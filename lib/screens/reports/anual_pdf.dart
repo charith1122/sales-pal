@@ -11,7 +11,7 @@ Future<Uint8List> makePdf(
     BodyOfAnualReport anualReport,
     String year,
     String name,
-    String company,
+    // String company,
     String phone}) async {
   final pdf = Document(title: '2023-01-26');
   final imageLogo = MemoryImage(
@@ -64,7 +64,7 @@ Future<Uint8List> makePdf(
               Spacer(),
               Column(children: [
                 Text(name),
-                Text(company),
+                // Text(company),
                 Text(phone),
               ]),
               SizedBox(width: 30),
