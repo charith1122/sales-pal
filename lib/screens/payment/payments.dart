@@ -19,7 +19,7 @@ class _PaymentsState extends State<Payments> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -53,9 +53,9 @@ class _PaymentsState extends State<Payments> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: Container(
-        color: AppColors.PRIMARY_COLOR,
+        color: AppColors.PRIMARY_COLOR_NEW,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -73,8 +73,8 @@ class _PaymentsState extends State<Payments> {
               height: 100,
               width: size.width - 80,
               decoration: BoxDecoration(
-                  border:
-                      Border.all(color: AppColors.SECONDARY_COLOR, width: 3),
+                  border: Border.all(
+                      color: AppColors.SECONDARY_COLOR_NEW, width: 3),
                   borderRadius: BorderRadius.circular(20)),
             )
           ],

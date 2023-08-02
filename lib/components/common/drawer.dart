@@ -13,7 +13,7 @@ Drawer myDrawer({
   BuildContext context,
 }) {
   return Drawer(
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
@@ -47,7 +47,7 @@ Drawer myDrawer({
                   child: Text(
                     "Profile",
                     style: TextStyle(
-                        color: AppColors.SECONDARY_COLOR, fontSize: 18),
+                        color: AppColors.SECONDARY_COLOR_NEW, fontSize: 18),
                   )),
             ),
             /*  TextButton(
@@ -145,7 +145,7 @@ Drawer myDrawer({
                   child: Text(
                     "Logout",
                     style: TextStyle(
-                        color: AppColors.SECONDARY_COLOR, fontSize: 18),
+                        color: AppColors.SECONDARY_COLOR_NEW, fontSize: 18),
                   )),
             ),
             /*  TextButton(

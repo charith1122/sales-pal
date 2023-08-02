@@ -124,7 +124,7 @@ class _NOPCreateState extends State<NOPCreate> {
                           style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: AppColors.PRIMARY_COLOR),
+                              color: AppColors.PRIMARY_COLOR_NEW),
                         ),
                       ),
                       IconButton(
@@ -150,13 +150,13 @@ class _NOPCreateState extends State<NOPCreate> {
                       controller: tagController,
 
                       style: TextStyle(
-                          fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                          fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                       // obscureText: obsecure,
                       decoration: InputDecoration(
                         floatingLabelBehavior: FloatingLabelBehavior.never,
                         errorMaxLines: 2,
                         filled: true,
-                        fillColor: AppColors.SECONDARY_COLOR,
+                        fillColor: AppColors.SECONDARY_COLOR_NEW,
                         errorStyle: TextStyle(
                             color: Color.fromARGB(255, 182, 40, 30),
                             fontWeight: FontWeight.w400,
@@ -167,7 +167,7 @@ class _NOPCreateState extends State<NOPCreate> {
                                 BorderRadius.all(Radius.circular(50))),
                         // prefixIcon: Icon(
                         //   Icons.person,
-                        //   color: AppColors.PRIMARY_COLOR,
+                        //   color: AppColors.PRIMARY_COLOR_NEW,
                         // ),
                         labelText: ' Tag ',
                         labelStyle: AppStyles.labelStyle,
@@ -196,7 +196,7 @@ class _NOPCreateState extends State<NOPCreate> {
                       value: _chosenValue,
                       elevation: 5,
                       underline: Container(color: Colors.transparent),
-                      style: TextStyle(color: AppColors.PRIMARY_COLOR),
+                      style: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                       // items: dropdownItems,
                       items: <String>[
                         'Prospect',
@@ -207,7 +207,8 @@ class _NOPCreateState extends State<NOPCreate> {
                           value: value,
                           child: Text(
                             value,
-                            style: TextStyle(color: AppColors.PRIMARY_COLOR),
+                            style:
+                                TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                           ),
                         );
                       }).toList(),
@@ -232,10 +233,10 @@ class _NOPCreateState extends State<NOPCreate> {
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 50),
                     decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(25.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     child: FlatButton(
                       height: 40,
                       minWidth: 200,
@@ -346,13 +347,13 @@ class _NOPCreateState extends State<NOPCreate> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -391,7 +392,7 @@ class _NOPCreateState extends State<NOPCreate> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -425,19 +426,19 @@ class _NOPCreateState extends State<NOPCreate> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
               ))
           : Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               padding: EdgeInsets.only(top: 12, left: 15, right: 15, bottom: 2),
               child: ListView(
                 children: [
@@ -489,14 +490,14 @@ class _NOPCreateState extends State<NOPCreate> {
                 // initialValue: 'K.M.A.Shiran Kularathna',
                 controller: nameController,
                 readOnly: true,
-                style: TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                style: TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                 // obscureText: obsecure,
                 decoration: InputDecoration(
                                 floatingLabelBehavior:FloatingLabelBehavior.never,
                                 floatingLabelBehavior:FloatingLabelBehavior.never,
                   errorMaxLines: 2,
                   filled: true,
-                  fillColor: AppColors.SECONDARY_COLOR,
+                  fillColor: AppColors.SECONDARY_COLOR_NEW,
                   errorStyle: TextStyle(
                       color: Color.fromARGB(255, 182, 40, 30),
                       fontWeight: FontWeight.w400,
@@ -506,7 +507,7 @@ class _NOPCreateState extends State<NOPCreate> {
                       borderRadius: BorderRadius.all(Radius.circular(50))),
                   prefixIcon: Icon(
                     Icons.person,
-                    color: AppColors.PRIMARY_COLOR,
+                    color: AppColors.PRIMARY_COLOR_NEW,
                   ),
                   labelText: 'Name',
                   labelStyle: AppStyles.labelStyle,
@@ -528,18 +529,18 @@ class _NOPCreateState extends State<NOPCreate> {
                   Container(
                     width: size.width,
                     decoration: BoxDecoration(
-                        color: AppColors.SECONDARY_COLOR,
+                        color: AppColors.SECONDARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(50),
                         border: Border.all(width: 0.5)),
                     padding: const EdgeInsets.only(left: 15.0, right: 15),
                     child: CustomSearchableDropDown(
                       dropdownHintText: 'Search For Name Here... ',
                       showLabelInMenu: false,
-                      primaryColor: AppColors.PRIMARY_COLOR,
+                      primaryColor: AppColors.PRIMARY_COLOR_NEW,
                       menuMode: false,
                       items: prospects,
                       // label: selectedName,
-                      labelStyle: TextStyle(color: AppColors.PRIMARY_COLOR),
+                      labelStyle: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(0.0),
                         child: Icon(Icons.search),
@@ -562,14 +563,14 @@ class _NOPCreateState extends State<NOPCreate> {
                   TextFormField(
                     controller: policyNoController,
                     // initialValue: 'AP 2022-4466',
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -579,7 +580,7 @@ class _NOPCreateState extends State<NOPCreate> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.person,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: 'Policy Number',
                       labelStyle: AppStyles.labelStyle,
@@ -605,14 +606,14 @@ class _NOPCreateState extends State<NOPCreate> {
                       _selectDate(context, 'PROS');
                     },
                     readOnly: true,
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -622,7 +623,7 @@ class _NOPCreateState extends State<NOPCreate> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.person,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: 'Commencment Date',
                       labelStyle: AppStyles.labelStyle,
@@ -645,14 +646,14 @@ class _NOPCreateState extends State<NOPCreate> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         border: Border.all(width: 0.5),
-                        color: AppColors.SECONDARY_COLOR),
+                        color: AppColors.SECONDARY_COLOR_NEW),
                     padding: const EdgeInsets.only(left: 15.0, right: 15),
                     child: DropdownButton<String>(
                       isExpanded: true,
                       value: selectedPayType,
                       elevation: 5,
                       underline: Container(color: Colors.transparent),
-                      style: TextStyle(color: AppColors.PRIMARY_COLOR),
+                      style: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                       // items: dropdownItems,
                       items:
                           payType.map<DropdownMenuItem<String>>((String value) {
@@ -682,14 +683,14 @@ class _NOPCreateState extends State<NOPCreate> {
                   TextFormField(
                     controller: premiumController,
                     // initialValue: 'LKR 16500.00',
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -699,7 +700,7 @@ class _NOPCreateState extends State<NOPCreate> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.money,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: 'Premium',
                       labelStyle: AppStyles.labelStyle,
@@ -742,8 +743,8 @@ class _NOPCreateState extends State<NOPCreate> {
                                             padding: const EdgeInsets.all(10),
                                             width: size.width,
                                             decoration: BoxDecoration(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 border: Border.all(
                                                     color: Colors.grey),
                                                 borderRadius:
@@ -754,7 +755,7 @@ class _NOPCreateState extends State<NOPCreate> {
                                                   cover[i].tag,
                                                   style: TextStyle(
                                                       color: AppColors
-                                                          .PRIMARY_COLOR),
+                                                          .PRIMARY_COLOR_NEW),
                                                 ),
                                                 Spacer(),
                                                 IconButton(
@@ -768,8 +769,8 @@ class _NOPCreateState extends State<NOPCreate> {
                                                     Icons
                                                         .delete_forever_rounded,
                                                     size: 20,
-                                                    color:
-                                                        AppColors.PRIMARY_COLOR,
+                                                    color: AppColors
+                                                        .PRIMARY_COLOR_NEW,
                                                   ),
                                                 ),
                                               ],
@@ -799,8 +800,8 @@ class _NOPCreateState extends State<NOPCreate> {
                                             padding: const EdgeInsets.all(10),
                                             width: size.width,
                                             decoration: BoxDecoration(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 border: Border.all(
                                                     color: Colors.grey),
                                                 borderRadius:
@@ -811,7 +812,7 @@ class _NOPCreateState extends State<NOPCreate> {
                                                   cover[j].tag,
                                                   style: TextStyle(
                                                       color: AppColors
-                                                          .PRIMARY_COLOR),
+                                                          .PRIMARY_COLOR_NEW),
                                                 ),
                                                 Spacer(),
                                                 IconButton(
@@ -825,8 +826,8 @@ class _NOPCreateState extends State<NOPCreate> {
                                                     Icons
                                                         .delete_forever_rounded,
                                                     size: 20,
-                                                    color:
-                                                        AppColors.PRIMARY_COLOR,
+                                                    color: AppColors
+                                                        .PRIMARY_COLOR_NEW,
                                                   ),
                                                 ),
                                               ],
@@ -849,7 +850,7 @@ class _NOPCreateState extends State<NOPCreate> {
                     },
                     child: const Text(
                       'Add Coverage +',
-                      style: TextStyle(color: AppColors.SECONDARY_COLOR),
+                      style: TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
                     ),
                   ),
                   SizedBox(height: 20),
@@ -857,7 +858,7 @@ class _NOPCreateState extends State<NOPCreate> {
                       ? Container(
                           child: Center(
                           child: SpinKitThreeBounce(
-                            color: AppColors.SECONDARY_COLOR,
+                            color: AppColors.SECONDARY_COLOR_NEW,
                             size: 25.0,
                           ),
                         ))
@@ -866,10 +867,10 @@ class _NOPCreateState extends State<NOPCreate> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.PRIMARY_COLOR_NEW,
                                   borderRadius: BorderRadius.circular(25.0),
                                   border: Border.all(
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                       width: 2)),
                               child: FlatButton(
                                 height: 50,

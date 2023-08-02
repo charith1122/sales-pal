@@ -69,7 +69,7 @@ class _NOPListState extends State<NOPList> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -103,13 +103,13 @@ class _NOPListState extends State<NOPList> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
@@ -119,7 +119,7 @@ class _NOPListState extends State<NOPList> {
                 Container(
                     child: prospects.isNotEmpty
                         ? Container(
-                            color: AppColors.PRIMARY_COLOR,
+                            color: AppColors.PRIMARY_COLOR_NEW,
                             padding: EdgeInsets.only(
                                 top: 68, left: 0, right: 0, bottom: 75),
                             child: ListView(
@@ -132,7 +132,8 @@ class _NOPListState extends State<NOPList> {
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW,
                                             width: 2)),
                                     child: Row(children: [
                                       SizedBox(
@@ -157,8 +158,8 @@ class _NOPListState extends State<NOPList> {
                                             Divider(
                                                 indent: 25,
                                                 endIndent: 25,
-                                                color:
-                                                    AppColors.SECONDARY_COLOR),
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW),
                                             Text('Policy No: ' +
                                                 prospects[i].policyNo),
                                           ],
@@ -171,7 +172,7 @@ class _NOPListState extends State<NOPList> {
                                                 icon: Icon(Icons.list_alt_sharp,
                                                     // size: 30,
                                                     color: AppColors
-                                                        .SECONDARY_COLOR),
+                                                        .SECONDARY_COLOR_NEW),
                                                 onPressed: () {
                                                   Navigator.of(context)
                                                       .push(MaterialPageRoute(
@@ -191,7 +192,7 @@ class _NOPListState extends State<NOPList> {
                                                 icon: Icon(Icons.remove_red_eye,
                                                     // size: 30,
                                                     color: AppColors
-                                                        .SECONDARY_COLOR),
+                                                        .SECONDARY_COLOR_NEW),
                                                 onPressed: () {
                                                   Navigator.of(context)
                                                       .push(MaterialPageRoute(
@@ -225,10 +226,11 @@ class _NOPListState extends State<NOPList> {
                       Container(
                         // margin: const EdgeInsets.symmetric(horizontal: 50),
                         decoration: BoxDecoration(
-                            color: AppColors.PRIMARY_COLOR,
+                            color: AppColors.PRIMARY_COLOR_NEW,
                             borderRadius: BorderRadius.circular(25.0),
                             border: Border.all(
-                                color: AppColors.SECONDARY_COLOR, width: 2)),
+                                color: AppColors.SECONDARY_COLOR_NEW,
+                                width: 2)),
                         child: FlatButton(
                           height: 50,
                           onPressed: () {
@@ -258,10 +260,10 @@ class _NOPListState extends State<NOPList> {
                     margin: const EdgeInsets.symmetric(
                         vertical: 10, horizontal: 20),
                     decoration: BoxDecoration(
-                        // color: AppColors.SECONDARY_COLOR,
+                        // color: AppColors.SECONDARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(50),
                         border: Border.all(
-                            width: 1, color: AppColors.SECONDARY_COLOR)),
+                            width: 1, color: AppColors.SECONDARY_COLOR_NEW)),
                     child: Row(children: [
                       isSearchResult
                           ? IconButton(
@@ -274,7 +276,7 @@ class _NOPListState extends State<NOPList> {
                               },
                               icon: Icon(
                                 Icons.close,
-                                color: AppColors.SECONDARY_COLOR,
+                                color: AppColors.SECONDARY_COLOR_NEW,
                               ))
                           : SizedBox(
                               height: 5,
@@ -315,7 +317,7 @@ class _NOPListState extends State<NOPList> {
                           },
                           icon: Icon(
                             Icons.search,
-                            color: AppColors.SECONDARY_COLOR,
+                            color: AppColors.SECONDARY_COLOR_NEW,
                           ))
                     ]),
                   ),

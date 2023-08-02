@@ -299,13 +299,13 @@ class _NewInterviewsState extends State<NewInterviews> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -348,13 +348,13 @@ class _NewInterviewsState extends State<NewInterviews> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -414,7 +414,7 @@ class _NewInterviewsState extends State<NewInterviews> {
       data: MediaQuery.of(context).copyWith(),
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
 
           /* leading: IconButton(
               icon: Icon(
@@ -451,10 +451,10 @@ class _NewInterviewsState extends State<NewInterviews> {
         ),
         body: isLoading
             ? Container(
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Center(
                   child: SpinKitCubeGrid(
-                    color: AppColors.SECONDARY_COLOR,
+                    color: AppColors.SECONDARY_COLOR_NEW,
                     size: 50.0,
                     // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                   ),
@@ -462,7 +462,7 @@ class _NewInterviewsState extends State<NewInterviews> {
             : Container(
                 height: size.height,
                 width: double.infinity,
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Stack(
                   fit: StackFit.loose,
                   children: [
@@ -476,7 +476,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                             /*  Container(
                               width: size.width,
                               decoration: BoxDecoration(
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(width: 0.5)),
                               padding:
@@ -485,14 +485,14 @@ class _NewInterviewsState extends State<NewInterviews> {
                                 enabled: false,
                                 dropdownHintText: 'Search For Name Here... ',
                                 showLabelInMenu: true,
-                                primaryColor: AppColors.PRIMARY_COLOR,
+                                primaryColor: AppColors.PRIMARY_COLOR_NEW,
                                 menuMode: false,
                                 // dropdownBackgroundColor:
-                                //     AppColors.PRIMARY_COLOR,
+                                //     AppColors.PRIMARY_COLOR_NEW,
                                 // dropdownItemStyle:
-                                //     TextStyle(color: AppColors.SECONDARY_COLOR),
+                                //     TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
                                 labelStyle:
-                                    TextStyle(color: AppColors.PRIMARY_COLOR),
+                                    TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                                 items: prospects,
                                 label: selectedName,
                                 prefixIcon: Padding(
@@ -516,7 +516,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(width: 0.5)),
                               padding:
@@ -524,12 +524,12 @@ class _NewInterviewsState extends State<NewInterviews> {
                               child: CustomSearchableDropDown(
                                 dropdownHintText: 'Search For Name Here... ',
                                 showLabelInMenu: false,
-                                primaryColor: AppColors.PRIMARY_COLOR,
+                                primaryColor: AppColors.PRIMARY_COLOR_NEW,
                                 menuMode: false,
                                 items: prospects,
                                 label: selectedName,
-                                labelStyle:
-                                    TextStyle(color: AppColors.PRIMARY_COLOR),
+                                labelStyle: TextStyle(
+                                    color: AppColors.PRIMARY_COLOR_NEW),
                                 prefixIcon: Padding(
                                   padding: const EdgeInsets.all(0.0),
                                   child: Icon(Icons.search),
@@ -560,8 +560,8 @@ class _NewInterviewsState extends State<NewInterviews> {
                                       borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
                                           width: 1,
-                                          color: AppColors.SECONDARY_COLOR),
-                                      color: AppColors.PRIMARY_COLOR),
+                                          color: AppColors.SECONDARY_COLOR_NEW),
+                                      color: AppColors.PRIMARY_COLOR_NEW),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -571,7 +571,8 @@ class _NewInterviewsState extends State<NewInterviews> {
                                           deliverDatePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR),
+                                              color: AppColors
+                                                  .SECONDARY_COLOR_NEW),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -584,8 +585,8 @@ class _NewInterviewsState extends State<NewInterviews> {
                                               topRight: Radius.circular(10),
                                             ),
                                             side: BorderSide(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 width: 2)),
                                         onPressed: () => _selectDate(context),
                                         color: AppColors.PRYMARY_COLOR2,
@@ -593,7 +594,8 @@ class _NewInterviewsState extends State<NewInterviews> {
                                           "Change Date",
                                           style: TextStyle(
                                             fontSize: 14,
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW,
                                           ),
                                         ),
                                       ),
@@ -614,7 +616,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(50),
                                       border: Border.all(width: 0.5),
-                                      color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.SECONDARY_COLOR_NEW),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -624,7 +626,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                                           deliverTimePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.PRIMARY_COLOR),
+                                              color: AppColors.PRIMARY_COLOR_NEW),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -638,15 +640,15 @@ class _NewInterviewsState extends State<NewInterviews> {
                                             ),
                                             side: BorderSide(
                                                 color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                    AppColors.SECONDARY_COLOR_NEW,
                                                 width: 2)),
                                         onPressed: () => selectTime(context),
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRIMARY_COLOR_NEW,
                                         child: Text(
                                           "Change Time",
                                           style: TextStyle(
                                             fontSize: 14,
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color: AppColors.SECONDARY_COLOR_NEW,
                                           ),
                                         ),
                                       ),
@@ -661,17 +663,18 @@ class _NewInterviewsState extends State<NewInterviews> {
                                 ? Container(
                                     child: Center(
                                     child: SpinKitThreeBounce(
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                       size: 25.0,
                                     ),
                                   ))
                                 : Container(
                                     decoration: BoxDecoration(
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRIMARY_COLOR_NEW,
                                         borderRadius:
                                             BorderRadius.circular(25.0),
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW,
                                             width: 2)),
                                     child: FlatButton(
                                       height: 50,

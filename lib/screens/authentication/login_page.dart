@@ -90,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         body: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                 /*    Text(
                   'WELCOME',
                   style: TextStyle(
-                      color: AppColors.SECONDARY_COLOR,
+                      color: AppColors.SECONDARY_COLOR_NEW,
                       fontSize: 40,
                       fontWeight: FontWeight.bold),
                 ), */
@@ -131,7 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                       Text(
                         'Phone Number',
                         style: TextStyle(
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           fontSize: 14,
                         ),
                       ),
@@ -157,7 +157,7 @@ class _LoginPageState extends State<LoginPage> {
                 /* Text(
                   'PHONE NUMBER',
                   style: TextStyle(
-                      color: AppColors.SECONDARY_COLOR,
+                      color: AppColors.SECONDARY_COLOR_NEW,
                       fontSize: 16,
                       fontWeight: FontWeight.bold),
                 ),
@@ -219,7 +219,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Icon(
                       Icons.check,
                       size: 40,
-                      color: AppColors.PRIMARY_COLOR,
+                      color: AppColors.PRIMARY_COLOR_NEW,
                     ),
                   ),
                 ), */
@@ -229,7 +229,7 @@ class _LoginPageState extends State<LoginPage> {
                 /* Text(
                   'HOTLINE',
                   style: TextStyle(
-                      color: AppColors.SECONDARY_COLOR,
+                      color: AppColors.SECONDARY_COLOR_NEW,
                       // fontSize: 16,
                       fontWeight: FontWeight.normal),
                 ),
@@ -238,7 +238,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     TextButton(
                       style: TextButton.styleFrom(
-                        primary: AppColors.SECONDARY_COLOR,
+                        primary: AppColors.SECONDARY_COLOR_NEW,
                       ),
                       onPressed: () {
                         // Navigator.pop(context);
@@ -253,12 +253,12 @@ class _LoginPageState extends State<LoginPage> {
                     Text(
                       '/',
                       style: TextStyle(
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           fontWeight: FontWeight.bold),
                     ),
                     TextButton(
                       style: TextButton.styleFrom(
-                        primary: AppColors.SECONDARY_COLOR,
+                        primary: AppColors.SECONDARY_COLOR_NEW,
                       ),
                       onPressed: () {},
                       child: const Text('+9471 784 80 20'),

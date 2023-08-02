@@ -57,7 +57,7 @@ InkWell menuTileCategoryContainer(
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.white, width: 3),
                         shape: BoxShape.circle,
-                        color: AppColors.PRIMARY_COLOR),
+                        color: AppColors.PRIMARY_COLOR_NEW),
                   ),
                 ),
               ),
@@ -80,7 +80,7 @@ Container homeTile({
     width: size.width / 4.9,
     height: 65,
     decoration: BoxDecoration(
-        color: AppColors.PRIMARY_COLOR,
+        color: AppColors.PRIMARY_COLOR_NEW,
         border: Border.all(color: Colors.white),
         borderRadius: BorderRadius.circular(10)),
     child: Column(

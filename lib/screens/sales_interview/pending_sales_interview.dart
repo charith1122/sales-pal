@@ -95,7 +95,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
     return Scaffold(
       // drawer: Drawer(),
       /* appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -129,19 +129,19 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
             )),
         automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              // color: AppColors.PRIMARY_COLOR,
+              // color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
               child: SpinKitCubeGrid(
-                color: AppColors.SECONDARY_COLOR,
+                color: AppColors.SECONDARY_COLOR_NEW,
                 size: 50.0,
                 // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
               ),
             ))
           : Container(
-              // color: AppColors.PRIMARY_COLOR,
+              // color: AppColors.PRIMARY_COLOR_NEW,
               child: Stack(
               children: [
                 /* appointments.length + */ pendingAppointments.length > 0
@@ -156,7 +156,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                     vertical: 12, horizontal: 12),
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                   ),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
@@ -178,7 +178,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                     ),
                                     VerticalDivider(
                                       thickness: 2,
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                     ),
                                     Container(
                                       width: size.width - 107,
@@ -238,7 +238,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                         horizontal: 10),
                                                     decoration: BoxDecoration(
                                                         color: AppColors
-                                                            .SECONDARY_COLOR,
+                                                            .SECONDARY_COLOR_NEW,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(10)),
@@ -246,7 +246,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                       'Reject',
                                                       style: TextStyle(
                                                           color: AppColors
-                                                              .PRIMARY_COLOR),
+                                                              .PRIMARY_COLOR_NEW),
                                                     ),
                                                   )), */
                                               FlatButton(
@@ -269,7 +269,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                         horizontal: 10),
                                                     decoration: BoxDecoration(
                                                         color: AppColors
-                                                            .SECONDARY_COLOR,
+                                                            .SECONDARY_COLOR_NEW,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(10)),
@@ -277,7 +277,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                       'Schedule',
                                                       style: TextStyle(
                                                           color: AppColors
-                                                              .PRIMARY_COLOR),
+                                                              .PRIMARY_COLOR_NEW),
                                                     ),
                                                   ))
                                             ],
@@ -294,7 +294,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                     indent: 25,
                                     endIndent: 25,
                                     thickness: 2,
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                   )
                                 : Container(), */
                             /* for (int k = 0; k < appointments.length; k++)
@@ -304,7 +304,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                     vertical: 12, horizontal: 12),
                                 decoration: BoxDecoration(
                                     border: Border.all(
-                                        color: AppColors.SECONDARY_COLOR,
+                                        color: AppColors.SECONDARY_COLOR_NEW,
                                         width: 2),
                                     borderRadius: BorderRadius.circular(15)),
                                 child: IntrinsicHeight(
@@ -322,7 +322,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                     ),
                                     VerticalDivider(
                                       thickness: 2,
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                     ),
                                     Column(
                                       crossAxisAlignment:
@@ -378,7 +378,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -386,7 +386,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                     'OK',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
                                             FlatButton(
@@ -402,7 +402,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -410,7 +410,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                     'Reject',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
                                             FlatButton(
@@ -431,7 +431,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -439,7 +439,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                                     'Edit',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 ))
                                           ],
@@ -462,7 +462,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       border: Border.all(
-                          color: AppColors.SECONDARY_COLOR, width: 2),
+                          color: AppColors.SECONDARY_COLOR_NEW, width: 2),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: FlatButton(
@@ -481,7 +481,7 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                         "Rejected Interviews",
                         style: TextStyle(
                           fontSize: 18,
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -494,10 +494,10 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 50),
                     decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(25.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     child: FlatButton(
                       height: 50,
                       onPressed: () {

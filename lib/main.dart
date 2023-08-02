@@ -169,7 +169,7 @@ class _MainSplashScreenState extends State<MainSplashScreen> {
       child: Container(
         height: size.height,
         width: double.infinity,
-        color: AppColors.PRIMARY_COLOR,
+        color: AppColors.PRIMARY_COLOR_NEW,
         child: Stack(
           alignment: Alignment.center,
           children: [

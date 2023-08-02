@@ -79,13 +79,13 @@ class _ToDoListState extends State<ToDoList> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -290,7 +290,7 @@ class _ToDoListState extends State<ToDoList> {
       child: Scaffold(
           // drawer: Drawer(),
           appBar: AppBar(
-            backgroundColor: AppColors.PRIMARY_COLOR,
+            backgroundColor: AppColors.PRIMARY_COLOR_NEW,
             /* leading: IconButton(
               icon: Icon(
                 Icons.menu,
@@ -324,9 +324,9 @@ class _ToDoListState extends State<ToDoList> {
                 )),
             automaticallyImplyLeading: false,
           ),
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           body: Container(
-            color: AppColors.PRIMARY_COLOR,
+            color: AppColors.PRIMARY_COLOR_NEW,
             child: Column(
               children: [
                 Container(
@@ -339,7 +339,7 @@ class _ToDoListState extends State<ToDoList> {
                       // Spacer(),
                       Container(
                         decoration: BoxDecoration(
-                            color: AppColors.SECONDARY_COLOR,
+                            color: AppColors.SECONDARY_COLOR_NEW,
                             borderRadius: BorderRadius.circular(20)),
                         width: size.width / 3,
                         child: FlatButton(
@@ -348,14 +348,15 @@ class _ToDoListState extends State<ToDoList> {
                             },
                             child: Text(
                               startDate,
-                              style: TextStyle(color: AppColors.PRIMARY_COLOR),
+                              style:
+                                  TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                             )),
                       ),
                       Text('-'),
                       // Spacer(),
                       Container(
                         decoration: BoxDecoration(
-                            color: AppColors.SECONDARY_COLOR,
+                            color: AppColors.SECONDARY_COLOR_NEW,
                             borderRadius: BorderRadius.circular(20)),
                         width: size.width / 3,
                         child: FlatButton(
@@ -364,7 +365,8 @@ class _ToDoListState extends State<ToDoList> {
                             },
                             child: Text(
                               endDate,
-                              style: TextStyle(color: AppColors.PRIMARY_COLOR),
+                              style:
+                                  TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                             )),
                       ),
                     ],
@@ -372,7 +374,7 @@ class _ToDoListState extends State<ToDoList> {
                 ),
                 /*   TabBar(
                   labelColor: AppColors.PRYMARY_COLOR2,
-                  unselectedLabelColor: AppColors.SECONDARY_COLOR,
+                  unselectedLabelColor: AppColors.SECONDARY_COLOR_NEW,
                   indicatorColor: AppColors.PRYMARY_COLOR2,
                   tabs: <Widget>[
                     Tab(
@@ -392,16 +394,16 @@ class _ToDoListState extends State<ToDoList> {
                       children: [
                         isAppointLoading
                             ? Container(
-                                color: AppColors.PRIMARY_COLOR,
+                                color: AppColors.PRIMARY_COLOR_NEW,
                                 child: Center(
                                   child: SpinKitCubeGrid(
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                     size: 50.0,
                                     // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                                   ),
                                 ))
                             : Container(
-                                color: AppColors.PRIMARY_COLOR,
+                                color: AppColors.PRIMARY_COLOR_NEW,
                                 padding: EdgeInsets.only(
                                     top: 6, left: 0, right: 0, bottom: 2),
                                 child: Stack(
@@ -426,7 +428,7 @@ class _ToDoListState extends State<ToDoList> {
                                                     decoration: BoxDecoration(
                                                         border: Border.all(
                                                             color: AppColors
-                                                                .SECONDARY_COLOR,
+                                                                .SECONDARY_COLOR_NEW,
                                                             width: 2),
                                                         borderRadius:
                                                             BorderRadius
@@ -452,7 +454,7 @@ class _ToDoListState extends State<ToDoList> {
                                                         ),
                                                         VerticalDivider(
                                                           color: AppColors
-                                                              .SECONDARY_COLOR,
+                                                              .SECONDARY_COLOR_NEW,
                                                           thickness: 2,
                                                         ),
                                                         Column(
@@ -532,7 +534,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                               10),
                                                                       decoration: BoxDecoration(
                                                                           color: AppColors
-                                                                              .SECONDARY_COLOR,
+                                                                              .SECONDARY_COLOR_NEW,
                                                                           borderRadius:
                                                                               BorderRadius.circular(10)),
                                                                       child:
@@ -540,7 +542,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                         'OK',
                                                                         style: TextStyle(
                                                                             color:
-                                                                                AppColors.PRIMARY_COLOR),
+                                                                                AppColors.PRIMARY_COLOR_NEW),
                                                                       ),
                                                                     )),
                                                                 /* FlatButton(
@@ -556,7 +558,7 @@ class _ToDoListState extends State<ToDoList> {
                                                           horizontal: 10),
                                                       decoration: BoxDecoration(
                                                           color: AppColors
-                                                              .SECONDARY_COLOR,
+                                                              .SECONDARY_COLOR_NEW,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(10)),
@@ -564,7 +566,7 @@ class _ToDoListState extends State<ToDoList> {
                                                         'Reject',
                                                         style: TextStyle(
                                                             color: AppColors
-                                                                .PRIMARY_COLOR),
+                                                                .PRIMARY_COLOR_NEW),
                                                       ),
                                                     )), */
                                                                 FlatButton(
@@ -592,7 +594,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                               10),
                                                                       decoration: BoxDecoration(
                                                                           color: AppColors
-                                                                              .SECONDARY_COLOR,
+                                                                              .SECONDARY_COLOR_NEW,
                                                                           borderRadius:
                                                                               BorderRadius.circular(10)),
                                                                       child:
@@ -600,7 +602,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                         'Edit',
                                                                         style: TextStyle(
                                                                             color:
-                                                                                AppColors.PRIMARY_COLOR),
+                                                                                AppColors.PRIMARY_COLOR_NEW),
                                                                       ),
                                                                     ))
                                                               ],
@@ -629,12 +631,13 @@ class _ToDoListState extends State<ToDoList> {
                                             margin: const EdgeInsets.symmetric(
                                                 horizontal: 50),
                                             decoration: BoxDecoration(
-                                                color: AppColors.PRIMARY_COLOR,
+                                                color:
+                                                    AppColors.PRIMARY_COLOR_NEW,
                                                 borderRadius:
                                                     BorderRadius.circular(25.0),
                                                 border: Border.all(
                                                     color: AppColors
-                                                        .SECONDARY_COLOR,
+                                                        .SECONDARY_COLOR_NEW,
                                                     width: 2)),
                                             child: FlatButton(
                                               height: 50,
@@ -681,7 +684,7 @@ class _ToDoListState extends State<ToDoList> {
                                                   color: Colors.transparent,
                                                   border: Border.all(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       width: 2),
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -713,7 +716,7 @@ class _ToDoListState extends State<ToDoList> {
                                                   VerticalDivider(
                                                     thickness: 2,
                                                     color: AppColors
-                                                        .SECONDARY_COLOR,
+                                                        .SECONDARY_COLOR_NEW,
                                                   ),
                                                   Column(
                                                     crossAxisAlignment:
@@ -784,7 +787,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                         10),
                                                                 decoration: BoxDecoration(
                                                                     color: AppColors
-                                                                        .SECONDARY_COLOR,
+                                                                        .SECONDARY_COLOR_NEW,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             10)),
@@ -792,7 +795,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                   'OK',
                                                                   style: TextStyle(
                                                                       color: AppColors
-                                                                          .PRIMARY_COLOR),
+                                                                          .PRIMARY_COLOR_NEW),
                                                                 ),
                                                               )),
                                                           MaterialButton(
@@ -817,7 +820,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                         10),
                                                                 decoration: BoxDecoration(
                                                                     color: AppColors
-                                                                        .SECONDARY_COLOR,
+                                                                        .SECONDARY_COLOR_NEW,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             10)),
@@ -825,7 +828,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                   'Reject',
                                                                   style: TextStyle(
                                                                       color: AppColors
-                                                                          .PRIMARY_COLOR),
+                                                                          .PRIMARY_COLOR_NEW),
                                                                 ),
                                                               )),
                                                           MaterialButton(
@@ -853,7 +856,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                         10),
                                                                 decoration: BoxDecoration(
                                                                     color: AppColors
-                                                                        .SECONDARY_COLOR,
+                                                                        .SECONDARY_COLOR_NEW,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             10)),
@@ -862,7 +865,7 @@ class _ToDoListState extends State<ToDoList> {
                                                                   style:
                                                                       TextStyle(
                                                                     color: AppColors
-                                                                        .PRIMARY_COLOR,
+                                                                        .PRIMARY_COLOR_NEW,
                                                                   ),
                                                                 ),
                                                               ))
@@ -882,16 +885,16 @@ class _ToDoListState extends State<ToDoList> {
                         ),
                         isSalesLoading
                             ? Container(
-                                // color: AppColors.PRIMARY_COLOR,
+                                // color: AppColors.PRIMARY_COLOR_NEW,
                                 child: Center(
                                 child: SpinKitCubeGrid(
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                   size: 50.0,
                                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                                 ),
                               ))
                             : Container(
-                                // color: AppColors.PRIMARY_COLOR,
+                                // color: AppColors.PRIMARY_COLOR_NEW,
                                 child: Stack(
                                 children: [
                                   salesInterviews.length >
@@ -917,7 +920,7 @@ class _ToDoListState extends State<ToDoList> {
                                                   decoration: BoxDecoration(
                                                       border: Border.all(
                                                           color: AppColors
-                                                              .SECONDARY_COLOR,
+                                                              .SECONDARY_COLOR_NEW,
                                                           width: 2),
                                                       borderRadius:
                                                           BorderRadius.circular(
@@ -943,7 +946,7 @@ class _ToDoListState extends State<ToDoList> {
                                                       VerticalDivider(
                                                         thickness: 2,
                                                         color: AppColors
-                                                            .SECONDARY_COLOR,
+                                                            .SECONDARY_COLOR_NEW,
                                                       ),
                                                       Column(
                                                         crossAxisAlignment:
@@ -1020,14 +1023,14 @@ class _ToDoListState extends State<ToDoList> {
                                                                             10),
                                                                     decoration: BoxDecoration(
                                                                         color: AppColors
-                                                                            .SECONDARY_COLOR,
+                                                                            .SECONDARY_COLOR_NEW,
                                                                         borderRadius:
                                                                             BorderRadius.circular(10)),
                                                                     child: Text(
                                                                       'OK',
                                                                       style: TextStyle(
                                                                           color:
-                                                                              AppColors.PRIMARY_COLOR),
+                                                                              AppColors.PRIMARY_COLOR_NEW),
                                                                     ),
                                                                   )),
                                                               MaterialButton(
@@ -1050,14 +1053,14 @@ class _ToDoListState extends State<ToDoList> {
                                                                             10),
                                                                     decoration: BoxDecoration(
                                                                         color: AppColors
-                                                                            .SECONDARY_COLOR,
+                                                                            .SECONDARY_COLOR_NEW,
                                                                         borderRadius:
                                                                             BorderRadius.circular(10)),
                                                                     child: Text(
                                                                       'Reject',
                                                                       style: TextStyle(
                                                                           color:
-                                                                              AppColors.PRIMARY_COLOR),
+                                                                              AppColors.PRIMARY_COLOR_NEW),
                                                                     ),
                                                                   )),
                                                               MaterialButton(
@@ -1088,14 +1091,14 @@ class _ToDoListState extends State<ToDoList> {
                                                                             10),
                                                                     decoration: BoxDecoration(
                                                                         color: AppColors
-                                                                            .SECONDARY_COLOR,
+                                                                            .SECONDARY_COLOR_NEW,
                                                                         borderRadius:
                                                                             BorderRadius.circular(10)),
                                                                     child: Text(
                                                                       'Edit',
                                                                       style: TextStyle(
                                                                           color:
-                                                                              AppColors.PRIMARY_COLOR),
+                                                                              AppColors.PRIMARY_COLOR_NEW),
                                                                     ),
                                                                   ))
                                                             ],
@@ -1118,7 +1121,7 @@ class _ToDoListState extends State<ToDoList> {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       border: Border.all(
-                          color: AppColors.SECONDARY_COLOR, width: 2),
+                          color: AppColors.SECONDARY_COLOR_NEW, width: 2),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: FlatButton(
@@ -1137,7 +1140,7 @@ class _ToDoListState extends State<ToDoList> {
                         "Rejected Interviews",
                         style: TextStyle(
                           fontSize: 18,
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -1150,10 +1153,10 @@ class _ToDoListState extends State<ToDoList> {
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 50),
                     decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(25.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     child: FlatButton(
                       height: 50,
                       onPressed: () {

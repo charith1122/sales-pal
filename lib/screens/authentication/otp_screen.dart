@@ -263,7 +263,7 @@ class _OtpScreenState extends State<OtpScreen> {
 
   BoxDecoration get pinPutDecoration {
     return BoxDecoration(
-      border: Border.all(color: AppColors.PRIMARY_COLOR),
+      border: Border.all(color: AppColors.PRIMARY_COLOR_NEW),
       borderRadius: BorderRadius.circular(5.0),
     );
   }
@@ -272,7 +272,7 @@ class _OtpScreenState extends State<OtpScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         body: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -300,7 +300,7 @@ class _OtpScreenState extends State<OtpScreen> {
                         widget.mobileNo.replaceRange(5, 10, 'XXXXX'),
                     style: TextStyle(
                       fontSize: 20,
-                      color: AppColors.SECONDARY_COLOR.withOpacity(0.8),
+                      color: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.8),
                       fontWeight: FontWeight.normal,
                     ),
                     textAlign: TextAlign.center,
@@ -318,7 +318,7 @@ class _OtpScreenState extends State<OtpScreen> {
                         " to get the OTP",
                     style: TextStyle(
                       fontSize: 16,
-                      color: AppColors.SECONDARY_COLOR,
+                      color: AppColors.SECONDARY_COLOR_NEW,
                       fontWeight: FontWeight.normal,
                     ),
                     textAlign: TextAlign.center,
@@ -332,7 +332,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   margin: const EdgeInsets.only(bottom: 20),
                   child: PinPut(
                     textStyle: TextStyle(
-                        fontSize: 14, color: AppColors.SECONDARY_COLOR),
+                        fontSize: 14, color: AppColors.SECONDARY_COLOR_NEW),
                     fieldsAlignment: MainAxisAlignment.spaceEvenly,
                     fieldsCount: 4,
                     onSubmit: (String pin) {},
@@ -340,14 +340,14 @@ class _OtpScreenState extends State<OtpScreen> {
                     submittedFieldDecoration: pinPutDecoration.copyWith(
                         borderRadius: BorderRadius.circular(15.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     selectedFieldDecoration: pinPutDecoration.copyWith(
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     followingFieldDecoration: pinPutDecoration.copyWith(
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
-                          color: AppColors.SECONDARY_COLOR, width: 2),
+                          color: AppColors.SECONDARY_COLOR_NEW, width: 2),
                     ),
                   ),
                 ),
@@ -361,7 +361,7 @@ class _OtpScreenState extends State<OtpScreen> {
                     }),
                 /* Container(
                   decoration: BoxDecoration(
-                      color: AppColors.SECONDARY_COLOR, shape: BoxShape.circle
+                      color: AppColors.SECONDARY_COLOR_NEW, shape: BoxShape.circle
                       // borderRadius: BorderRadius.circular(25.0),
 
                       ),
@@ -374,7 +374,7 @@ class _OtpScreenState extends State<OtpScreen> {
                     child: Icon(
                       Icons.check,
                       size: 40,
-                      color: AppColors.PRIMARY_COLOR,
+                      color: AppColors.PRIMARY_COLOR_NEW,
                     ),
                   ),
                 ), */
@@ -392,7 +392,7 @@ class _OtpScreenState extends State<OtpScreen> {
                             : "Didn't receive the code ",
                         style: TextStyle(
                           fontSize: 16,
-                          color: AppColors.SECONDARY_COLOR.withOpacity(0.8),
+                          color: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.8),
                         ),
                       ),
                       isResendButton
@@ -404,7 +404,7 @@ class _OtpScreenState extends State<OtpScreen> {
                                 "Resend",
                                 style: TextStyle(
                                     fontSize: 18,
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                     fontWeight: FontWeight.w900,
                                     decoration: TextDecoration.underline),
                               ),
@@ -413,8 +413,8 @@ class _OtpScreenState extends State<OtpScreen> {
                               countSecond.toString(),
                               style: TextStyle(
                                 fontSize: 18,
-                                color:
-                                    AppColors.SECONDARY_COLOR.withOpacity(0.3),
+                                color: AppColors.SECONDARY_COLOR_NEW
+                                    .withOpacity(0.3),
                                 fontWeight: FontWeight.w900,
                               ),
                             ),
@@ -424,7 +424,7 @@ class _OtpScreenState extends State<OtpScreen> {
                               "s",
                               style: TextStyle(
                                 fontSize: 18,
-                                color: AppColors.PRIMARY_COLOR,
+                                color: AppColors.PRIMARY_COLOR_NEW,
                                 fontWeight: FontWeight.w900,
                               ),
                             ),

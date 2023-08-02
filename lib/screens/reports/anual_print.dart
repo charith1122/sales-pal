@@ -30,7 +30,7 @@ class AnnualPrint extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         title: Text('PDF Preview'),
       ),
       body: PdfPreview(

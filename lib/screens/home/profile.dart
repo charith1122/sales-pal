@@ -136,7 +136,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         context: context,
         countryListTheme: CountryListThemeData(
           flagSize: 25,
-          textStyle: TextStyle(color: AppColors.PRIMARY_COLOR),
+          textStyle: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
           backgroundColor: Colors.white,
           // textStyle: AppStyles.countryPickerNames,
           borderRadius: const BorderRadius.only(
@@ -351,14 +351,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
       data: MediaQuery.of(context).copyWith(),
       child: SafeArea(
         child: Scaffold(
-            backgroundColor: AppColors.PRIMARY_COLOR,
+            backgroundColor: AppColors.PRIMARY_COLOR_NEW,
             appBar: AppBar(
               centerTitle: true,
               title: Text(
                 "Profile",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              backgroundColor: AppColors.PRIMARY_COLOR,
+              backgroundColor: AppColors.PRIMARY_COLOR_NEW,
               actions: [
                 IconButton(
                     icon: Icon(
@@ -381,7 +381,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ? Container(
                     child: Center(
                     child: SpinKitCubeGrid(
-                      color: AppColors.SECONDARY_COLOR,
+                      color: AppColors.SECONDARY_COLOR_NEW,
                       size: 50.0,
                       // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                     ),
@@ -428,7 +428,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     floatingLabelBehavior:
                                         FloatingLabelBehavior.never,
 
-                                    // fillColor: AppColors.SECONDARY_COLOR,
+                                    // fillColor: AppColors.SECONDARY_COLOR_NEW,
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
                                     // border: OutlineInputBorder(
@@ -464,7 +464,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         FloatingLabelBehavior.never,
 
                                     filled: false,
-                                    fillColor: AppColors.SECONDARY_COLOR,
+                                    fillColor: AppColors.SECONDARY_COLOR_NEW,
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
                                     border: InputBorder.none,
@@ -496,7 +496,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         FloatingLabelBehavior.never,
 
                                     filled: false,
-                                    fillColor: AppColors.SECONDARY_COLOR,
+                                    fillColor: AppColors.SECONDARY_COLOR_NEW,
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
                                     border: InputBorder.none,
@@ -526,7 +526,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         FloatingLabelBehavior.never,
 
                                     filled: false,
-                                    fillColor: AppColors.SECONDARY_COLOR,
+                                    fillColor: AppColors.SECONDARY_COLOR_NEW,
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
                                     border: InputBorder.none,
@@ -578,7 +578,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 Container(
                                   width: size.width,
                                   decoration: BoxDecoration(
-                                    color: AppColors.PRIMARY_COLOR,
+                                    color: AppColors.PRIMARY_COLOR_NEW,
                                     borderRadius: BorderRadius.circular(50),
                                     //  border: Border.all(width: 0.5)
                                   ),
@@ -586,7 +586,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       left: 50.0, right: 50),
                                   child: Center(
                                     child: DropdownButton<String>(
-                                      dropdownColor: AppColors.PRIMARY_COLOR,
+                                      dropdownColor: AppColors.PRIMARY_COLOR_NEW,
                                       alignment:
                                           AlignmentDirectional.bottomCenter,
                                       isExpanded: true,
@@ -600,7 +600,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         "Company",
                                         // style: TextStyle(
                                         //     color:
-                                        //         AppColors.SECONDARY_COLOR),
+                                        //         AppColors.SECONDARY_COLOR_NEW),
                                       ),
                                       onChanged: (String value) {
                                         setState(() {
@@ -622,12 +622,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   decoration: InputDecoration(
                                     hintText: '--',
                                     hintStyle: TextStyle(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     floatingLabelBehavior:
                                         FloatingLabelBehavior.never,
 
                                     filled: false,
-                                    fillColor: AppColors.PRIMARY_COLOR_LIGHT,
+                                    fillColor: AppColors.PRIMARY_COLOR_NEW_LIGHT,
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
                                     border: InputBorder.none,
@@ -657,7 +657,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         FloatingLabelBehavior.never,
 
                                     filled: false,
-                                    fillColor: AppColors.SECONDARY_COLOR,
+                                    fillColor: AppColors.SECONDARY_COLOR_NEW,
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
                                     border: InputBorder.none,
@@ -681,7 +681,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   decoration: BoxDecoration(
                                       // borderRadius: BorderRadius.circular(50),
                                       // border: Border.all(width: 0.5),
-                                      // color: AppColors.SECONDARY_COLOR
+                                      // color: AppColors.SECONDARY_COLOR_NEW
                                       ),
                                   padding: const EdgeInsets.only(
                                       // left: 15.0, right: 15
@@ -694,7 +694,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     underline:
                                         Container(color: Colors.transparent),
                                     // style: TextStyle(
-                                    //     color: AppColors.PRIMARY_COLOR),
+                                    //     color: AppColors.PRIMARY_COLOR_NEW),
                                     style: AppStyles.textFieldStyle2,
                                     // items: dropdownItems,
                                     items: <String>[
@@ -741,7 +741,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         FloatingLabelBehavior.never,
 
                                     filled: false,
-                                    fillColor: AppColors.SECONDARY_COLOR,
+                                    fillColor: AppColors.SECONDARY_COLOR_NEW,
 
                                     errorMaxLines: 2,
                                     errorStyle: AppStyles.errorTextStyle,
@@ -770,8 +770,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                           horizontal: 10),
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR),
-                                        color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.SECONDARY_COLOR_NEW),
+                                        color: AppColors.PRIMARY_COLOR_NEW,
                                         borderRadius:
                                             BorderRadius.circular(15.0),
                                       ),
@@ -785,7 +785,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                           "Submit",
                                           style: TextStyle(
                                             fontSize: 18,
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color: AppColors.SECONDARY_COLOR_NEW,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),

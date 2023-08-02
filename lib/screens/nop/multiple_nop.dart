@@ -62,7 +62,7 @@ class _MultpleNOPState extends State<MultpleNOP> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -96,13 +96,13 @@ class _MultpleNOPState extends State<MultpleNOP> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
@@ -112,7 +112,7 @@ class _MultpleNOPState extends State<MultpleNOP> {
                 Container(
                     child: plans.isNotEmpty
                         ? Container(
-                            color: AppColors.PRIMARY_COLOR,
+                            color: AppColors.PRIMARY_COLOR_NEW,
                             padding: EdgeInsets.only(
                                 top: 6, left: 0, right: 0, bottom: 2),
                             child: ListView(
@@ -125,7 +125,8 @@ class _MultpleNOPState extends State<MultpleNOP> {
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW,
                                             width: 2)),
                                     child: Row(children: [
                                       SizedBox(
@@ -153,8 +154,8 @@ class _MultpleNOPState extends State<MultpleNOP> {
                                         child: IconButton(
                                             icon: Icon(Icons.edit,
                                                 // size: 30,
-                                                color:
-                                                    AppColors.SECONDARY_COLOR),
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW),
                                             onPressed: () {
                                               Navigator.of(context)
                                                   .push(MaterialPageRoute(
@@ -186,10 +187,10 @@ class _MultpleNOPState extends State<MultpleNOP> {
                       Container(
                         // margin: const EdgeInsets.symmetric(horizontal: 50),
                         decoration: BoxDecoration(
-                            color: AppColors.PRIMARY_COLOR,
+                            color: AppColors.PRIMARY_COLOR_NEW,
                             borderRadius: BorderRadius.circular(25.0),
                             border: Border.all(
-                                color: AppColors.SECONDARY_COLOR, width: 2)),
+                                color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                         child: FlatButton(
                           height: 50,
                           onPressed: () {

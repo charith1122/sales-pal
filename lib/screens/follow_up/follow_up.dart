@@ -70,7 +70,7 @@ class _FollowUpState extends State<FollowUp> {
     return Scaffold(
         // drawer: Drawer(),
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -104,13 +104,13 @@ class _FollowUpState extends State<FollowUp> {
               )),
           automaticallyImplyLeading: false,
         ),
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         body: isLoading
             ? Container(
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Center(
                   child: SpinKitCubeGrid(
-                    color: AppColors.SECONDARY_COLOR,
+                    color: AppColors.SECONDARY_COLOR_NEW,
                     size: 50.0,
                     // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                   ),
@@ -119,7 +119,7 @@ class _FollowUpState extends State<FollowUp> {
                 child: Stack(children: [
                   prospects.isNotEmpty
                       ? Container(
-                          color: AppColors.PRIMARY_COLOR,
+                          color: AppColors.PRIMARY_COLOR_NEW,
                           padding: EdgeInsets.only(
                               top: 6, left: 0, right: 0, bottom: 2),
                           child: Container(
@@ -134,7 +134,8 @@ class _FollowUpState extends State<FollowUp> {
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW,
                                             width: 2)),
                                     child: Row(
                                         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -169,7 +170,7 @@ class _FollowUpState extends State<FollowUp> {
                                                         horizontal: 10),
                                                 decoration: BoxDecoration(
                                                     color: AppColors
-                                                        .SECONDARY_COLOR,
+                                                        .SECONDARY_COLOR_NEW,
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             10)),
@@ -177,7 +178,7 @@ class _FollowUpState extends State<FollowUp> {
                                                   'NOP',
                                                   style: TextStyle(
                                                       color: AppColors
-                                                          .PRIMARY_COLOR),
+                                                          .PRIMARY_COLOR_NEW),
                                                 ),
                                               ))
                                         ]),
@@ -193,10 +194,10 @@ class _FollowUpState extends State<FollowUp> {
                       margin: const EdgeInsets.symmetric(
                           vertical: 10, horizontal: 20),
                       decoration: BoxDecoration(
-                          // color: AppColors.SECONDARY_COLOR,
+                          // color: AppColors.SECONDARY_COLOR_NEW,
                           borderRadius: BorderRadius.circular(50),
                           border: Border.all(
-                              width: 1, color: AppColors.SECONDARY_COLOR)),
+                              width: 1, color: AppColors.SECONDARY_COLOR_NEW)),
                       child: Row(children: [
                         isSearchResult
                             ? IconButton(
@@ -209,7 +210,7 @@ class _FollowUpState extends State<FollowUp> {
                                 },
                                 icon: Icon(
                                   Icons.close,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ))
                             : SizedBox(
                                 height: 5,
@@ -251,7 +252,7 @@ class _FollowUpState extends State<FollowUp> {
                             },
                             icon: Icon(
                               Icons.search,
-                              color: AppColors.SECONDARY_COLOR,
+                              color: AppColors.SECONDARY_COLOR_NEW,
                             ))
                       ]),
                     ),

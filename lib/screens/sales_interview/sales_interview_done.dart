@@ -95,7 +95,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
     return Scaffold(
       // drawer: Drawer(),
       /*  appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -129,19 +129,19 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
             )),
         automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              // color: AppColors.PRIMARY_COLOR,
+              // color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
               child: SpinKitCubeGrid(
-                color: AppColors.SECONDARY_COLOR,
+                color: AppColors.SECONDARY_COLOR_NEW,
                 size: 50.0,
                 // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
               ),
             ))
           : Container(
-              // color: AppColors.PRIMARY_COLOR,
+              // color: AppColors.PRIMARY_COLOR_NEW,
               child: Stack(
               children: [
                 appointments.length > 0 /* + pendingAppointments.length > 0 */
@@ -159,7 +159,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                     vertical: 12, horizontal: 12),
                                 decoration: BoxDecoration(
                                     border: Border.all(
-                                        color: AppColors.SECONDARY_COLOR,
+                                        color: AppColors.SECONDARY_COLOR_NEW,
                                         width: 2),
                                     borderRadius: BorderRadius.circular(15)),
                                 child: IntrinsicHeight(
@@ -177,7 +177,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                     ),
                                     VerticalDivider(
                                       thickness: 2,
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                     ),
                                     Column(
                                       crossAxisAlignment:
@@ -233,7 +233,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -241,7 +241,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                                     'OK',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
                                             FlatButton(
@@ -257,7 +257,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -265,7 +265,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                                     'Reject',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
                                             FlatButton(
@@ -286,7 +286,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -294,7 +294,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                                                     'Edit',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 ))
                                           ],
@@ -317,7 +317,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       border: Border.all(
-                          color: AppColors.SECONDARY_COLOR, width: 2),
+                          color: AppColors.SECONDARY_COLOR_NEW, width: 2),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     child: FlatButton(
@@ -336,7 +336,7 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                         "Rejected Interviews",
                         style: TextStyle(
                           fontSize: 18,
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -349,10 +349,10 @@ class _DoneSalesInterviewState extends State<DoneSalesInterview> {
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 50),
                     decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(25.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     child: FlatButton(
                       height: 50,
                       onPressed: () {

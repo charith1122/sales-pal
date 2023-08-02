@@ -295,13 +295,13 @@ class _NewAppointmentState extends State<NewAppointment> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -344,13 +344,13 @@ class _NewAppointmentState extends State<NewAppointment> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -410,7 +410,7 @@ class _NewAppointmentState extends State<NewAppointment> {
       data: MediaQuery.of(context).copyWith(),
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
 
           /* leading: IconButton(
               icon: Icon(
@@ -447,10 +447,10 @@ class _NewAppointmentState extends State<NewAppointment> {
         ),
         body: isLoading
             ? Container(
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Center(
                   child: SpinKitCubeGrid(
-                    color: AppColors.SECONDARY_COLOR,
+                    color: AppColors.SECONDARY_COLOR_NEW,
                     size: 50.0,
                     // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                   ),
@@ -458,7 +458,7 @@ class _NewAppointmentState extends State<NewAppointment> {
             : Container(
                 height: size.height,
                 width: double.infinity,
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Stack(
                   fit: StackFit.loose,
                   children: [
@@ -472,7 +472,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(width: 0.5)),
                               padding:
@@ -480,12 +480,12 @@ class _NewAppointmentState extends State<NewAppointment> {
                               child: CustomSearchableDropDown(
                                 dropdownHintText: 'Search For Name Here... ',
                                 showLabelInMenu: false,
-                                primaryColor: AppColors.PRIMARY_COLOR,
+                                primaryColor: AppColors.PRIMARY_COLOR_NEW,
                                 menuMode: false,
                                 items: prospects,
                                 label: selectedName,
-                                labelStyle:
-                                    TextStyle(color: AppColors.PRIMARY_COLOR),
+                                labelStyle: TextStyle(
+                                    color: AppColors.PRIMARY_COLOR_NEW),
                                 prefixIcon: Padding(
                                   padding: const EdgeInsets.all(0.0),
                                   child: Icon(Icons.search),
@@ -513,11 +513,12 @@ class _NewAppointmentState extends State<NewAppointment> {
                                   padding: const EdgeInsets.only(left: 15.0),
                                   width: size.width,
                                   decoration: BoxDecoration(
-                                      color: AppColors.PRIMARY_COLOR,
+                                      color: AppColors.PRIMARY_COLOR_NEW,
                                       borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
                                           width: 0.5,
-                                          color: AppColors.SECONDARY_COLOR)),
+                                          color:
+                                              AppColors.SECONDARY_COLOR_NEW)),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -527,7 +528,8 @@ class _NewAppointmentState extends State<NewAppointment> {
                                           deliverDatePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR),
+                                              color: AppColors
+                                                  .SECONDARY_COLOR_NEW),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -540,8 +542,8 @@ class _NewAppointmentState extends State<NewAppointment> {
                                               topRight: Radius.circular(10),
                                             ),
                                             side: BorderSide(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 width: 2)),
                                         onPressed: () => _selectDate(context),
                                         color: AppColors.PRYMARY_COLOR2,
@@ -549,7 +551,8 @@ class _NewAppointmentState extends State<NewAppointment> {
                                           "Change Date",
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR),
+                                              color: AppColors
+                                                  .SECONDARY_COLOR_NEW),
                                         ),
                                       ),
                                     ],
@@ -567,11 +570,11 @@ class _NewAppointmentState extends State<NewAppointment> {
                                   padding: const EdgeInsets.only(left: 15.0),
                                   width: size.width,
                                   decoration: BoxDecoration(
-                                      color: AppColors.PRIMARY_COLOR,
+                                      color: AppColors.PRIMARY_COLOR_NEW,
                                       borderRadius: BorderRadius.circular(10),
                                       border: Border.all(
                                           width: 0.5,
-                                          color: AppColors.SECONDARY_COLOR)),
+                                          color: AppColors.SECONDARY_COLOR_NEW)),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -581,7 +584,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                           deliverTimePickController.text,
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR),
+                                              color: AppColors.SECONDARY_COLOR_NEW),
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
                                         ),
@@ -595,7 +598,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                             ),
                                             side: BorderSide(
                                                 color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                    AppColors.SECONDARY_COLOR_NEW,
                                                 width: 2)),
                                         onPressed: () => selectTime(context),
                                         color: AppColors.PRYMARY_COLOR2,
@@ -603,7 +606,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                           "Change Time",
                                           style: TextStyle(
                                               fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR),
+                                              color: AppColors.SECONDARY_COLOR_NEW),
                                         ),
                                       ),
                                     ],
@@ -617,7 +620,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                 ? Container(
                                     child: Center(
                                     child: SpinKitThreeBounce(
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                       size: 25.0,
                                     ),
                                   ))
@@ -627,11 +630,12 @@ class _NewAppointmentState extends State<NewAppointment> {
 
                                 Container(
                                     decoration: BoxDecoration(
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRIMARY_COLOR_NEW,
                                         borderRadius:
                                             BorderRadius.circular(25.0),
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW,
                                             width: 2)),
                                     child: FlatButton(
                                       height: 50,

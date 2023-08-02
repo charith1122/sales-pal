@@ -87,7 +87,7 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
     return Scaffold(
       // drawer: Drawer(),
       /*  appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
 
         // leading: IconButton(
         //     icon: Icon(
@@ -122,24 +122,24 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
             )),
         // automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
               ))
           : appointments.isNotEmpty
               ? Container(
-                  color: AppColors.PRIMARY_COLOR,
+                  color: AppColors.PRIMARY_COLOR_NEW,
                   child: Stack(
                     children: [
                       Container(
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                         padding: EdgeInsets.only(
                             top: 10, left: 0, right: 0, bottom: 2),
                         child: ListView(
@@ -150,7 +150,7 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                     vertical: 12, horizontal: 12),
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                       width: 2),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
@@ -166,12 +166,13 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                         style: TextStyle(
                                             fontSize: 14,
                                             fontWeight: FontWeight.bold,
-                                            color: AppColors.SECONDARY_COLOR),
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW),
                                       ),
                                     ),
                                     VerticalDivider(
                                       thickness: 2,
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                     ),
                                     Column(
                                       crossAxisAlignment:
@@ -185,8 +186,8 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                             style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,
-                                                color:
-                                                    AppColors.SECONDARY_COLOR),
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW),
                                           ),
                                         ),
                                         SizedBox(
@@ -204,7 +205,7 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                                               .date)),
                                               style: TextStyle(
                                                   color: AppColors
-                                                      .SECONDARY_COLOR),
+                                                      .SECONDARY_COLOR_NEW),
                                             ),
                                             SizedBox(
                                               width: 20,
@@ -218,7 +219,7 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                                   : appointments[k].time,
                                               style: TextStyle(
                                                   color: AppColors
-                                                      .SECONDARY_COLOR),
+                                                      .SECONDARY_COLOR_NEW),
                                             ) */
                                           ],
                                         ),
@@ -237,7 +238,7 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -245,7 +246,7 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                                     'Restore',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
                                             /* FlatButton(

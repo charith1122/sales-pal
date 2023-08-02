@@ -526,8 +526,8 @@ class _ReportsState extends State<Reports> {
                   child: TextFormField(
                     controller: numberController,
 
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
@@ -585,7 +585,7 @@ class _ReportsState extends State<Reports> {
     return Scaffold(
       // drawer: Drawer(),
       /* appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -619,12 +619,12 @@ class _ReportsState extends State<Reports> {
             )),
         automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
               child: Center(
               child: SpinKitCubeGrid(
-                color: AppColors.SECONDARY_COLOR,
+                color: AppColors.SECONDARY_COLOR_NEW,
                 size: 50.0,
               ),
             ))
@@ -689,7 +689,7 @@ class _ReportsState extends State<Reports> {
                       if (canPrint)
                         IconButton(
                             iconSize: 32,
-                            color: AppColors.SECONDARY_COLOR,
+                            color: AppColors.SECONDARY_COLOR_NEW,
                             icon: const Icon(Icons.print),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -712,7 +712,7 @@ class _ReportsState extends State<Reports> {
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 15),
                   decoration: BoxDecoration(
-                      border: Border.all(color: AppColors.SECONDARY_COLOR)),
+                      border: Border.all(color: AppColors.SECONDARY_COLOR_NEW)),
                   child: Column(
                     children: [
                       SizedBox(height: 10),
@@ -733,7 +733,7 @@ class _ReportsState extends State<Reports> {
                               width: size.width - 124,
                               child: Table(
                                 border: TableBorder.all(
-                                    color: AppColors.SECONDARY_COLOR),
+                                    color: AppColors.SECONDARY_COLOR_NEW),
                                 columnWidths: const <int, TableColumnWidth>{
                                   0: IntrinsicColumnWidth(),
                                   // 1: FlexColumnWidth(25),
@@ -1200,7 +1200,7 @@ class _ReportsState extends State<Reports> {
                                 children: [
                                   Table(
                                       border: TableBorder.all(
-                                          color: AppColors.SECONDARY_COLOR),
+                                          color: AppColors.SECONDARY_COLOR_NEW),
                                       defaultVerticalAlignment:
                                           TableCellVerticalAlignment.middle,
                                       children: <TableRow>[
@@ -1217,7 +1217,7 @@ class _ReportsState extends State<Reports> {
                                       ]),
                                   Table(
                                       border: TableBorder.all(
-                                          color: AppColors.SECONDARY_COLOR),
+                                          color: AppColors.SECONDARY_COLOR_NEW),
                                       defaultVerticalAlignment:
                                           TableCellVerticalAlignment.middle,
                                       children: <TableRow>[
@@ -1648,7 +1648,7 @@ class _ReportsState extends State<Reports> {
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 15),
                   decoration: BoxDecoration(
-                      border: Border.all(color: AppColors.SECONDARY_COLOR)),
+                      border: Border.all(color: AppColors.SECONDARY_COLOR_NEW)),
                   child: Column(
                     children: [
                       SizedBox(height: 10),
@@ -1669,7 +1669,7 @@ class _ReportsState extends State<Reports> {
                               width: size.width - 124,
                               child: Table(
                                 border: TableBorder.all(
-                                    color: AppColors.SECONDARY_COLOR),
+                                    color: AppColors.SECONDARY_COLOR_NEW),
                                 columnWidths: const <int, TableColumnWidth>{
                                   0: IntrinsicColumnWidth(),
                                   // 1: FlexColumnWidth(25),
@@ -2196,7 +2196,7 @@ class _ReportsState extends State<Reports> {
                                 children: [
                                   Table(
                                       border: TableBorder.all(
-                                          color: AppColors.SECONDARY_COLOR),
+                                          color: AppColors.SECONDARY_COLOR_NEW),
                                       defaultVerticalAlignment:
                                           TableCellVerticalAlignment.middle,
                                       children: <TableRow>[
@@ -2213,7 +2213,7 @@ class _ReportsState extends State<Reports> {
                                       ]),
                                   Table(
                                       border: TableBorder.all(
-                                          color: AppColors.SECONDARY_COLOR),
+                                          color: AppColors.SECONDARY_COLOR_NEW),
                                       defaultVerticalAlignment:
                                           TableCellVerticalAlignment.middle,
                                       children: <TableRow>[

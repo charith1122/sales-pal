@@ -88,13 +88,13 @@ class _DobState extends State<Dob> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -136,7 +136,7 @@ class _DobState extends State<Dob> {
     return Scaffold(
         // drawer: Drawer(),
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -171,13 +171,13 @@ class _DobState extends State<Dob> {
               )),
           automaticallyImplyLeading: false,
         ),
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         body: isLoading
             ? Container(
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Center(
                   child: SpinKitCubeGrid(
-                    color: AppColors.SECONDARY_COLOR,
+                    color: AppColors.SECONDARY_COLOR_NEW,
                     size: 50.0,
                     // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                   ),
@@ -187,7 +187,7 @@ class _DobState extends State<Dob> {
                   prospects != null
                       ? prospects.isNotEmpty
                           ? Container(
-                              color: AppColors.PRIMARY_COLOR,
+                              color: AppColors.PRIMARY_COLOR_NEW,
                               padding: EdgeInsets.only(
                                   top: 6, left: 0, right: 0, bottom: 2),
                               child: Container(
@@ -203,8 +203,8 @@ class _DobState extends State<Dob> {
                                             borderRadius:
                                                 BorderRadius.circular(10),
                                             border: Border.all(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 width: 2)),
                                         child: Row(
                                             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -249,7 +249,7 @@ class _DobState extends State<Dob> {
                                                         horizontal: 10),
                                                 decoration: BoxDecoration(
                                                     color: AppColors
-                                                        .SECONDARY_COLOR,
+                                                        .SECONDARY_COLOR_NEW,
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             10)),
@@ -257,7 +257,7 @@ class _DobState extends State<Dob> {
                                                   'NOP',
                                                   style: TextStyle(
                                                       color: AppColors
-                                                          .PRIMARY_COLOR),
+                                                          .PRIMARY_COLOR_NEW),
                                                 ),
                                               )) */
                                             ]),
@@ -283,11 +283,11 @@ class _DobState extends State<Dob> {
                             margin: const EdgeInsets.symmetric(
                                 vertical: 10, horizontal: 20),
                             decoration: BoxDecoration(
-                                // color: AppColors.SECONDARY_COLOR,
+                                // color: AppColors.SECONDARY_COLOR_NEW,
                                 borderRadius: BorderRadius.circular(50),
                                 border: Border.all(
                                     width: 1,
-                                    color: AppColors.SECONDARY_COLOR)),
+                                    color: AppColors.SECONDARY_COLOR_NEW)),
                             child: TextFormField(
                               textAlign: TextAlign.center,
                               controller: dateController,
@@ -304,7 +304,7 @@ class _DobState extends State<Dob> {
                                     FloatingLabelBehavior.never,
                                 errorMaxLines: 2,
                                 filled: true,
-                                fillColor: AppColors.PRIMARY_COLOR,
+                                fillColor: AppColors.PRIMARY_COLOR_NEW,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
                                     fontWeight: FontWeight.w400,
@@ -315,7 +315,7 @@ class _DobState extends State<Dob> {
                                         BorderRadius.all(Radius.circular(50))),
                                 /* prefixIcon: Icon(
                                   Icons.calendar_today,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ), */
                                 // labelText: 'Commencment Date',
                                 labelStyle: AppStyles.labelStyle,

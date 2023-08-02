@@ -20,7 +20,7 @@ class _PrivacyState extends State<Privacy> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -54,7 +54,7 @@ class _PrivacyState extends State<Privacy> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.SECONDARY_COLOR,
+      backgroundColor: AppColors.SECONDARY_COLOR_NEW,
       body: Container(
         margin: const EdgeInsets.all(12),
         child: SingleChildScrollView(

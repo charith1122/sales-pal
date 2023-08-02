@@ -93,7 +93,7 @@ Future<Uint8List> makePdf(
                             // width: MediaQuery.of(context).size.width - 124,
                             child: Table(
                               border: TableBorder.all(
-                                  // color: AppColors.SECONDARY_COLOR
+                                  // color: AppColors.SECONDARY_COLOR_NEW
                                   ),
                               columnWidths: const <int, TableColumnWidth>{
                                 0: FixedColumnWidth(75),
@@ -178,7 +178,7 @@ Future<Uint8List> makePdf(
                               children: [
                                 Table(
                                     border: TableBorder.all(
-                                        // color: AppColors.SECONDARY_COLOR
+                                        // color: AppColors.SECONDARY_COLOR_NEW
                                         ),
                                     // defaultVerticalAlignment:
                                     //     SizedBoxVerticalAlignment.middle,
@@ -196,7 +196,7 @@ Future<Uint8List> makePdf(
                                     ]),
                                 Table(
                                     border: TableBorder.all(
-                                        // color: AppColors.SECONDARY_COLOR
+                                        // color: AppColors.SECONDARY_COLOR_NEW
                                         ),
                                     children: <TableRow>[
                                       TableRow(
@@ -269,7 +269,7 @@ Future<Uint8List> makePdf(
                             // width: MediaQuery.of(context).size.width - 124,
                             child: Table(
                               border: TableBorder.all(
-                                  // color: AppColors.SECONDARY_COLOR
+                                  // color: AppColors.SECONDARY_COLOR_NEW
                                   ),
                               columnWidths: const <int, TableColumnWidth>{
                                 0: FixedColumnWidth(75),
@@ -503,7 +503,7 @@ Future<Uint8List> makePdf(
                               children: [
                                 Table(
                                     border: TableBorder.all(
-                                        // color: AppColors.SECONDARY_COLOR
+                                        // color: AppColors.SECONDARY_COLOR_NEW
                                         ),
                                     // defaultVerticalAlignment:
                                     //     SizedBoxVerticalAlignment.middle,
@@ -521,7 +521,7 @@ Future<Uint8List> makePdf(
                                     ]),
                                 Table(
                                     border: TableBorder.all(
-                                        // color: AppColors.SECONDARY_COLOR
+                                        // color: AppColors.SECONDARY_COLOR_NEW
                                         ),
                                     // defaultVerticalAlignment:
                                     // SizedBoxVerticalAlignment.middle,

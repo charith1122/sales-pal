@@ -217,7 +217,7 @@ class _NewProspectState extends State<NewProspect> {
                           style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: AppColors.PRIMARY_COLOR),
+                              color: AppColors.PRIMARY_COLOR_NEW),
                         ),
                       ),
                       IconButton(
@@ -248,7 +248,7 @@ class _NewProspectState extends State<NewProspect> {
                       decoration: InputDecoration(
                         floatingLabelBehavior: FloatingLabelBehavior.never,
                         filled: true,
-                        fillColor: AppColors.SECONDARY_COLOR,
+                        fillColor: AppColors.SECONDARY_COLOR_NEW,
                         errorMaxLines: 2,
                         errorStyle: TextStyle(
                             color: Color.fromARGB(255, 182, 40, 30),
@@ -260,7 +260,7 @@ class _NewProspectState extends State<NewProspect> {
                                 BorderRadius.all(Radius.circular(50))),
                         prefixIcon: Icon(
                           Icons.person,
-                          color: AppColors.PRIMARY_COLOR,
+                          color: AppColors.PRIMARY_COLOR_NEW,
                         ),
                         labelText: 'Name',
                         labelStyle: AppStyles.labelStyle,
@@ -292,7 +292,7 @@ class _NewProspectState extends State<NewProspect> {
                       decoration: InputDecoration(
                         floatingLabelBehavior: FloatingLabelBehavior.never,
                         filled: true,
-                        fillColor: AppColors.SECONDARY_COLOR,
+                        fillColor: AppColors.SECONDARY_COLOR_NEW,
                         errorMaxLines: 2,
                         errorStyle: TextStyle(
                             color: Color.fromARGB(255, 182, 40, 30),
@@ -304,7 +304,7 @@ class _NewProspectState extends State<NewProspect> {
                                 BorderRadius.all(Radius.circular(50))),
                         prefixIcon: Icon(
                           Icons.calendar_today,
-                          color: AppColors.PRIMARY_COLOR,
+                          color: AppColors.PRIMARY_COLOR_NEW,
                         ),
                         labelText: 'Date Of Birth',
                         labelStyle: AppStyles.labelStyle,
@@ -327,10 +327,10 @@ class _NewProspectState extends State<NewProspect> {
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 50),
                     decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                         borderRadius: BorderRadius.circular(25.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     child: FlatButton(
                       height: 40,
                       minWidth: 200,
@@ -376,13 +376,13 @@ class _NewProspectState extends State<NewProspect> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -571,7 +571,7 @@ class _NewProspectState extends State<NewProspect> {
       data: MediaQuery.of(context).copyWith(),
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           /* leading: IconButton(
           icon: Icon(
             Icons.menu,
@@ -607,17 +607,17 @@ class _NewProspectState extends State<NewProspect> {
         ),
         body: isLoading
             ? Container(
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Center(
                   child: SpinKitCubeGrid(
-                    color: AppColors.SECONDARY_COLOR,
+                    color: AppColors.SECONDARY_COLOR_NEW,
                     size: 50.0,
                   ),
                 ))
             : Container(
                 height: size.height,
                 width: double.infinity,
-                color: AppColors.PRIMARY_COLOR,
+                color: AppColors.PRIMARY_COLOR_NEW,
                 child: Stack(
                   fit: StackFit.loose,
                   children: [
@@ -631,7 +631,7 @@ class _NewProspectState extends State<NewProspect> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 24,
-                                    color: AppColors.SECONDARY_COLOR)),
+                                    color: AppColors.SECONDARY_COLOR_NEW)),
                             SizedBox(height: 15),
                             /* Row(
                               children: [
@@ -640,13 +640,13 @@ class _NewProspectState extends State<NewProspect> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(50),
                                       border: Border.all(width: 0.5),
-                                      color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.SECONDARY_COLOR_NEW),
                                   padding: const EdgeInsets.only(
                                       left: 15.0, right: 15),
                                   child: Row(
                                     children: [
                                       Icon(Icons.safety_divider,
-                                          color: AppColors.PRIMARY_COLOR),
+                                          color: AppColors.PRIMARY_COLOR_NEW),
                                       SizedBox(
                                         width: 8,
                                       ),
@@ -658,7 +658,7 @@ class _NewProspectState extends State<NewProspect> {
                                           underline: Container(
                                               color: Colors.transparent),
                                           style: TextStyle(
-                                              color: AppColors.PRIMARY_COLOR),
+                                              color: AppColors.PRIMARY_COLOR_NEW),
                                           // items: dropdownItems,
                                           items: <String>[
                                             'Mr.',
@@ -673,7 +673,7 @@ class _NewProspectState extends State<NewProspect> {
                                                 value,
                                                 style: TextStyle(
                                                     color:
-                                                        AppColors.PRIMARY_COLOR,
+                                                        AppColors.PRIMARY_COLOR_NEW,
                                                     fontWeight:
                                                         FontWeight.bold),
                                               ),
@@ -682,7 +682,7 @@ class _NewProspectState extends State<NewProspect> {
                                           hint: Text(
                                             "Select",
                                             style: TextStyle(
-                                                color: AppColors.PRIMARY_COLOR,
+                                                color: AppColors.PRIMARY_COLOR_NEW,
                                                 fontWeight: FontWeight.bold),
                                           ),
                                           onChanged: (String value) {
@@ -710,7 +710,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 /* filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR, */
+                                fillColor: AppColors.SECONDARY_COLOR_NEW, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -719,25 +719,25 @@ class _NewProspectState extends State<NewProspect> {
                                     overflow: TextOverflow.fade),
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 border: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 prefixIcon: Icon(
                                   Icons.person,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ),
                                 labelText: 'Name',
                                 labelStyle: AppStyles.labelStyle,
@@ -771,7 +771,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                fillColor: AppColors.SECONDARY_COLOR_NEW,
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -783,7 +783,7 @@ class _NewProspectState extends State<NewProspect> {
                                         BorderRadius.all(Radius.circular(50))),
                                 prefixIcon: Icon(
                                   Icons.person,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.PRIMARY_COLOR_NEW,
                                 ),
                                 labelText: 'Date Of Birth',
                                 labelStyle: AppStyles.labelStyle,
@@ -813,7 +813,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 /*  filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR, */
+                                fillColor: AppColors.SECONDARY_COLOR_NEW, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -822,25 +822,25 @@ class _NewProspectState extends State<NewProspect> {
                                     overflow: TextOverflow.fade),
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 border: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 prefixIcon: Icon(
                                   Icons.account_box_outlined,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ),
                                 labelText: 'ID',
                                 labelStyle: AppStyles.labelStyle,
@@ -870,7 +870,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 /*  filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR, */
+                                fillColor: AppColors.SECONDARY_COLOR_NEW, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -879,25 +879,25 @@ class _NewProspectState extends State<NewProspect> {
                                     overflow: TextOverflow.fade),
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 border: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 prefixIcon: Icon(
                                   Icons.location_pin,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ),
                                 labelText: 'Address',
                                 labelStyle: AppStyles.labelStyle,
@@ -927,7 +927,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 /*         filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR, */
+                                fillColor: AppColors.SECONDARY_COLOR_NEW, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -936,25 +936,25 @@ class _NewProspectState extends State<NewProspect> {
                                     overflow: TextOverflow.fade),
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 border: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 prefixIcon: Icon(
                                   Icons.phone,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ),
                                 labelText: 'Phone',
                                 labelStyle: AppStyles.labelStyle,
@@ -981,24 +981,24 @@ class _NewProspectState extends State<NewProspect> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50),
                                   border: Border.all(width: 0.5),
-                                  color: AppColors.SECONDARY_COLOR),
+                                  color: AppColors.SECONDARY_COLOR_NEW),
                               padding:
                                   const EdgeInsets.only(left: 15.0, right: 30),
                               child: Row(
                                 children: [
                                   Icon(Icons.manage_accounts_rounded,
-                                      color: AppColors.PRIMARY_COLOR),
+                                      color: AppColors.PRIMARY_COLOR_NEW),
                                   SizedBox(
                                     width: 8,
                                   ),
                                   Expanded(
                                     child: DropdownSearch<String>(
                                       popupBackgroundColor:
-                                          AppColors.PRIMARY_COLOR,
+                                          AppColors.PRIMARY_COLOR_NEW,
                                       dropdownSearchBaseStyle: TextStyle(
-                                          color: AppColors.PRIMARY_COLOR,
+                                          color: AppColors.PRIMARY_COLOR_NEW,
                                           decorationColor:
-                                              AppColors.PRIMARY_COLOR),
+                                              AppColors.PRIMARY_COLOR_NEW),
                                       dropdownSearchDecoration: InputDecoration(
                                         hintText: 'Occupation',
                                         labelText: 'Occupation',
@@ -1007,7 +1007,7 @@ class _NewProspectState extends State<NewProspect> {
                                             AppStyles.floatingLabelStyle,
                                         filled: true,
 
-                                        fillColor: AppColors.SECONDARY_COLOR,
+                                        fillColor: AppColors.SECONDARY_COLOR_NEW,
                                         errorMaxLines: 2,
                                         errorStyle: AppStyles.errorTextStyle,
 
@@ -1047,7 +1047,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR,
+                                fillColor: AppColors.SECONDARY_COLOR_NEW,
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -1059,7 +1059,7 @@ class _NewProspectState extends State<NewProspect> {
                                         BorderRadius.all(Radius.circular(50))),
                                 prefixIcon: Icon(
                                   Icons.money,
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.PRIMARY_COLOR_NEW,
                                 ),
                                 labelText: 'Income',
                                 labelStyle: AppStyles.labelStyle,
@@ -1089,7 +1089,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 /*  filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR, */
+                                fillColor: AppColors.SECONDARY_COLOR_NEW, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -1098,25 +1098,25 @@ class _NewProspectState extends State<NewProspect> {
                                     overflow: TextOverflow.fade),
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 border: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 prefixIcon: Icon(
                                   Icons.comment_rounded,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ),
                                 labelText: 'Whatsapp Number',
                                 labelStyle: AppStyles.labelStyle,
@@ -1146,7 +1146,7 @@ class _NewProspectState extends State<NewProspect> {
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.never,
                                 /*       filled: true,
-                                fillColor: AppColors.SECONDARY_COLOR, */
+                                fillColor: AppColors.SECONDARY_COLOR_NEW, */
                                 errorMaxLines: 2,
                                 errorStyle: TextStyle(
                                     color: Color.fromARGB(255, 182, 40, 30),
@@ -1155,25 +1155,25 @@ class _NewProspectState extends State<NewProspect> {
                                     overflow: TextOverflow.fade),
                                 enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 border: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: AppColors.SECONDARY_COLOR),
+                                        color: AppColors.SECONDARY_COLOR_NEW),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10),
                                     )),
                                 prefixIcon: Icon(
                                   Icons.mail,
-                                  color: AppColors.SECONDARY_COLOR,
+                                  color: AppColors.SECONDARY_COLOR_NEW,
                                 ),
                                 labelText: 'Email',
                                 labelStyle: AppStyles.labelStyle,
@@ -1206,12 +1206,12 @@ class _NewProspectState extends State<NewProspect> {
                                       Text(
                                         'Is married?',
                                         style: TextStyle(
-                                            color: AppColors.SECONDARY_COLOR),
+                                            color: AppColors.SECONDARY_COLOR_NEW),
                                       ),
                                       Checkbox(
-                                          checkColor: AppColors.PRIMARY_COLOR,
+                                          checkColor: AppColors.PRIMARY_COLOR_NEW,
                                           activeColor:
-                                              AppColors.SECONDARY_COLOR,
+                                              AppColors.SECONDARY_COLOR_NEW,
                                           value: isMarried,
                                           onChanged: (bool value) {
                                             setState(() {
@@ -1232,13 +1232,13 @@ class _NewProspectState extends State<NewProspect> {
                                               'Have Children?',
                                               style: TextStyle(
                                                   color: AppColors
-                                                      .SECONDARY_COLOR),
+                                                      .SECONDARY_COLOR_NEW),
                                             ),
                                             Checkbox(
                                                 checkColor:
-                                                    AppColors.PRIMARY_COLOR,
+                                                    AppColors.PRIMARY_COLOR_NEW,
                                                 activeColor:
-                                                    AppColors.SECONDARY_COLOR,
+                                                    AppColors.SECONDARY_COLOR_NEW,
                                                 value: haveChildren,
                                                 onChanged: (bool value) {
                                                   setState(() {
@@ -1267,7 +1267,7 @@ class _NewProspectState extends State<NewProspect> {
                                               fontWeight: FontWeight.bold,
                                               fontSize: 24,
                                               color:
-                                                  AppColors.SECONDARY_COLOR)),
+                                                  AppColors.SECONDARY_COLOR_NEW)),
                                       SizedBox(height: 12),
                                       labelText(label: 'Spouse Name'),
                                       TextFormField(
@@ -1278,7 +1278,7 @@ class _NewProspectState extends State<NewProspect> {
                                           floatingLabelBehavior:
                                               FloatingLabelBehavior.never,
                                           filled: true,
-                                          fillColor: AppColors.SECONDARY_COLOR,
+                                          fillColor: AppColors.SECONDARY_COLOR_NEW,
                                           errorMaxLines: 2,
                                           errorStyle: TextStyle(
                                               color: Color.fromARGB(
@@ -1291,7 +1291,7 @@ class _NewProspectState extends State<NewProspect> {
                                                   Radius.circular(50))),
                                           prefixIcon: Icon(
                                             Icons.person,
-                                            color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.PRIMARY_COLOR_NEW,
                                           ),
                                           labelText: 'Name',
                                           labelStyle: AppStyles.labelStyle,
@@ -1322,7 +1322,7 @@ class _NewProspectState extends State<NewProspect> {
                                           floatingLabelBehavior:
                                               FloatingLabelBehavior.never,
                                           filled: true,
-                                          fillColor: AppColors.SECONDARY_COLOR,
+                                          fillColor: AppColors.SECONDARY_COLOR_NEW,
                                           errorMaxLines: 2,
                                           errorStyle: TextStyle(
                                               color: Color.fromARGB(
@@ -1335,7 +1335,7 @@ class _NewProspectState extends State<NewProspect> {
                                                   Radius.circular(50))),
                                           prefixIcon: Icon(
                                             Icons.phone,
-                                            color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.PRIMARY_COLOR_NEW,
                                           ),
                                           labelText: 'Phone',
                                           labelStyle: AppStyles.labelStyle,
@@ -1370,7 +1370,7 @@ class _NewProspectState extends State<NewProspect> {
                                           floatingLabelBehavior:
                                               FloatingLabelBehavior.never,
                                           filled: true,
-                                          fillColor: AppColors.SECONDARY_COLOR,
+                                          fillColor: AppColors.SECONDARY_COLOR_NEW,
                                           errorMaxLines: 2,
                                           errorStyle: TextStyle(
                                               color: Color.fromARGB(
@@ -1383,7 +1383,7 @@ class _NewProspectState extends State<NewProspect> {
                                                   Radius.circular(50))),
                                           prefixIcon: Icon(
                                             Icons.person,
-                                            color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.PRIMARY_COLOR_NEW,
                                           ),
                                           labelText: 'Date Of Birth',
                                           labelStyle: AppStyles.labelStyle,
@@ -1419,7 +1419,7 @@ class _NewProspectState extends State<NewProspect> {
                                           floatingLabelBehavior:
                                               FloatingLabelBehavior.never,
                                           filled: true,
-                                          fillColor: AppColors.SECONDARY_COLOR,
+                                          fillColor: AppColors.SECONDARY_COLOR_NEW,
                                           errorMaxLines: 2,
                                           errorStyle: TextStyle(
                                               color: Color.fromARGB(
@@ -1432,7 +1432,7 @@ class _NewProspectState extends State<NewProspect> {
                                                   Radius.circular(50))),
                                           prefixIcon: Icon(
                                             Icons.person,
-                                            color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.PRIMARY_COLOR_NEW,
                                           ),
                                           labelText: 'Date Of Anniversary',
                                           labelStyle: AppStyles.labelStyle,
@@ -1463,7 +1463,7 @@ class _NewProspectState extends State<NewProspect> {
                                           floatingLabelBehavior:
                                               FloatingLabelBehavior.never,
                                           filled: true,
-                                          fillColor: AppColors.SECONDARY_COLOR,
+                                          fillColor: AppColors.SECONDARY_COLOR_NEW,
                                           errorMaxLines: 2,
                                           errorStyle: TextStyle(
                                               color: Color.fromARGB(
@@ -1476,7 +1476,7 @@ class _NewProspectState extends State<NewProspect> {
                                                   Radius.circular(50))),
                                           prefixIcon: Icon(
                                             Icons.account_box_outlined,
-                                            color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.PRIMARY_COLOR_NEW,
                                           ),
                                           labelText: 'ID',
                                           labelStyle: AppStyles.labelStyle,
@@ -1507,7 +1507,7 @@ class _NewProspectState extends State<NewProspect> {
                                           floatingLabelBehavior:
                                               FloatingLabelBehavior.never,
                                           filled: true,
-                                          fillColor: AppColors.SECONDARY_COLOR,
+                                          fillColor: AppColors.SECONDARY_COLOR_NEW,
                                           errorMaxLines: 2,
                                           errorStyle: TextStyle(
                                               color: Color.fromARGB(
@@ -1520,7 +1520,7 @@ class _NewProspectState extends State<NewProspect> {
                                                   Radius.circular(50))),
                                           prefixIcon: Icon(
                                             Icons.location_pin,
-                                            color: AppColors.PRIMARY_COLOR,
+                                            color: AppColors.PRIMARY_COLOR_NEW,
                                           ),
                                           labelText: 'Address',
                                           labelStyle: AppStyles.labelStyle,
@@ -1549,20 +1549,20 @@ class _NewProspectState extends State<NewProspect> {
                                             borderRadius:
                                                 BorderRadius.circular(50),
                                             border: Border.all(width: 0.5),
-                                            color: AppColors.SECONDARY_COLOR),
+                                            color: AppColors.SECONDARY_COLOR_NEW),
                                         padding: const EdgeInsets.only(
                                             left: 15.0, right: 30),
                                         child: Row(
                                           children: [
                                             Icon(Icons.manage_accounts_rounded,
-                                                color: AppColors.PRIMARY_COLOR),
+                                                color: AppColors.PRIMARY_COLOR_NEW),
                                             SizedBox(
                                               width: 8,
                                             ),
                                             Expanded(
                                               child: DropdownSearch<String>(
                                                 popupBackgroundColor:
-                                                    AppColors.PRIMARY_COLOR,
+                                                    AppColors.PRIMARY_COLOR_NEW,
                                                 dropdownSearchDecoration:
                                                     InputDecoration(
                                                   hintText: 'Spouse Occupation',
@@ -1572,7 +1572,7 @@ class _NewProspectState extends State<NewProspect> {
                                                       AppStyles.labelStyle,
                                                   filled: true,
                                                   fillColor:
-                                                      AppColors.SECONDARY_COLOR,
+                                                      AppColors.SECONDARY_COLOR_NEW,
                                                   errorMaxLines: 2,
                                                   errorStyle: TextStyle(
                                                       color: Color.fromARGB(
@@ -1622,7 +1622,7 @@ class _NewProspectState extends State<NewProspect> {
                                               fontWeight: FontWeight.bold,
                                               fontSize: 24,
                                               color:
-                                                  AppColors.SECONDARY_COLOR)),
+                                                  AppColors.SECONDARY_COLOR_NEW)),
                                       TextButton(
                                         style: TextButton.styleFrom(
                                           textStyle:
@@ -1639,10 +1639,10 @@ class _NewProspectState extends State<NewProspect> {
                                       for (int k = 0; k < children.length; k++)
                                         Container(
                                             decoration: BoxDecoration(
-                                                color: AppColors.PRIMARY_COLOR,
+                                                color: AppColors.PRIMARY_COLOR_NEW,
                                                 border: Border.all(
                                                     color: AppColors
-                                                        .SECONDARY_COLOR),
+                                                        .SECONDARY_COLOR_NEW),
                                                 borderRadius:
                                                     BorderRadius.circular(10)),
                                             padding: const EdgeInsets.symmetric(
@@ -1663,7 +1663,7 @@ class _NewProspectState extends State<NewProspect> {
                                                           children[k].name,
                                                       style: TextStyle(
                                                           color: AppColors
-                                                              .SECONDARY_COLOR),
+                                                              .SECONDARY_COLOR_NEW),
                                                     ),
                                                     SizedBox(
                                                       height: 6,
@@ -1673,7 +1673,7 @@ class _NewProspectState extends State<NewProspect> {
                                                           children[k].dob,
                                                       style: TextStyle(
                                                           color: AppColors
-                                                              .SECONDARY_COLOR),
+                                                              .SECONDARY_COLOR_NEW),
                                                     ),
                                                   ],
                                                 ),
@@ -1689,7 +1689,7 @@ class _NewProspectState extends State<NewProspect> {
                                                         .delete_forever_rounded,
                                                     size: 20,
                                                     color: AppColors
-                                                        .SECONDARY_COLOR,
+                                                        .SECONDARY_COLOR_NEW,
                                                   ),
                                                 ),
                                               ],
@@ -1702,7 +1702,7 @@ class _NewProspectState extends State<NewProspect> {
                                 ? Container(
                                     child: Center(
                                     child: SpinKitThreeBounce(
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                       size: 25.0,
                                     ),
                                   ))
@@ -1717,11 +1717,11 @@ class _NewProspectState extends State<NewProspect> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 10),
                                     decoration: BoxDecoration(
-                                        color: AppColors.PRIMARY_COLOR,
+                                        color: AppColors.PRIMARY_COLOR_NEW,
                                         borderRadius:
                                             BorderRadius.circular(25.0),
                                         border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR,
+                                            color: AppColors.SECONDARY_COLOR_NEW,
                                             width: 2)),
                                     child: FlatButton(
                                       height: 50,

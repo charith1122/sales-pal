@@ -19,7 +19,7 @@ class AppointmentNewState extends State<AppointmentMain> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           /* leading: IconButton(
               icon: Icon(
                 Icons.menu,
@@ -53,12 +53,12 @@ class AppointmentNewState extends State<AppointmentMain> {
           ],
         ),
         body: Container(
-          color: AppColors.PRIMARY_COLOR,
+          color: AppColors.PRIMARY_COLOR_NEW,
           child: Column(
             children: [
               TabBar(
                 labelColor: AppColors.PRYMARY_COLOR2,
-                unselectedLabelColor: AppColors.SECONDARY_COLOR,
+                unselectedLabelColor: AppColors.SECONDARY_COLOR_NEW,
                 indicatorColor: AppColors.PRYMARY_COLOR2,
                 tabs: <Widget>[
                   Tab(
@@ -95,11 +95,12 @@ class SecondScreen extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            backgroundColor: AppColors.PRIMARY_COLOR,
+            backgroundColor: AppColors.PRIMARY_COLOR_NEW,
             body: Center(
                 child: Text(
               'There will be some changes',
-              style: TextStyle(fontSize: 21, color: AppColors.SECONDARY_COLOR),
+              style:
+                  TextStyle(fontSize: 21, color: AppColors.SECONDARY_COLOR_NEW),
             ))));
   }
 }

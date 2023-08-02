@@ -27,7 +27,7 @@ class LeaderReportMainState extends State<LeaderReportMain> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           /* leading: IconButton(
               icon: Icon(
                 Icons.menu,
@@ -61,7 +61,7 @@ class LeaderReportMainState extends State<LeaderReportMain> {
           ],
         ),
         body: Container(
-          color: AppColors.PRIMARY_COLOR,
+          color: AppColors.PRIMARY_COLOR_NEW,
           child: Column(
             children: [
               Container(
@@ -73,7 +73,7 @@ class LeaderReportMainState extends State<LeaderReportMain> {
                 ]),
               ),
               TabBar(
-                indicatorColor: AppColors.SECONDARY_COLOR,
+                indicatorColor: AppColors.SECONDARY_COLOR_NEW,
                 tabs: <Widget>[
                   Tab(
                     text: 'Annual',
@@ -117,11 +117,12 @@ class SecondScreen extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            backgroundColor: AppColors.PRIMARY_COLOR,
+            backgroundColor: AppColors.PRIMARY_COLOR_NEW,
             body: Center(
                 child: Text(
               'There will be some changes',
-              style: TextStyle(fontSize: 21, color: AppColors.SECONDARY_COLOR),
+              style:
+                  TextStyle(fontSize: 21, color: AppColors.SECONDARY_COLOR_NEW),
             ))));
   }
 }

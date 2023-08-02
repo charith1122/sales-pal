@@ -19,7 +19,7 @@ class _DetailResourcesState extends State<DetailResources> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -53,9 +53,9 @@ class _DetailResourcesState extends State<DetailResources> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: Container(
-          color: AppColors.PRIMARY_COLOR,
+          color: AppColors.PRIMARY_COLOR_NEW,
           child: Column(
             children: [
               Row(

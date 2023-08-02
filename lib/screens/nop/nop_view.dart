@@ -170,13 +170,13 @@ class _NOPState extends State<NOPView> {
                       controller: tagController,
 
                       style: TextStyle(
-                          fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                          fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                       // obscureText: obsecure,
                       decoration: InputDecoration(
                         floatingLabelBehavior: FloatingLabelBehavior.never,
                         errorMaxLines: 2,
                         filled: true,
-                        fillColor: AppColors.SECONDARY_COLOR,
+                        fillColor: AppColors.SECONDARY_COLOR_NEW,
                         errorStyle: TextStyle(
                             color: Color.fromARGB(255, 182, 40, 30),
                             fontWeight: FontWeight.w400,
@@ -187,7 +187,7 @@ class _NOPState extends State<NOPView> {
                                 BorderRadius.all(Radius.circular(50))),
                         // prefixIcon: Icon(
                         //   Icons.person,
-                        //   color: AppColors.PRIMARY_COLOR,
+                        //   color: AppColors.PRIMARY_COLOR_NEW,
                         // ),
                         labelText: ' Tag ',
                         labelStyle: AppStyles.labelStyle,
@@ -251,7 +251,7 @@ class _NOPState extends State<NOPView> {
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(25.0),
                         border: Border.all(
-                            color: AppColors.SECONDARY_COLOR, width: 2)),
+                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                     child: FlatButton(
                       height: 40,
                       minWidth: 200,
@@ -396,13 +396,13 @@ class _NOPState extends State<NOPView> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR, // <-- SEE HERE
+              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR, // button text color
+                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -441,7 +441,7 @@ class _NOPState extends State<NOPView> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -475,19 +475,19 @@ class _NOPState extends State<NOPView> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
               ))
           : Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               padding: EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 2),
               child: ListView(
                 children: [
@@ -535,14 +535,14 @@ class _NOPState extends State<NOPView> {
                     // initialValue: 'K.M.A.Shiran Kularathna',
                     controller: nameController,
                     readOnly: true,
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -552,7 +552,7 @@ class _NOPState extends State<NOPView> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.person,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: ' Name ',
                       labelStyle: AppStyles.labelStyle,
@@ -575,14 +575,14 @@ class _NOPState extends State<NOPView> {
                     // readOnly: true,
                     controller: policyNoController,
                     // initialValue: 'AP 2022-4466',
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -592,7 +592,7 @@ class _NOPState extends State<NOPView> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.person,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: ' Policy Number ',
                       labelStyle: AppStyles.labelStyle,
@@ -618,14 +618,14 @@ class _NOPState extends State<NOPView> {
                       _selectDate(context, 'PROS');
                     }, */
 
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -635,7 +635,7 @@ class _NOPState extends State<NOPView> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.person,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: ' Commencment Date ',
                       labelStyle: AppStyles.labelStyle,
@@ -657,14 +657,14 @@ class _NOPState extends State<NOPView> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         border: Border.all(width: 0.5),
-                        color: AppColors.SECONDARY_COLOR),
+                        color: AppColors.SECONDARY_COLOR_NEW),
                     padding: const EdgeInsets.only(left: 15.0, right: 15),
                     child: DropdownButton<String>(
                       isExpanded: true,
                       value: selectedPayType,
                       elevation: 5,
                       underline: Container(color: Colors.transparent),
-                      style: TextStyle(color: AppColors.PRIMARY_COLOR),
+                      style: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
                       // items: dropdownItems,
                       items:
                           payType.map<DropdownMenuItem<String>>((String value) {
@@ -694,14 +694,14 @@ class _NOPState extends State<NOPView> {
                     // readOnly: true,
                     controller: premiumController,
                     // initialValue: 'LKR 16500.00',
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
                       errorMaxLines: 2,
                       filled: true,
-                      fillColor: AppColors.SECONDARY_COLOR,
+                      fillColor: AppColors.SECONDARY_COLOR_NEW,
                       errorStyle: TextStyle(
                           color: Color.fromARGB(255, 182, 40, 30),
                           fontWeight: FontWeight.w400,
@@ -711,7 +711,7 @@ class _NOPState extends State<NOPView> {
                           borderRadius: BorderRadius.all(Radius.circular(50))),
                       prefixIcon: Icon(
                         Icons.money,
-                        color: AppColors.PRIMARY_COLOR,
+                        color: AppColors.PRIMARY_COLOR_NEW,
                       ),
                       labelText: ' Premium ',
                       labelStyle: AppStyles.labelStyle,
@@ -754,8 +754,8 @@ class _NOPState extends State<NOPView> {
                                             padding: const EdgeInsets.all(10),
                                             width: size.width,
                                             decoration: BoxDecoration(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 border: Border.all(
                                                     color: Colors.grey),
                                                 borderRadius:
@@ -766,7 +766,7 @@ class _NOPState extends State<NOPView> {
                                                   cover[i].tag,
                                                   style: TextStyle(
                                                       color: AppColors
-                                                          .PRIMARY_COLOR),
+                                                          .PRIMARY_COLOR_NEW),
                                                 ),
                                                 Spacer(),
                                                 IconButton(
@@ -780,8 +780,8 @@ class _NOPState extends State<NOPView> {
                                                     Icons
                                                         .delete_forever_rounded,
                                                     size: 20,
-                                                    color:
-                                                        AppColors.PRIMARY_COLOR,
+                                                    color: AppColors
+                                                        .PRIMARY_COLOR_NEW,
                                                   ),
                                                 ),
                                               ],
@@ -811,8 +811,8 @@ class _NOPState extends State<NOPView> {
                                             padding: const EdgeInsets.all(10),
                                             width: size.width,
                                             decoration: BoxDecoration(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW,
                                                 border: Border.all(
                                                     color: Colors.grey),
                                                 borderRadius:
@@ -823,7 +823,7 @@ class _NOPState extends State<NOPView> {
                                                   cover[j].tag,
                                                   style: TextStyle(
                                                       color: AppColors
-                                                          .PRIMARY_COLOR),
+                                                          .PRIMARY_COLOR_NEW),
                                                 ),
                                                 Spacer(),
                                                 IconButton(
@@ -837,8 +837,8 @@ class _NOPState extends State<NOPView> {
                                                     Icons
                                                         .delete_forever_rounded,
                                                     size: 20,
-                                                    color:
-                                                        AppColors.PRIMARY_COLOR,
+                                                    color: AppColors
+                                                        .PRIMARY_COLOR_NEW,
                                                   ),
                                                 ),
                                               ],
@@ -851,7 +851,7 @@ class _NOPState extends State<NOPView> {
                                       padding: const EdgeInsets.all(10),
                                       width: size.width,
                                       decoration: BoxDecoration(
-                                          color: AppColors.SECONDARY_COLOR,
+                                          color: AppColors.SECONDARY_COLOR_NEW,
                                           border:
                                               Border.all(color: Colors.grey),
                                           borderRadius:
@@ -859,7 +859,7 @@ class _NOPState extends State<NOPView> {
                                       child: Text(
                                         spouseCover[x].tag,
                                         style: TextStyle(
-                                            color: AppColors.PRIMARY_COLOR),
+                                            color: AppColors.PRIMARY_COLOR_NEW),
                                       ),
                                     )
                                 ],
@@ -878,7 +878,7 @@ class _NOPState extends State<NOPView> {
                     },
                     child: const Text(
                       'Add Coverage +',
-                      style: TextStyle(color: AppColors.SECONDARY_COLOR),
+                      style: TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
                     ),
                   ),
                   SizedBox(height: 20),
@@ -886,7 +886,7 @@ class _NOPState extends State<NOPView> {
                       ? Container(
                           child: Center(
                           child: SpinKitThreeBounce(
-                            color: AppColors.SECONDARY_COLOR,
+                            color: AppColors.SECONDARY_COLOR_NEW,
                             size: 25.0,
                           ),
                         ))
@@ -895,18 +895,18 @@ class _NOPState extends State<NOPView> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                  color: AppColors.PRIMARY_COLOR,
+                                  color: AppColors.PRIMARY_COLOR_NEW,
 
                                   /*  gradient: LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.topRight,
                                   colors: [
-                                    AppColors.PRIMARY_COLOR,
-                                    AppColors.SECONDARY_COLOR,
+                                    AppColors.PRIMARY_COLOR_NEW,
+                                    AppColors.SECONDARY_COLOR_NEW,
                                   ]), */
                                   borderRadius: BorderRadius.circular(25.0),
                                   border: Border.all(
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                       width: 2)),
                               child: FlatButton(
                                 height: 50,

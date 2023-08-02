@@ -88,7 +88,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
     return Scaffold(
       // drawer: Drawer(),
       /* appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
 
         // leading: IconButton(
         //     icon: Icon(
@@ -123,20 +123,20 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
             )),
         // automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              color: AppColors.PRIMARY_COLOR,
+              color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
               ))
           : appointments.isNotEmpty
               ? Container(
-                  color: AppColors.PRIMARY_COLOR,
+                  color: AppColors.PRIMARY_COLOR_NEW,
                   child: Stack(
                     children: [
                       Container(
@@ -150,7 +150,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                     vertical: 12, horizontal: 15),
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                   ),
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
@@ -166,12 +166,13 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                         style: TextStyle(
                                             fontSize: 14,
                                             fontWeight: FontWeight.bold,
-                                            color: AppColors.SECONDARY_COLOR),
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW),
                                       ),
                                     ),
                                     VerticalDivider(
                                       thickness: 2,
-                                      color: AppColors.SECONDARY_COLOR,
+                                      color: AppColors.SECONDARY_COLOR_NEW,
                                     ),
                                     Column(
                                       crossAxisAlignment:
@@ -185,8 +186,8 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                             style: TextStyle(
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold,
-                                                color:
-                                                    AppColors.SECONDARY_COLOR),
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW),
                                           ),
                                         ),
                                         Row(
@@ -203,7 +204,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                                   : '',
                                               style: TextStyle(
                                                   color: AppColors
-                                                      .SECONDARY_COLOR),
+                                                      .SECONDARY_COLOR_NEW),
                                             ),
                                             SizedBox(
                                               width: 20,
@@ -215,7 +216,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                                   : '',
                                               style: TextStyle(
                                                   color: AppColors
-                                                      .SECONDARY_COLOR),
+                                                      .SECONDARY_COLOR_NEW),
                                             ) */
                                           ],
                                         ),
@@ -234,7 +235,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                                       horizontal: 10),
                                                   decoration: BoxDecoration(
                                                       color: AppColors
-                                                          .SECONDARY_COLOR,
+                                                          .SECONDARY_COLOR_NEW,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               10)),
@@ -242,7 +243,7 @@ class _RejectedInterviewsState extends State<RejectedInterviews> {
                                                     'Restore',
                                                     style: TextStyle(
                                                         color: AppColors
-                                                            .PRIMARY_COLOR),
+                                                            .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
                                             /* FlatButton(

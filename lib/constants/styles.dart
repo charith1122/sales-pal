@@ -10,34 +10,35 @@ class AppStyles {
 
   static TextStyle labelStyle = TextStyle(
       fontWeight: FontWeight.bold,
-      color: AppColors.SECONDARY_COLOR.withOpacity(0.5));
+      color: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.5));
   static const TextStyle floatingLabelStyle = TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.bold,
-      color: AppColors.PRIMARY_COLOR,
-      backgroundColor: AppColors.SECONDARY_COLOR);
+      color: AppColors.PRIMARY_COLOR_NEW,
+      backgroundColor: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle errorTextStyle = TextStyle(
-      color: /* Color.fromARGB(255, 182, 40, 30), */ AppColors.SECONDARY_COLOR,
+      color: /* Color.fromARGB(255, 182, 40, 30), */ AppColors
+          .SECONDARY_COLOR_NEW,
       fontWeight: FontWeight.w400,
       fontSize: 12,
       overflow: TextOverflow.fade);
   static const TextStyle textFieldStyle = TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.bold,
-      color: AppColors.SECONDARY_COLOR);
+      color: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle textFieldStyle2 = TextStyle(
       fontSize: 14,
       fontWeight: FontWeight.normal,
-      color: AppColors.SECONDARY_COLOR);
+      color: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle drawerText = TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.normal,
-      color: AppColors.SECONDARY_COLOR);
+      color: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle drawerText2 = TextStyle(
       fontSize: 16,
       decoration: TextDecoration.underline,
       fontWeight: FontWeight.normal,
-      color: AppColors.SECONDARY_COLOR);
+      color: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle textFieldHeaderStyle = TextStyle(
     fontSize: 20,
     color: Colors.white,

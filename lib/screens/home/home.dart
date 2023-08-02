@@ -183,7 +183,7 @@ class _HomePageState extends State<HomePage> {
       drawer: myDrawer(context: context, size: size),
 
       /* Drawer(
-          backgroundColor: AppColors.PRIMARY_COLOR,
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW_NEW,
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.max,
@@ -354,11 +354,11 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 28,
-              color: AppColors.PRIMARY_COLOR),
+              color: AppColors.PRIMARY_COLOR_NEW),
         ),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.SECONDARY_COLOR_NEW,
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 15),
         children: [
@@ -629,10 +629,10 @@ class _HomePageState extends State<HomePage> {
                         margin:
                             const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
-                            color: AppColors.PRIMARY_COLOR,
+                            color: AppColors.PRIMARY_COLOR_NEW_NEW,
                             borderRadius: BorderRadius.circular(10.0),
                             border: Border.all(
-                                color: AppColors.SECONDARY_COLOR,
+                                color: AppColors.SECONDARY_COLOR_NEW,
                                 width: 2)),
                         child: FlatButton(
                           height: 50,

@@ -136,7 +136,7 @@ class _AddMemberState extends State<AddMember> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -170,10 +170,10 @@ class _AddMemberState extends State<AddMember> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-        color: AppColors.PRIMARY_COLOR,
+        color: AppColors.PRIMARY_COLOR_NEW,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -188,14 +188,14 @@ class _AddMemberState extends State<AddMember> {
               decoration: InputDecoration(
                 floatingLabelBehavior: FloatingLabelBehavior.never,
                 filled: true,
-                fillColor: AppColors.SECONDARY_COLOR,
+                fillColor: AppColors.SECONDARY_COLOR_NEW,
                 errorMaxLines: 2,
                 errorStyle: AppStyles.errorTextStyle,
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(50))),
                 prefixIcon: Icon(
                   Icons.phone,
-                  color: AppColors.PRIMARY_COLOR,
+                  color: AppColors.PRIMARY_COLOR_NEW,
                 ),
                 labelText: '  Phone Number ',
                 labelStyle: AppStyles.labelStyle,
@@ -217,10 +217,10 @@ class _AddMemberState extends State<AddMember> {
                 Container(
                   // margin: const EdgeInsets.symmetric(horizontal: 50),
                   decoration: BoxDecoration(
-                      color: AppColors.PRIMARY_COLOR,
+                      color: AppColors.PRIMARY_COLOR_NEW,
                       borderRadius: BorderRadius.circular(25.0),
                       border: Border.all(
-                          color: AppColors.SECONDARY_COLOR, width: 2)),
+                          color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                   child: FlatButton(
                     height: 50,
                     onPressed: () {
@@ -289,10 +289,11 @@ class _AddMemberState extends State<AddMember> {
                         width: 150,
                         // margin: const EdgeInsets.symmetric(horizontal: 50),
                         decoration: BoxDecoration(
-                            color: AppColors.PRIMARY_COLOR,
+                            color: AppColors.PRIMARY_COLOR_NEW,
                             borderRadius: BorderRadius.circular(25.0),
                             border: Border.all(
-                                color: AppColors.SECONDARY_COLOR, width: 2)),
+                                color: AppColors.SECONDARY_COLOR_NEW,
+                                width: 2)),
                         child: FlatButton(
                           minWidth: 50,
                           height: 50,
@@ -316,7 +317,7 @@ class _AddMemberState extends State<AddMember> {
                     : Container(
                         child: Center(
                             child: SpinKitThreeBounce(
-                        color: AppColors.SECONDARY_COLOR,
+                        color: AppColors.SECONDARY_COLOR_NEW,
                         size: 25.0,
                       )))
                 : Container(),

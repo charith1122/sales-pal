@@ -13,7 +13,7 @@ successMessage({String message}) {
     toastLength: Toast.LENGTH_LONG,
     gravity: ToastGravity.TOP,
     timeInSecForIosWeb: 1,
-    backgroundColor: AppColors.SECONDARY_COLOR,
+    backgroundColor: AppColors.SECONDARY_COLOR_NEW,
     textColor: Colors.green[800],
     fontSize: 14.0,
   );
@@ -26,7 +26,7 @@ errorMessage({String message}) {
     toastLength: Toast.LENGTH_LONG,
     gravity: ToastGravity.TOP,
     timeInSecForIosWeb: 1,
-    backgroundColor: AppColors.SECONDARY_COLOR,
+    backgroundColor: AppColors.SECONDARY_COLOR_NEW,
     textColor: Colors.red[800],
     fontSize: 14.0,
   );

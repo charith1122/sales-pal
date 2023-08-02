@@ -520,7 +520,7 @@ class _AnualPlanState extends State<AnualPlan> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
-            backgroundColor: AppColors.SECONDARY_COLOR,
+            backgroundColor: AppColors.SECONDARY_COLOR_NEW,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)), //this right here
 
@@ -558,8 +558,8 @@ class _AnualPlanState extends State<AnualPlan> {
                   child: TextFormField(
                     controller: numberController,
 
-                    style:
-                        TextStyle(fontSize: 12, color: AppColors.PRIMARY_COLOR),
+                    style: TextStyle(
+                        fontSize: 12, color: AppColors.PRIMARY_COLOR_NEW),
                     // obscureText: obsecure,
                     decoration: InputDecoration(
                       floatingLabelBehavior: FloatingLabelBehavior.never,
@@ -617,7 +617,7 @@ class _AnualPlanState extends State<AnualPlan> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         /* leading: IconButton(
             icon: Icon(
               Icons.menu,
@@ -632,7 +632,7 @@ class _AnualPlanState extends State<AnualPlan> {
               icon: Icon(
                 Icons.home_filled,
                 size: 30,
-                color: AppColors.SECONDARY_COLOR,
+                color: AppColors.SECONDARY_COLOR_NEW,
               ),
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
@@ -651,12 +651,12 @@ class _AnualPlanState extends State<AnualPlan> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
               child: Center(
               child: SpinKitCubeGrid(
-                color: AppColors.SECONDARY_COLOR,
+                color: AppColors.SECONDARY_COLOR_NEW,
                 size: 50.0,
               ),
             ))
@@ -718,17 +718,17 @@ class _AnualPlanState extends State<AnualPlan> {
                         ? Container(
                             child: Center(
                             child: SpinKitThreeBounce(
-                              color: AppColors.SECONDARY_COLOR,
+                              color: AppColors.SECONDARY_COLOR_NEW,
                               size: 32.0,
                             ),
                           ))
                         : Container(
                             // margin: const EdgeInsets.symmetric(horizontal: 15),
                             decoration: BoxDecoration(
-                                color: AppColors.PRIMARY_COLOR,
+                                color: AppColors.PRIMARY_COLOR_NEW,
                                 borderRadius: BorderRadius.circular(25.0),
                                 border: Border.all(
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                     width: 2)),
                             child: FlatButton(
                               height: 45,
@@ -752,10 +752,10 @@ class _AnualPlanState extends State<AnualPlan> {
                       decoration: BoxDecoration(
                           color: _lodedYear == _chosenValue
                               ? Colors.grey.withOpacity(.8)
-                              : AppColors.PRIMARY_COLOR,
+                              : AppColors.PRIMARY_COLOR_NEW,
                           borderRadius: BorderRadius.circular(25.0),
                           border: Border.all(
-                              color: AppColors.SECONDARY_COLOR, width: 2)),
+                              color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
                       child: FlatButton(
                         height: 50,
                         minWidth: 120,
@@ -791,7 +791,7 @@ class _AnualPlanState extends State<AnualPlan> {
                           width: size.width - 124,
                           child: Table(
                             border: TableBorder.all(
-                                color: AppColors.SECONDARY_COLOR),
+                                color: AppColors.SECONDARY_COLOR_NEW),
                             columnWidths: const <int, TableColumnWidth>{
                               0: IntrinsicColumnWidth(),
                               // 1: FlexColumnWidth(25),
@@ -1497,7 +1497,7 @@ class _AnualPlanState extends State<AnualPlan> {
                             children: [
                               Table(
                                   border: TableBorder.all(
-                                      color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.SECONDARY_COLOR_NEW),
                                   defaultVerticalAlignment:
                                       TableCellVerticalAlignment.middle,
                                   children: <TableRow>[
@@ -1514,7 +1514,7 @@ class _AnualPlanState extends State<AnualPlan> {
                                   ]),
                               Table(
                                   border: TableBorder.all(
-                                      color: AppColors.SECONDARY_COLOR),
+                                      color: AppColors.SECONDARY_COLOR_NEW),
                                   defaultVerticalAlignment:
                                       TableCellVerticalAlignment.middle,
                                   children: <TableRow>[
@@ -2000,7 +2000,7 @@ class _AnualPlanState extends State<AnualPlan> {
                     ? Container(
                         child: Center(
                         child: SpinKitThreeBounce(
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           size: 40.0,
                         ),
                       ))
@@ -2010,10 +2010,10 @@ class _AnualPlanState extends State<AnualPlan> {
                           Container(
                             // margin: const EdgeInsets.symmetric(horizontal: 15),
                             decoration: BoxDecoration(
-                                color: AppColors.PRIMARY_COLOR,
+                                color: AppColors.PRIMARY_COLOR_NEW,
                                 borderRadius: BorderRadius.circular(25.0),
                                 border: Border.all(
-                                    color: AppColors.SECONDARY_COLOR,
+                                    color: AppColors.SECONDARY_COLOR_NEW,
                                     width: 2)),
                             child: FlatButton(
                               height: 50,

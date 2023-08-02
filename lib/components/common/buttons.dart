@@ -11,7 +11,7 @@ SizedBox submitButton({Function submit, BuildContext context}) {
         },
         child: Text(
           "Submit",
-          style: TextStyle(color: AppColors.PRIMARY_COLOR),
+          style: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
         )),
   );
 }
@@ -25,7 +25,8 @@ SizedBox homeMenuButton(
     width: MediaQuery.of(context).size.width * 0.9,
     height: MediaQuery.of(context).size.width * 0.15,
     child: ElevatedButton(
-        style: ElevatedButton.styleFrom(primary: AppColors.BUTTON_BG),
+        style: ElevatedButton.styleFrom(
+            primary: Color.fromARGB(255, 237, 237, 237)),
         onPressed: () {
           submit();
         },
@@ -35,7 +36,8 @@ SizedBox homeMenuButton(
             Spacer(),
             Text(
               title,
-              style: TextStyle(color: AppColors.SECONDARY_COLOR, fontSize: 20),
+              style: TextStyle(
+                  color: AppColors.BUTTON_BG.withOpacity(0.7), fontSize: 20),
             ),
             /*  Spacer(),
             Container(), */

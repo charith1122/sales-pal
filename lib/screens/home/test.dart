@@ -33,11 +33,11 @@ class _MyTestUiState extends State<MyTestUi> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar:
-          AppBar(backgroundColor: AppColors.PRIMARY_COLOR, title: Text('Test')),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      appBar: AppBar(
+          backgroundColor: AppColors.PRIMARY_COLOR_NEW, title: Text('Test')),
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: Container(
-          color: AppColors.PRIMARY_COLOR,
+          color: AppColors.PRIMARY_COLOR_NEW,
           padding: EdgeInsets.only(top: 6, left: 0, right: 0, bottom: 2),
           child: ListView(
             children: [

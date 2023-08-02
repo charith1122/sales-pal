@@ -109,7 +109,7 @@ class _LeaderRequestState extends State<LeaderRequest> {
     return Scaffold(
       // drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR,
+        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
         actions: [
           IconButton(
               icon: Icon(
@@ -134,16 +134,16 @@ class _LeaderRequestState extends State<LeaderRequest> {
             )),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: Center(
         // padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-        // color: AppColors.PRIMARY_COLOR,
+        // color: AppColors.PRIMARY_COLOR_NEW,
         child: isLoading
             ? Container(
-                // color: AppColors.PRIMARY_COLOR,
+                // color: AppColors.PRIMARY_COLOR_NEW,
                 child: Center(
                 child: SpinKitCubeGrid(
-                  color: AppColors.SECONDARY_COLOR,
+                  color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
                   // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
@@ -171,17 +171,18 @@ class _LeaderRequestState extends State<LeaderRequest> {
                       ? Container(
                           child: Center(
                               child: SpinKitThreeBounce(
-                          color: AppColors.SECONDARY_COLOR,
+                          color: AppColors.SECONDARY_COLOR_NEW,
                           size: 25.0,
                         )))
                       : Container(
                           width: 100,
                           margin: const EdgeInsets.symmetric(horizontal: 20),
                           decoration: BoxDecoration(
-                              color: AppColors.PRIMARY_COLOR,
+                              color: AppColors.PRIMARY_COLOR_NEW,
                               borderRadius: BorderRadius.circular(25.0),
                               border: Border.all(
-                                  color: AppColors.SECONDARY_COLOR, width: 2)),
+                                  color: AppColors.SECONDARY_COLOR_NEW,
+                                  width: 2)),
                           child: FlatButton(
                             minWidth: 50,
                             height: 50,
