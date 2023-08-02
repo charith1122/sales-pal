@@ -11,17 +11,9 @@ class _DatePickerContainerState extends State<DatePickerContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 100,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: Colors.transparent,
-        /* boxShadow: [
-          BoxShadow(
-            color: Colors.grey,
-            blurRadius: 0.1,
-            spreadRadius: 0.1,
-          )
-        ], */
         borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
@@ -30,13 +22,7 @@ class _DatePickerContainerState extends State<DatePickerContainer> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            /*  SizedBox(
-              height: 15.0,
-            ), */
             widget.child,
-            /* SizedBox(
-              height: 10,
-            ), */
           ],
         ),
       ),

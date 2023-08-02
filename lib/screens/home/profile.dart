@@ -301,24 +301,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
           if (getCustomerLoginDetails.done) {
             await EasyLoading.dismiss();
             successMessage(message: "Sign up was Successfully.");
-            // double lat = 0;
-            // double lng = 0;
-
-            // getCustomerLoginDetails.body.user.savedLocations.forEach((element) {
-            //   if (element.locationType == "Home") {
-            //     setState(() {
-            //       lat = double.parse(element.latitude);
-            //       lng = double.parse(element.longitude);
-            //     });
-            //   } else if (element.locationType == "Work") {
-            //     if (lat == 0 && lng == 0) {
-            //       setState(() {
-            //         lat = double.parse(element.latitude);
-            //         lng = double.parse(element.longitude);
-            //       });
-            //     }
-            //   }
-            // });
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
@@ -375,9 +357,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         MaterialPageRoute(builder: (context) => HomePage()),
                         (Route<dynamic> route) => false,
                       );
-                    }
-                    // scaffoldKey.currentState.openDrawer(),
-                    )
+                    })
               ],
             ),
             body: isLoading
@@ -386,13 +366,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: SpinKitCubeGrid(
                       color: AppColors.SECONDARY_COLOR_NEW,
                       size: 50.0,
-                      // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                     ),
                   ))
                 : Container(
                     height: size.height,
                     width: double.infinity,
-                    // color: Colors.white,
                     child: Stack(
                       fit: StackFit.loose,
                       children: [
@@ -575,157 +553,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
                                 ),
-                                /*  SizedBox(height: 8),
-                                Text('Company',
-                                    style: AppStyles.textFieldHeaderStyle),
-                                Container(
-                                  width: size.width,
-                                  decoration: BoxDecoration(
-                                    color: AppColors.PRIMARY_COLOR_NEW,
-                                    borderRadius: BorderRadius.circular(50),
-                                    //  border: Border.all(width: 0.5)
-                                  ),
-                                  padding: const EdgeInsets.only(
-                                      left: 50.0, right: 50),
-                                  child: Center(
-                                    child: DropdownButton<String>(
-                                      dropdownColor: AppColors.PRIMARY_COLOR_NEW,
-                                      alignment:
-                                          AlignmentDirectional.bottomCenter,
-                                      isExpanded: true,
-                                      value: myCompany,
-                                      elevation: 5,
-                                      underline:
-                                          Container(color: Colors.transparent),
-                                      style: AppStyles.textFieldStyle2,
-                                      items: dropdownItems,
-                                      hint: Text(
-                                        "Company",
-                                        // style: TextStyle(
-                                        //     color:
-                                        //         AppColors.SECONDARY_COLOR_NEW),
-                                      ),
-                                      onChanged: (String value) {
-                                        setState(() {
-                                          myCompany = value;
-                                          // print('  myCompany'   + myCompany);
-                                        });
-                                      },
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 8),
-                                Text('Register No',
-                                    style: AppStyles.textFieldHeaderStyle),
-                                TextFormField(
-                                  textAlign: TextAlign.center,
-                                  textAlignVertical: TextAlignVertical.top,
-                                  controller: regNoController,
-                                  style: AppStyles.textFieldStyle2,
-                                  decoration: InputDecoration(
-                                    hintText: '--',
-                                    hintStyle: TextStyle(
-                                        color: AppColors.SECONDARY_COLOR_NEW),
-                                    floatingLabelBehavior:
-                                        FloatingLabelBehavior.never,
-
-                                    filled: false,
-                                    fillColor: AppColors.PRIMARY_COLOR_NEW_LIGHT,
-                                    errorMaxLines: 2,
-                                    errorStyle: AppStyles.errorTextStyle,
-                                    border: InputBorder.none,
-
-                                    // labelText: '  Address ',
-                                    // labelStyle: AppStyles.labelStyle,
-                                    contentPadding:
-                                        EdgeInsets.fromLTRB(8, 0, 8, 0),
-                                  ),
-                                  onEditingComplete: () {
-                                    FocusScope.of(context).unfocus();
-                                    setState(() {});
-                                  },
-                                  autovalidateMode:
-                                      AutovalidateMode.onUserInteraction,
-                                ),
-                                SizedBox(height: 8),
-                                Text('Position',
-                                    style: AppStyles.textFieldHeaderStyle),
-                                TextFormField(
-                                  textAlign: TextAlign.center,
-                                  textAlignVertical: TextAlignVertical.top,
-                                  controller: positionController,
-                                  style: AppStyles.textFieldStyle2,
-                                  decoration: InputDecoration(
-                                    floatingLabelBehavior:
-                                        FloatingLabelBehavior.never,
-
-                                    filled: false,
-                                    fillColor: AppColors.SECONDARY_COLOR_NEW,
-                                    errorMaxLines: 2,
-                                    errorStyle: AppStyles.errorTextStyle,
-                                    border: InputBorder.none,
-                                    // labelText: '  Position ',
-                                    // labelStyle: AppStyles.labelStyle,
-                                    contentPadding:
-                                        EdgeInsets.fromLTRB(8, 0, 8, 0),
-                                  ),
-                                  onEditingComplete: () {
-                                    FocusScope.of(context).unfocus();
-                                    setState(() {});
-                                  },
-                                  autovalidateMode:
-                                      AutovalidateMode.onUserInteraction,
-                                ),
-                                SizedBox(height: 8),
-                                Text('Job Role',
-                                    style: AppStyles.textFieldHeaderStyle),
-                                Container(
-                                  width: 120,
-                                  decoration: BoxDecoration(
-                                      // borderRadius: BorderRadius.circular(50),
-                                      // border: Border.all(width: 0.5),
-                                      // color: AppColors.SECONDARY_COLOR_NEW
-                                      ),
-                                  padding: const EdgeInsets.only(
-                                      // left: 15.0, right: 15
-                                      ),
-                                  child: DropdownButton<String>(
-                                    isExpanded: true,
-                                    value: _chosenValue,
-                                    elevation: 5,
-                                    dropdownColor: Colors.grey,
-                                    underline:
-                                        Container(color: Colors.transparent),
-                                    // style: TextStyle(
-                                    //     color: AppColors.PRIMARY_COLOR_NEW),
-                                    style: AppStyles.textFieldStyle2,
-                                    // items: dropdownItems,
-                                    items: <String>[
-                                      'Member',
-                                      'Team Leader',
-                                    ].map<DropdownMenuItem<String>>(
-                                        (String value) {
-                                      return DropdownMenuItem<String>(
-                                        value: value,
-                                        child: Text(value),
-                                      );
-                                    }).toList(),
-                                    hint: Text(
-                                      "Job Role",
-                                      style: TextStyle(
-                                          // color: Colors.black,
-                                          // fontSize: 16,
-                                          // fontWeight: FontWeight.w600
-                                          ),
-                                    ),
-                                    onChanged: (String value) {
-                                      setState(() {
-                                        _chosenValue = value;
-                                        // print('_chosenValue' + _chosenValue);
-                                      });
-                                    },
-                                  ),
-                                ), */
                                 SizedBox(height: 15),
                                 Text('Country',
                                     style: AppStyles.textFieldHeaderStyle),
@@ -750,9 +577,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     errorStyle: AppStyles.errorTextStyle,
                                     border: InputBorder.none,
 
-                                    // labelText: '  Country ',
-                                    // labelStyle: AppStyles.labelStyle,
-
                                     contentPadding:
                                         EdgeInsets.fromLTRB(8, 0, 8, 0),
                                     // hintText: country
@@ -767,33 +591,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         submit: () {
                                           register();
                                         }),
-                                    /* Container(
-                                      height: 35,
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10),
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                            color: AppColors.SECONDARY_COLOR_NEW),
-                                        color: AppColors.PRIMARY_COLOR_NEW,
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                      ),
-                                      child: FlatButton(
-                                        height: 30,
-                                        // minWidth: size.width / 2.2,
-                                        onPressed: () {
-                                          register();
-                                        },
-                                        child: Text(
-                                          "Submit",
-                                          style: TextStyle(
-                                            fontSize: 18,
-                                            color: AppColors.SECONDARY_COLOR_NEW,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ), */
                                     Spacer(),
                                   ],
                                 ),

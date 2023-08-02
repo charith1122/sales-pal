@@ -51,81 +51,6 @@ Drawer myDrawer({
                         color: AppColors.SECONDARY_COLOR_NEW, fontSize: 18),
                   )),
             ),
-            /*  TextButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => ProfileScreen(),
-                ));
-              },
-              child: Text(
-                '',
-                style: AppStyles.drawerText,
-              ),
-            ), */
-            /*  SizedBox(
-              height: 8,
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                'LinkedIn',
-                style: AppStyles.drawerText,
-              ),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                'Facebook',
-                style: AppStyles.drawerText,
-              ),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                'YouTube',
-                style: AppStyles.drawerText,
-              ),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                'Web',
-                style: AppStyles.drawerText,
-              ),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                'Contact',
-                style: AppStyles.drawerText,
-              ),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => Payments(),
-                ));
-              },
-              child: Text(
-                'Payment',
-                style: AppStyles.drawerText,
-              ),
-            ), */
             SizedBox(
               height: 8,
             ),
@@ -150,32 +75,5 @@ Drawer myDrawer({
                         color: AppColors.SECONDARY_COLOR_NEW, fontSize: 18),
                   )),
             ),
-            /*  TextButton(
-              onPressed: () {
-                SendUser().deleteDeviceToken();
-                removeUserAuthPref(key: "userAuth");
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => MainSplashScreen()),
-                  (Route<dynamic> route) => false,
-                );
-              },
-              child: const Text(
-                'Logout',
-                style: AppStyles.drawerText,
-              ),
-            ), */
-            /*  Spacer(),
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => Privacy(),
-                ));
-              },
-              child: Text(
-                'Privacy Policy',
-                style: AppStyles.drawerText2,
-              ),
-            ), */
           ]));
 }

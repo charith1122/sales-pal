@@ -26,43 +26,6 @@ InkWell menuTileCategoryContainer(
               ),
             ),
           ),
-
-          /* child: Column(
-            // alignment: WrapAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            // spacing: 10,
-            children: [
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Container(
-                height: 75,
-                width: 75,
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Container(
-                    width: 45,
-                    height: 45,
-                    child: Icon(
-                      icon1,
-                      size: 36,
-                      color: Colors.white,
-                    ),
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white, width: 3),
-                        shape: BoxShape.circle,
-                        color: AppColors.PRIMARY_COLOR_NEW),
-                  ),
-                ),
-              ),
-            ],
-          ), */
         )
       ],
     ),

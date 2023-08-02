@@ -23,15 +23,6 @@ class SalesInterviewMainState extends State<SalesInterviewMain> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-          /* leading: IconButton(
-              icon: Icon(
-                Icons.menu,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {}
-              // scaffoldKey.currentState.openDrawer(),
-              ), */
           centerTitle: true,
           title: Text('Sales Interviews',
               style: TextStyle(

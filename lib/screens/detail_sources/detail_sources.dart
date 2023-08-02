@@ -17,18 +17,8 @@ class _DetailResourcesState extends State<DetailResources> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      // drawer: Drawer(),
       appBar: AppBar(
         backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-        /* leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 30,
-              color: Colors.white,
-            ),
-            onPressed: () {}
-            // scaffoldKey.currentState.openDrawer(),
-            ), */
         actions: [
           IconButton(
               icon: Icon(
@@ -42,9 +32,7 @@ class _DetailResourcesState extends State<DetailResources> {
                   MaterialPageRoute(builder: (context) => HomePage()),
                   (Route<dynamic> route) => false,
                 );
-              }
-              // scaffoldKey.currentState.openDrawer(),
-              )
+              })
         ],
         centerTitle: true,
         title: Text('Detail Resources',

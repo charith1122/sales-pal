@@ -400,15 +400,7 @@ class _NewToDoState extends State<NewToDo> {
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           iconTheme: IconThemeData(color: AppColors.SECONDARY_COLOR_NEW),
-          /* leading: IconButton(
-              icon: Icon(
-                Icons.menu,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {}
-              // scaffoldKey.currentState.openDrawer(),
-              ), */
+
           actions: [
             IconButton(
                 icon: Icon(

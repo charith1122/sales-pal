@@ -561,59 +561,6 @@ class _NewAppointmentState extends State<NewAppointment> {
                               ),
                             ),
                             SizedBox(height: 15),
-                            /* labelText(label: 'Time'),
-                            DatePickerContainer(
-                              child: GestureDetector(
-                                onTap: () => selectTime(context),
-                                child: Container(
-                                  height: 50,
-                                  padding: const EdgeInsets.only(left: 15.0),
-                                  width: size.width,
-                                  decoration: BoxDecoration(
-                                      color: AppColors.PRIMARY_COLOR_NEW,
-                                      borderRadius: BorderRadius.circular(10),
-                                      border: Border.all(
-                                          width: 0.5,
-                                          color: AppColors.SECONDARY_COLOR_NEW)),
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          deliverTimePickController.text,
-                                          style: TextStyle(
-                                              fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR_NEW),
-                                          overflow: TextOverflow.ellipsis,
-                                          maxLines: 2,
-                                        ),
-                                      ),
-                                      MaterialButton(
-                                        height: 50,
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.only(
-                                              bottomRight: Radius.circular(10),
-                                              topRight: Radius.circular(10),
-                                            ),
-                                            side: BorderSide(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR_NEW,
-                                                width: 2)),
-                                        onPressed: () => selectTime(context),
-                                        color: AppColors.PRYMARY_COLOR2,
-                                        child: Text(
-                                          "Change Time",
-                                          style: TextStyle(
-                                              fontSize: 14,
-                                              color: AppColors.SECONDARY_COLOR_NEW),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ), */
                             SizedBox(height: 15),
                             SizedBox(height: 20),
                             isSubmitting
@@ -624,11 +571,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                                       size: 25.0,
                                     ),
                                   ))
-                                : /* submitButton(context: context, submit: () {widget.id == null
-                                            ? createAppointment()
-                                            : updateAppointment();}) */
-
-                                Container(
+                                : Container(
                                     decoration: BoxDecoration(
                                         color: AppColors.PRIMARY_COLOR_NEW,
                                         borderRadius:

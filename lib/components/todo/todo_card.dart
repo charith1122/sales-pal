@@ -91,13 +91,11 @@ InkWell todoCard(
                   iconSize: 36,
                   color: Colors.grey[700],
                   icon: const Icon(Icons.double_arrow_outlined),
-                  // tooltip: 'Increase volume by 10',
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) => NewToDo(
                         id: 'EDIT',
                       ),
-                      // builder: (BuildContext context) => DropDownDemo(),
                     ));
                   },
                 ),

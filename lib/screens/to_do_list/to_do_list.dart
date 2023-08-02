@@ -372,22 +372,6 @@ class _ToDoListState extends State<ToDoList> {
                     ],
                   ),
                 ),
-                /*   TabBar(
-                  labelColor: AppColors.PRYMARY_COLOR2,
-                  unselectedLabelColor: AppColors.SECONDARY_COLOR_NEW,
-                  indicatorColor: AppColors.PRYMARY_COLOR2,
-                  tabs: <Widget>[
-                    Tab(
-                      text: 'To Do',
-                    ),
-                    Tab(
-                      text: 'Appointments',
-                    ),
-                    Tab(
-                      text: 'S. Interviews',
-                    )
-                  ],
-                ), */
                 Expanded(
                   child: TabBarView(
                       physics: NeverScrollableScrollPhysics(),
@@ -557,30 +541,6 @@ class _ToDoListState extends State<ToDoList> {
                                                                                 AppColors.PRIMARY_COLOR_NEW),
                                                                       ),
                                                                     )),
-                                                                /* FlatButton(
-                                                    onPressed: () {
-                                                      updateTodo(
-                                                          id: todos[i].id,
-                                                          status: 'Rejected');
-                                                    },
-                                                    child: Container(
-                                                      padding: const EdgeInsets
-                                                              .symmetric(
-                                                          vertical: 6,
-                                                          horizontal: 10),
-                                                      decoration: BoxDecoration(
-                                                          color: AppColors
-                                                              .SECONDARY_COLOR_NEW,
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(10)),
-                                                      child: Text(
-                                                        'Reject',
-                                                        style: TextStyle(
-                                                            color: AppColors
-                                                                .PRIMARY_COLOR_NEW),
-                                                      ),
-                                                    )), */
                                                                 FlatButton(
                                                                     onPressed:
                                                                         () {
@@ -1128,71 +1088,6 @@ class _ToDoListState extends State<ToDoList> {
                                       : Center(
                                           child: Text('No Sales Interviews'),
                                         ),
-                                  /* Positioned(
-                  top: 10,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 50),
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      border: Border.all(
-                          color: AppColors.SECONDARY_COLOR_NEW, width: 2),
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
-                    child: FlatButton(
-                      height: 50,
-                      minWidth: size.width - 100,
-                      onPressed: () {
-                        // login(context, "");
-                        Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => RejectedInterviews(
-                              // type: 'NEW',
-                              ),
-                          // builder: (BuildContext context) => DropDownDemo(),
-                        ));
-                      },
-                      child: Text(
-                        "Rejected Interviews",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: AppColors.SECONDARY_COLOR_NEW,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ), */
-                                  /*  Positioned(
-                  bottom: 10,
-                  width: size.width,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 50),
-                    decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR_NEW,
-                        borderRadius: BorderRadius.circular(25.0),
-                        border: Border.all(
-                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
-                    child: FlatButton(
-                      height: 50,
-                      onPressed: () {
-                        // login(context, "");
-                        Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => NewInterviews(
-                            id: null,
-                          ),
-                          // builder: (BuildContext context) => DropDownDemo(),
-                        ));
-                      },
-                      child: Text(
-                        "Add +",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ) */
                                 ],
                               )),
                       ]),

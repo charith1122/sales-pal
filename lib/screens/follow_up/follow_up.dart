@@ -68,18 +68,8 @@ class _FollowUpState extends State<FollowUp> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-        // drawer: Drawer(),
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-          /* leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 30,
-              color: Colors.white,
-            ),
-            onPressed: () {}
-            // scaffoldKey.currentState.openDrawer(),
-            ), */
           actions: [
             IconButton(
                 icon: Icon(
@@ -93,9 +83,7 @@ class _FollowUpState extends State<FollowUp> {
                     MaterialPageRoute(builder: (context) => HomePage()),
                     (Route<dynamic> route) => false,
                   );
-                }
-                // scaffoldKey.currentState.openDrawer(),
-                )
+                })
           ],
           centerTitle: true,
           title: Text('Follow Up',
@@ -112,7 +100,6 @@ class _FollowUpState extends State<FollowUp> {
                   child: SpinKitCubeGrid(
                     color: AppColors.SECONDARY_COLOR_NEW,
                     size: 50.0,
-                    // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                   ),
                 ))
             : Container(

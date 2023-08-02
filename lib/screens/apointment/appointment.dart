@@ -91,42 +91,6 @@ class _AppointmentState extends State<Appointment> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      // drawer: Drawer(),
-      /* appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-        /* leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 30,
-              color: Colors.white,
-            ),
-            onPressed: () {}
-            // scaffoldKey.currentState.openDrawer(),
-            ), */
-        actions: [
-          IconButton(
-              icon: Icon(
-                Icons.home_filled,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                  (Route<dynamic> route) => false,
-                );
-              }
-              // scaffoldKey.currentState.openDrawer(),
-              )
-        ],
-        centerTitle: true,
-        title: Text('Appointment',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            )),
-        automaticallyImplyLeading: false,
-      ), */
       backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
@@ -354,39 +318,6 @@ class _AppointmentState extends State<Appointment> {
                             child: Text('No Appointments'),
                           ),
                   ),
-                  /* Positioned(
-                    top: 10,
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 50),
-                      decoration: BoxDecoration(
-                        color: Colors.transparent,
-                        border: Border.all(color: AppColors.SECONDARY_COLOR_NEW),
-                        borderRadius: BorderRadius.circular(25.0),
-                      ),
-                      child: FlatButton(
-                        height: 50,
-                        minWidth: size.width - 100,
-                        onPressed: () {
-                          // login(context, "");
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                RejectedAppointment(
-                                    // type: 'NEW',
-                                    ),
-                            // builder: (BuildContext context) => DropDownDemo(),
-                          ));
-                        },
-                        child: Text(
-                          "Rejected Appointments",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: AppColors.SECONDARY_COLOR_NEW,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ), */
                   Positioned(
                     bottom: 10,
                     width: size.width,

@@ -93,55 +93,16 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      // drawer: Drawer(),
-      /* appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-        /* leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 30,
-              color: Colors.white,
-            ),
-            onPressed: () {}
-            // scaffoldKey.currentState.openDrawer(),
-            ), */
-        actions: [
-          IconButton(
-              icon: Icon(
-                Icons.home_filled,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                  (Route<dynamic> route) => false,
-                );
-              }
-              // scaffoldKey.currentState.openDrawer(),
-              )
-        ],
-        centerTitle: true,
-        title: Text('Sales Interview',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            )),
-        automaticallyImplyLeading: false,
-      ), */
       backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
-              // color: AppColors.PRIMARY_COLOR_NEW,
               child: Center(
               child: SpinKitCubeGrid(
                 color: AppColors.SECONDARY_COLOR_NEW,
                 size: 50.0,
-                // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
               ),
             ))
           : Container(
-              // color: AppColors.PRIMARY_COLOR_NEW,
               child: Stack(
               children: [
                 /* appointments.length + */ pendingAppointments.length > 0
@@ -201,54 +162,10 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                           SizedBox(
                                             height: 10,
                                           ),
-                                          /* Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
-                                                'Date : ' +
-                                                    formatter.format(
-                                                        DateTime.parse(
-                                                            appointments[j]
-                                                                .date)),
-                                              ),
-                                              SizedBox(
-                                                width: 50,
-                                              ),
-                                              Text('Time : ' +
-                                                  (appointments[j].time))
-                                            ],
-                                          ), */
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              /* FlatButton(
-                                                  onPressed: () {
-                                                    updateInterview(
-                                                        id: pendingAppointments[
-                                                                j]
-                                                            .id,
-                                                        status: 'Rejected');
-                                                  },
-                                                  child: Container(
-                                                    padding: const EdgeInsets
-                                                            .symmetric(
-                                                        vertical: 6,
-                                                        horizontal: 10),
-                                                    decoration: BoxDecoration(
-                                                        color: AppColors
-                                                            .SECONDARY_COLOR_NEW,
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(10)),
-                                                    child: Text(
-                                                      'Reject',
-                                                      style: TextStyle(
-                                                          color: AppColors
-                                                              .PRIMARY_COLOR_NEW),
-                                                    ),
-                                                  )), */
                                               FlatButton(
                                                   onPressed: () {
                                                     Navigator.of(context)
@@ -288,238 +205,12 @@ class _PendingSalesInterviewState extends State<PendingSalesInterview> {
                                   ]),
                                 ),
                               ),
-                            /*  pendingAppointments.isNotEmpty &&
-                                    appointments.isNotEmpty
-                                ? Divider(
-                                    indent: 25,
-                                    endIndent: 25,
-                                    thickness: 2,
-                                    color: AppColors.SECONDARY_COLOR_NEW,
-                                  )
-                                : Container(), */
-                            /* for (int k = 0; k < appointments.length; k++)
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                margin: const EdgeInsets.symmetric(
-                                    vertical: 12, horizontal: 12),
-                                decoration: BoxDecoration(
-                                    border: Border.all(
-                                        color: AppColors.SECONDARY_COLOR_NEW,
-                                        width: 2),
-                                    borderRadius: BorderRadius.circular(15)),
-                                child: IntrinsicHeight(
-                                  child: Row(children: [
-                                    SizedBox(
-                                      width: 45,
-                                      child: Text(
-                                        // (k + 1).toString().padLeft(4, '0'),
-                                        appointments[k].prosNum.toString(),
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    VerticalDivider(
-                                      thickness: 2,
-                                      color: AppColors.SECONDARY_COLOR_NEW,
-                                    ),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        SizedBox(
-                                          width: size.width - 110,
-                                          child: Text(
-                                            appointments[k].prosName ?? '',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 10,
-                                        ),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Text(
-                                              appointments[k].date != null
-                                                  ? 'Date : ' +
-                                                      formatter.format(
-                                                          DateTime.parse(
-                                                              appointments[k]
-                                                                  .date))
-                                                  : '',
-                                            ),
-                                            SizedBox(
-                                              width: 50,
-                                            ),
-                                            Text(appointments[k].time != null
-                                                ? 'Time : ' +
-                                                    (appointments[k].time)
-                                                : '')
-                                          ],
-                                        ),
-                                        Row(
-                                          children: [
-                                            FlatButton(
-                                                onPressed: () {
-                                                  updateInterview(
-                                                      id: appointments[k].id,
-                                                      status: 'OK');
-                                                },
-                                                child: Container(
-                                                  padding: const EdgeInsets
-                                                          .symmetric(
-                                                      vertical: 6,
-                                                      horizontal: 10),
-                                                  decoration: BoxDecoration(
-                                                      color: AppColors
-                                                          .SECONDARY_COLOR_NEW,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              10)),
-                                                  child: Text(
-                                                    'OK',
-                                                    style: TextStyle(
-                                                        color: AppColors
-                                                            .PRIMARY_COLOR_NEW),
-                                                  ),
-                                                )),
-                                            FlatButton(
-                                                onPressed: () {
-                                                  updateInterview(
-                                                      id: appointments[k].id,
-                                                      status: 'Rejected');
-                                                },
-                                                child: Container(
-                                                  padding: const EdgeInsets
-                                                          .symmetric(
-                                                      vertical: 6,
-                                                      horizontal: 10),
-                                                  decoration: BoxDecoration(
-                                                      color: AppColors
-                                                          .SECONDARY_COLOR_NEW,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              10)),
-                                                  child: Text(
-                                                    'Reject',
-                                                    style: TextStyle(
-                                                        color: AppColors
-                                                            .PRIMARY_COLOR_NEW),
-                                                  ),
-                                                )),
-                                            FlatButton(
-                                                onPressed: () {
-                                                  Navigator.of(context)
-                                                      .push(MaterialPageRoute(
-                                                    builder: (BuildContext
-                                                            context) =>
-                                                        NewInterviews(
-                                                      id: appointments[k].id,
-                                                    ),
-                                                  ));
-                                                },
-                                                child: Container(
-                                                  padding: const EdgeInsets
-                                                          .symmetric(
-                                                      vertical: 6,
-                                                      horizontal: 10),
-                                                  decoration: BoxDecoration(
-                                                      color: AppColors
-                                                          .SECONDARY_COLOR_NEW,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              10)),
-                                                  child: Text(
-                                                    'Edit',
-                                                    style: TextStyle(
-                                                        color: AppColors
-                                                            .PRIMARY_COLOR_NEW),
-                                                  ),
-                                                ))
-                                          ],
-                                        )
-                                      ],
-                                    )
-                                  ]),
-                                ),
-                              ) */
                           ],
                         ),
                       )
                     : Center(
                         child: Text('No Appointments'),
                       ),
-                /* Positioned(
-                  top: 10,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 50),
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      border: Border.all(
-                          color: AppColors.SECONDARY_COLOR_NEW, width: 2),
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
-                    child: FlatButton(
-                      height: 50,
-                      minWidth: size.width - 100,
-                      onPressed: () {
-                        // login(context, "");
-                        Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => RejectedInterviews(
-                              // type: 'NEW',
-                              ),
-                          // builder: (BuildContext context) => DropDownDemo(),
-                        ));
-                      },
-                      child: Text(
-                        "Rejected Interviews",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: AppColors.SECONDARY_COLOR_NEW,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ), */
-                /*  Positioned(
-                  bottom: 10,
-                  width: size.width,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 50),
-                    decoration: BoxDecoration(
-                        color: AppColors.PRIMARY_COLOR_NEW,
-                        borderRadius: BorderRadius.circular(25.0),
-                        border: Border.all(
-                            color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
-                    child: FlatButton(
-                      height: 50,
-                      onPressed: () {
-                        // login(context, "");
-                        Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => NewInterviews(
-                            id: null,
-                          ),
-                          // builder: (BuildContext context) => DropDownDemo(),
-                        ));
-                      },
-                      child: Text(
-                        "Add +",
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ) */
               ],
             )),
     );

@@ -91,42 +91,6 @@ class _DoneAppointmentState extends State<DoneAppointment> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      // drawer: Drawer(),
-      /* appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-        /* leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 30,
-              color: Colors.white,
-            ),
-            onPressed: () {}
-            // scaffoldKey.currentState.openDrawer(),
-            ), */
-        actions: [
-          IconButton(
-              icon: Icon(
-                Icons.home_filled,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                  (Route<dynamic> route) => false,
-                );
-              }
-              // scaffoldKey.currentState.openDrawer(),
-              )
-        ],
-        centerTitle: true,
-        title: Text('Appointment',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            )),
-        automaticallyImplyLeading: false,
-      ), */
       backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
@@ -135,7 +99,6 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                 child: SpinKitCubeGrid(
                   color: AppColors.SECONDARY_COLOR_NEW,
                   size: 50.0,
-                  // controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1200)),
                 ),
               ))
           : Container(
@@ -143,8 +106,6 @@ class _DoneAppointmentState extends State<DoneAppointment> {
               child: Stack(
                 children: [
                   Container(
-                    // padding:
-                    // EdgeInsets.only(top: 70, left: 0, right: 0, bottom: 75),
                     child: appointments.isNotEmpty
                         ? ListView(
                             children: [
@@ -170,9 +131,6 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                                                 appointments[k]
                                                     .prosNum
                                                     .toString(),
-                                                /* (k + 1)
-                                                    .toString()
-                                                    .padLeft(4, '0'), */
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                     fontSize: 14,
@@ -226,121 +184,8 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                                                     SizedBox(
                                                       width: 20,
                                                     ),
-                                                    /*  Text('Time : ' +
-                                                        (appointments[k].time)) */
                                                   ],
                                                 ),
-                                                /* Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  children: [
-                                                    MaterialButton(
-                                                        minWidth: 10,
-                                                        onPressed: () {
-                                                          updateAppointment(
-                                                              id: appointments[
-                                                                      k]
-                                                                  .id,
-                                                              status: 'OK',
-                                                              prosId: appointments[
-                                                                      k]
-                                                                  .prospectId);
-                                                        },
-                                                        child: Container(
-                                                          padding:
-                                                              const EdgeInsets
-                                                                      .symmetric(
-                                                                  vertical: 6,
-                                                                  horizontal:
-                                                                      10),
-                                                          decoration: BoxDecoration(
-                                                              color: AppColors
-                                                                  .SECONDARY_COLOR_NEW,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          10)),
-                                                          child: Text(
-                                                            'OK',
-                                                            style: TextStyle(
-                                                                color: AppColors
-                                                                    .PRIMARY_COLOR_NEW),
-                                                          ),
-                                                        )),
-                                                    MaterialButton(
-                                                        // color: Colors.amber,
-                                                        minWidth: 10,
-                                                        onPressed: () {
-                                                          updateAppointment(
-                                                              id: appointments[
-                                                                      k]
-                                                                  .id,
-                                                              status:
-                                                                  'Rejected',
-                                                              prosId: appointments[
-                                                                      k]
-                                                                  .prospectId);
-                                                        },
-                                                        child: Container(
-                                                          padding:
-                                                              const EdgeInsets
-                                                                      .symmetric(
-                                                                  vertical: 6,
-                                                                  horizontal:
-                                                                      10),
-                                                          decoration: BoxDecoration(
-                                                              color: AppColors
-                                                                  .SECONDARY_COLOR_NEW,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          10)),
-                                                          child: Text(
-                                                            'Reject',
-                                                            style: TextStyle(
-                                                                color: AppColors
-                                                                    .PRIMARY_COLOR_NEW),
-                                                          ),
-                                                        )),
-                                                    MaterialButton(
-                                                        minWidth: 10,
-                                                        onPressed: () {
-                                                          Navigator.of(context)
-                                                              .push(
-                                                                  MaterialPageRoute(
-                                                            builder: (BuildContext
-                                                                    context) =>
-                                                                NewAppointment(
-                                                              id: appointments[
-                                                                      k]
-                                                                  .id,
-                                                            ),
-                                                          ));
-                                                        },
-                                                        child: Container(
-                                                          padding:
-                                                              const EdgeInsets
-                                                                      .symmetric(
-                                                                  vertical: 6,
-                                                                  horizontal:
-                                                                      10),
-                                                          decoration: BoxDecoration(
-                                                              color: AppColors
-                                                                  .SECONDARY_COLOR_NEW,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          10)),
-                                                          child: Text(
-                                                            'Edit',
-                                                            style: TextStyle(
-                                                              color: AppColors
-                                                                  .PRIMARY_COLOR_NEW,
-                                                            ),
-                                                          ),
-                                                        ))
-                                                  ],
-                                                ) */
                                               ],
                                             )
                                           ]),
@@ -353,77 +198,6 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                             child: Text('No Appointments'),
                           ),
                   ),
-                  /* Positioned(
-                    top: 10,
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 50),
-                      decoration: BoxDecoration(
-                        color: Colors.transparent,
-                        border: Border.all(color: AppColors.SECONDARY_COLOR_NEW),
-                        borderRadius: BorderRadius.circular(25.0),
-                      ),
-                      child: FlatButton(
-                        height: 50,
-                        minWidth: size.width - 100,
-                        onPressed: () {
-                          // login(context, "");
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                RejectedAppointment(
-                                    // type: 'NEW',
-                                    ),
-                            // builder: (BuildContext context) => DropDownDemo(),
-                          ));
-                        },
-                        child: Text(
-                          "Rejected Appointments",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: AppColors.SECONDARY_COLOR_NEW,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ), */
-                  /* Positioned(
-                    bottom: 10,
-                    width: size.width,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          // margin: const EdgeInsets.symmetric(horizontal: 50),
-                          decoration: BoxDecoration(
-                              color: AppColors.PRIMARY_COLOR_NEW,
-                              borderRadius: BorderRadius.circular(25.0),
-                              border: Border.all(
-                                  color: AppColors.SECONDARY_COLOR_NEW, width: 2)),
-                          child: FlatButton(
-                            height: 50,
-                            onPressed: () {
-                              // login(context, "");
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    NewAppointment(
-                                  id: null,
-                                ),
-                                // builder: (BuildContext context) => DropDownDemo(),
-                              ));
-                            },
-                            child: Text(
-                              "Add +",
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ) */
                 ],
               )),
     );

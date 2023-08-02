@@ -21,15 +21,6 @@ class _PrivacyState extends State<Privacy> {
       // drawer: Drawer(),
       appBar: AppBar(
         backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-        /* leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              size: 30,
-              color: Colors.white,
-            ),
-            onPressed: () {}
-            // scaffoldKey.currentState.openDrawer(),
-            ), */
         actions: [
           IconButton(
               icon: Icon(
@@ -43,9 +34,7 @@ class _PrivacyState extends State<Privacy> {
                   MaterialPageRoute(builder: (context) => HomePage()),
                   (Route<dynamic> route) => false,
                 );
-              }
-              // scaffoldKey.currentState.openDrawer(),
-              )
+              })
         ],
         centerTitle: true,
         title: Text('Privacy Policy',

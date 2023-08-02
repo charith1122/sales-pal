@@ -20,15 +20,6 @@ class AppointmentNewState extends State<AppointmentMain> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-          /* leading: IconButton(
-              icon: Icon(
-                Icons.menu,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {}
-              // scaffoldKey.currentState.openDrawer(),
-              ), */
           centerTitle: true,
           title: Text('Appointments',
               style: TextStyle(

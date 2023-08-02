@@ -160,59 +160,6 @@ class _OtpScreenState extends State<OtpScreen> {
     );
   }
 
-  /* resendOTP() async {
-    FocusScope.of(context).unfocus();
-    countSeconds();
-    try {
-      await EasyLoading.show(
-        status: 'loading...',
-        dismissOnTap: false,
-      );
-      if (widget.registered) {
-        APIs().resendOtp(widget.id, widget.mobileNo, true).then((value) async {
-          if (value.done != null) {
-            if (value.done) {
-              pinPutController.clear();
-              setState(() {
-                isResendButton = false;
-              });
-              await EasyLoading.dismiss();
-              successMessage(message: value.message);
-            } else {
-              await EasyLoading.dismiss();
-              errorMessage(message: value.message);
-            }
-          } else {
-            await EasyLoading.dismiss();
-            errorMessage(message: value.message);
-          }
-        });
-      } else {
-        APIs().resendOtp("", widget.mobileNo, false).then((value) async {
-          if (value.done != null) {
-            if (value.done) {
-              pinPutController.clear();
-              setState(() {
-                isResendButton = false;
-              });
-              await EasyLoading.dismiss();
-              successMessage(message: value.message);
-            } else {
-              await EasyLoading.dismiss();
-              errorMessage(message: value.message);
-            }
-          } else {
-            await EasyLoading.dismiss();
-            errorMessage(message: value.message);
-          }
-        });
-      }
-    } catch (e) {
-      await EasyLoading.dismiss();
-      errorMessage(message: e.message);
-    }
-  } */
-
   updateLoginDetails() async {
     updateUserAuthPref(key: "userAuth", data: getCustomerLoginDetails);
     await EasyLoading.dismiss();
@@ -225,41 +172,6 @@ class _OtpScreenState extends State<OtpScreen> {
     );
     SendUser().saveDeviceToken();
   }
-
-  /* getCustomerDetails() async {
-    try {
-      getCustomerLoginDetails = new CustomerLoginUpdateDetails.fromJson(
-          await getUserAuthPref(key: "userAuth"));
-    } catch (e) {}
-
-    try {
-      if (getCustomerLoginDetails != null) {
-        if (getCustomerLoginDetails.done != null) {
-          if (getCustomerLoginDetails.done) {
-            await EasyLoading.dismiss();
-            successMessage(message: "Sign in was Successfully.");
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => Dashboard(),
-              ),
-            );
-          } else {
-            getCustomerDetails();
-          }
-        } else {
-          await EasyLoading.dismiss();
-          errorMessage(message: getCustomerLoginDetails.message);
-        }
-      } else {
-        await EasyLoading.dismiss();
-        errorMessage(message: getCustomerLoginDetails.message);
-      }
-    } catch (e) {
-      await EasyLoading.dismiss();
-      errorMessage(message: e.message);
-    }
-  } */
 
   BoxDecoration get pinPutDecoration {
     return BoxDecoration(
@@ -310,20 +222,6 @@ class _OtpScreenState extends State<OtpScreen> {
                   height: 30,
                 ),
                 Text("Enter the OTP correctly"),
-                /* SizedBox(
-                  width: 200,
-                  child: Text(
-                    "Please check your mobile number " +
-                        widget.mobileNo.replaceRange(5, 10, 'xxxxx') +
-                        " to get the OTP",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: AppColors.SECONDARY_COLOR_NEW,
-                      fontWeight: FontWeight.normal,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ), */
                 SizedBox(
                   height: 15,
                 ),
@@ -359,25 +257,6 @@ class _OtpScreenState extends State<OtpScreen> {
                     submit: () {
                       confirm();
                     }),
-                /* Container(
-                  decoration: BoxDecoration(
-                      color: AppColors.SECONDARY_COLOR_NEW, shape: BoxShape.circle
-                      // borderRadius: BorderRadius.circular(25.0),
-
-                      ),
-                  child: FlatButton(
-                    height: 60,
-                    minWidth: size.width,
-                    onPressed: () {
-                      confirm();
-                    },
-                    child: Icon(
-                      Icons.check,
-                      size: 40,
-                      color: AppColors.PRIMARY_COLOR_NEW,
-                    ),
-                  ),
-                ), */
                 SizedBox(
                   height: 30,
                 ),

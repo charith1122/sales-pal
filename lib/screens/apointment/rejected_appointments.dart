@@ -85,43 +85,6 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      // drawer: Drawer(),
-      /*  appBar: AppBar(
-        backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-
-        // leading: IconButton(
-        //     icon: Icon(
-        //       Icons.menu,
-        //       size: 30,
-        //       color: Colors.white,
-        //     ),
-        //     onPressed: () {}
-        //     // scaffoldKey.currentState.openDrawer(),
-        //     ),
-        actions: [
-          IconButton(
-              icon: Icon(
-                Icons.home_filled,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                  (Route<dynamic> route) => false,
-                );
-              }
-              // scaffoldKey.currentState.openDrawer(),
-              )
-        ],
-        centerTitle: true,
-        title: Text('Rejected Appointment',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            )),
-        // automaticallyImplyLeading: false,
-      ), */
       backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: isLoading
           ? Container(
@@ -210,17 +173,6 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                             SizedBox(
                                               width: 20,
                                             ),
-                                            /* Text(
-                                              'Time : ' +
-                                                          appointments[k]
-                                                              .time ==
-                                                      null
-                                                  ? ""
-                                                  : appointments[k].time,
-                                              style: TextStyle(
-                                                  color: AppColors
-                                                      .SECONDARY_COLOR_NEW),
-                                            ) */
                                           ],
                                         ),
                                         Row(
@@ -249,33 +201,6 @@ class _RejectedAppointmentState extends State<RejectedAppointment> {
                                                             .PRIMARY_COLOR_NEW),
                                                   ),
                                                 )),
-                                            /* FlatButton(
-                                                onPressed: () {
-                                                  Navigator.of(context)
-                                                      .push(MaterialPageRoute(
-                                                    builder: (BuildContext
-                                                            context) =>
-                                                        NewAppointment(
-                                                      id: appointments[k].id,
-                                                    ),
-                                                  ));
-                                                },
-                                                child: Container(
-                                                  padding: const EdgeInsets
-                                                          .symmetric(
-                                                      vertical: 6,
-                                                      horizontal: 10),
-                                                  decoration: BoxDecoration(
-                                                      color: Colors.blue,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              10)),
-                                                  child: Text(
-                                                    'Edit',
-                                                    style: TextStyle(
-                                                        color: Colors.white),
-                                                  ),
-                                                )) */
                                           ],
                                         )
                                       ],

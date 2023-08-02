@@ -416,15 +416,7 @@ class _NewInterviewsState extends State<NewInterviews> {
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           iconTheme: IconThemeData(color: AppColors.SECONDARY_COLOR_NEW),
-          /* leading: IconButton(
-              icon: Icon(
-                Icons.menu,
-                size: 30,
-                color: Colors.white,
-              ),
-              onPressed: () {}
-              // scaffoldKey.currentState.openDrawer(),
-              ), */
+
           actions: [
             IconButton(
                 icon: Icon(
@@ -473,46 +465,6 @@ class _NewInterviewsState extends State<NewInterviews> {
                         child: Column(
                           children: [
                             labelText(label: 'Name'),
-                            /*  Container(
-                              width: size.width,
-                              decoration: BoxDecoration(
-                                  color: AppColors.SECONDARY_COLOR_NEW,
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(width: 0.5)),
-                              padding:
-                                  const EdgeInsets.only(left: 15.0, right: 15),
-                              child: CustomSearchableDropDown(
-                                enabled: false,
-                                dropdownHintText: 'Search For Name Here... ',
-                                showLabelInMenu: true,
-                                primaryColor: AppColors.PRIMARY_COLOR_NEW,
-                                menuMode: false,
-                                // dropdownBackgroundColor:
-                                //     AppColors.PRIMARY_COLOR_NEW,
-                                // dropdownItemStyle:
-                                //     TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
-                                labelStyle:
-                                    TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
-                                items: prospects,
-                                label: selectedName,
-                                prefixIcon: Padding(
-                                  padding: const EdgeInsets.all(0.0),
-                                  child: Icon(Icons.search),
-                                ),
-                                dropDownMenuItems: prospects?.map((item) {
-                                      return item.name;
-                                    })?.toList() ??
-                                    [],
-                                onChanged: (value) {
-                                  if (value != null) {
-                                    selected = value.id.toString();
-                                  } else {
-                                    selected = null;
-                                  }
-                                  print(selected);
-                                },
-                              ),
-                            ), */
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
@@ -605,58 +557,6 @@ class _NewInterviewsState extends State<NewInterviews> {
                               ),
                             ),
                             SizedBox(height: 15),
-                            /*  labelText(label: 'Time'),
-                            DatePickerContainer(
-                              child: GestureDetector(
-                                onTap: () => selectTime(context),
-                                child: Container(
-                                  height: 50,
-                                  padding: const EdgeInsets.only(left: 15.0),
-                                  width: size.width,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      border: Border.all(width: 0.5),
-                                      color: AppColors.SECONDARY_COLOR_NEW),
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Expanded(
-                                        child: Text(
-                                          deliverTimePickController.text,
-                                          style: TextStyle(
-                                              fontSize: 14,
-                                              color: AppColors.PRIMARY_COLOR_NEW),
-                                          overflow: TextOverflow.ellipsis,
-                                          maxLines: 2,
-                                        ),
-                                      ),
-                                      MaterialButton(
-                                        height: 50,
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.only(
-                                              bottomRight: Radius.circular(50),
-                                              topRight: Radius.circular(50),
-                                            ),
-                                            side: BorderSide(
-                                                color:
-                                                    AppColors.SECONDARY_COLOR_NEW,
-                                                width: 2)),
-                                        onPressed: () => selectTime(context),
-                                        color: AppColors.PRIMARY_COLOR_NEW,
-                                        child: Text(
-                                          "Change Time",
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            color: AppColors.SECONDARY_COLOR_NEW,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ), */
                             SizedBox(height: 15),
                             SizedBox(height: 20),
                             isSubmitting
@@ -683,9 +583,7 @@ class _NewInterviewsState extends State<NewInterviews> {
                                         widget.id != null
                                             ? updateInterview()
                                             : createInterview();
-                                        /* Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => HomePage(),
-                            )); */
+
                                         print(_chosenValue);
                                       },
                                       child: Text(

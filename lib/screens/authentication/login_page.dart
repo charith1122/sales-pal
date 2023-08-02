@@ -109,22 +109,12 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-
-                /*    Text(
-                  'WELCOME',
-                  style: TextStyle(
-                      color: AppColors.SECONDARY_COLOR_NEW,
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold),
-                ), */
                 SizedBox(
                   height: 30,
                 ),
                 Container(
                   margin:
                       EdgeInsets.only(bottom: 50, top: 30, left: 50, right: 50),
-                  /*  decoration: BoxDecoration(
-                      border: Border(bottom: BorderSide(color: Colors.white))), */
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -163,118 +153,14 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                   height: 30,
                 ),
-
-                /* Text(
-                  'PHONE NUMBER',
-                  style: TextStyle(
-                      color: AppColors.SECONDARY_COLOR_NEW,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(
-                      bottom: 50, top: 30, left: 50, right: 50),
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 85, 20, 20),
-                    border: Border.all(
-                      color: Color.fromARGB(255, 3, 0, 0),
-                    ),
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  height: 50,
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: InternationalPhoneInput(
-                      decoration: InputDecoration(
-                          focusColor: Colors.orange,
-                          counterStyle: TextStyle(color: Colors.black),
-                          floatingLabelStyle: TextStyle(color: Colors.black),
-                          floatingLabelBehavior: FloatingLabelBehavior.never,
-                          prefixStyle: TextStyle(color: Colors.black),
-                          suffixStyle: TextStyle(color: Colors.black),
-                          hoverColor: Colors.orange,
-                          hintStyle:
-                              TextStyle(fontSize: 14, color: Colors.black),
-                          labelStyle:
-                              TextStyle(fontSize: 14, color: Colors.black),
-                          border: InputBorder.none,
-                          filled: false,
-                          fillColor: Color.fromARGB(255, 92, 9, 9)),
-                      labelStyle: TextStyle(
-                          fontSize: 14,
-                          color: Colors.black,
-                          backgroundColor: Colors.pink),
-                      onPhoneNumberChange: onPhoneNumberChange,
-                      initialPhoneNumber: mobileNo,
-                      showCountryFlags: false,
-                      // showCountryCodes: false,
-                      initialSelection: "+94",
-                      enabledCountries: ['+94']),
-                ), */
                 submitButton(
                     submit: () {
                       login(context, "");
                     },
                     context: context),
-                /*  Container(
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                      border: Border.all(color: Colors.white)),
-                  child: FlatButton(
-                    height: 60,
-                    minWidth: size.width,
-                    onPressed: () {
-                      login(context, "");
-                    },
-                    child: Icon(
-                      Icons.check,
-                      size: 40,
-                      color: AppColors.PRIMARY_COLOR_NEW,
-                    ),
-                  ),
-                ), */
                 SizedBox(
                   height: 50,
                 ),
-                /* Text(
-                  'HOTLINE',
-                  style: TextStyle(
-                      color: AppColors.SECONDARY_COLOR_NEW,
-                      // fontSize: 16,
-                      fontWeight: FontWeight.normal),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        primary: AppColors.SECONDARY_COLOR_NEW,
-                      ),
-                      onPressed: () {
-                        // Navigator.pop(context);
-                        //  launch("tel://0775 675 625");
-                        launchUrl(Uri(
-                          scheme: 'tel',
-                          path: '+94773848020',
-                        ));
-                      },
-                      child: Text('+9477 384 80 20'),
-                    ),
-                    Text(
-                      '/',
-                      style: TextStyle(
-                          color: AppColors.SECONDARY_COLOR_NEW,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    TextButton(
-                      style: TextButton.styleFrom(
-                        primary: AppColors.SECONDARY_COLOR_NEW,
-                      ),
-                      onPressed: () {},
-                      child: const Text('+9471 784 80 20'),
-                    ),
-                  ],
-                ) */
               ],
             ),
           ),

@@ -2,31 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:pros_bot/constants/app_colors.dart';
 
 class MyTestUi extends StatefulWidget {
-  // const MyTestUi({Key? key, required this.title}) : super(key: key);
-
-  // final String title;
-
   @override
   State<MyTestUi> createState() => _MyTestUiState();
 }
-
-/* checkplayerLogin() async {
-  UpdateProfData result =
-      await Api().createPost(email: 'kaushalya', userName: 'kt');
-  print(result);
-  if (result.done != null) {
-    if (result.done) {
-      /* setState(() {
-          verifiedUser = true;
-          navigate();
-        }); */
-    } else {
-      // navigate();
-    }
-  } else {
-    // navigate();
-  }
-} */
 
 class _MyTestUiState extends State<MyTestUi> {
   @override
