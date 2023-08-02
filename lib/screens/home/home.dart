@@ -358,7 +358,7 @@ class _HomePageState extends State<HomePage> {
         ),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.SECONDARY_COLOR_NEW,
+      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 15),
         children: [

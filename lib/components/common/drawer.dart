@@ -38,7 +38,8 @@ Drawer myDrawer({
             SizedBox(
               width: size.width / 1.5,
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: AppColors.BUTTON_BG),
+                  style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(255, 237, 237, 237)),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) => ProfileScreen(),
@@ -131,7 +132,8 @@ Drawer myDrawer({
             SizedBox(
               width: size.width / 1.5,
               child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: AppColors.BUTTON_BG),
+                  style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(255, 237, 237, 237)),
                   onPressed: () {
                     SendUser().deleteDeviceToken();
                     removeUserAuthPref(key: "userAuth");
