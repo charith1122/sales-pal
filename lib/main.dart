@@ -180,7 +180,7 @@ class _MainSplashScreenState extends State<MainSplashScreen> {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     //image: AssetImage("assets/img/pros_bot_logo.png"),
-                    image: AssetImage("assets/logos/logo_with_text.png"),
+                    image: AssetImage("assets/logos/3_1.png"),
                     fit: BoxFit.fitWidth,
                   ),
                 ),

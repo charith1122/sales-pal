@@ -284,7 +284,7 @@ class _OtpScreenState extends State<OtpScreen> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         // image: AssetImage("assets/img/pros_bot_logo.png"),
-                        image: AssetImage("assets/logos/2.png"),
+                        image: AssetImage("assets/logos/3.png"),
                         fit: BoxFit.fitWidth,
                       ),
                     ),
