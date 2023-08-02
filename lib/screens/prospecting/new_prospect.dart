@@ -571,6 +571,7 @@ class _NewProspectState extends State<NewProspect> {
       data: MediaQuery.of(context).copyWith(),
       child: Scaffold(
         appBar: AppBar(
+          iconTheme: IconThemeData(color: AppColors.SECONDARY_COLOR_NEW),
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
           /* leading: IconButton(
           icon: Icon(
@@ -586,7 +587,7 @@ class _NewProspectState extends State<NewProspect> {
                 icon: Icon(
                   Icons.home_filled,
                   size: 30,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(

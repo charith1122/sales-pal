@@ -399,7 +399,7 @@ class _NewToDoState extends State<NewToDo> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-
+          iconTheme: IconThemeData(color: AppColors.SECONDARY_COLOR_NEW),
           /* leading: IconButton(
               icon: Icon(
                 Icons.menu,
