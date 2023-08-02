@@ -15,7 +15,7 @@ Future<Uint8List> makePdf(
     String phone}) async {
   final pdf = Document(title: '2023-01-26');
   final imageLogo = MemoryImage(
-      (await rootBundle.load('assets/img/pros_bot_logo_black.png'))
+      (await rootBundle.load('assets/logos/logo_new1.png'))
           .buffer
           .asUint8List());
 
@@ -325,7 +325,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtJanSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 //February
@@ -341,7 +340,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtFebSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 //March
@@ -357,7 +355,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtMarSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 //April
@@ -375,7 +372,6 @@ Future<Uint8List> makePdf(
                                       value:
                                           anualReport.rprtAprlSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 //May
@@ -391,7 +387,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtMaySale.toString(),
                                     ),
-                                   
                                   ],
                                 ),
                                 //June
@@ -407,7 +402,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtJunSale.toString(),
                                     ),
-                                   
                                   ],
                                 ),
                                 //July
@@ -423,7 +417,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtJulSale.toString(),
                                     ),
-                                   
                                   ],
                                 ),
                                 //August
@@ -439,7 +432,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtAugSale.toString(),
                                     ),
-                                   
                                   ],
                                 ),
                                 // September
@@ -455,7 +447,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtSepSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 // October
@@ -471,7 +462,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtOctSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 // November
@@ -487,7 +477,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtNovSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                                 // December
@@ -503,7 +492,6 @@ Future<Uint8List> makePdf(
                                     reportField(
                                       value: anualReport.rprtDecSale.toString(),
                                     ),
-                                    
                                   ],
                                 ),
                               ],

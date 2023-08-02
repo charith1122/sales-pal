@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:makepdfs/models/invoice.dart';
 import 'package:printing/printing.dart';
+import 'package:pros_bot/constants/app_colors.dart';
 import 'package:pros_bot/models/annual_plan/getAnnualPlans.dart';
 import 'package:pros_bot/models/report/anual_report.dart';
 import 'package:pros_bot/models/report/month_report.dart';
@@ -32,6 +33,7 @@ class MonthlyPrint extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppColors.PRIMARY_COLOR,
         title: Text('PDF Preview'),
       ),
       body: PdfPreview(

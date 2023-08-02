@@ -535,7 +535,7 @@ class _LeaderReportsState extends State<LeaderReports> {
       rprtOctSale = anualReport.rprtOctSale.toString();
       rprtNovSale = anualReport.rprtNovSale.toString();
       rprtDecSale = anualReport.rprtDecSale.toString();
-      rprtJanFup = anualReport.rprtJanFup.toString();
+      /* rprtJanFup = anualReport.rprtJanFup.toString();
       rprtFebFup = anualReport.rprtFebFup.toString();
       rprtMarFup = anualReport.rprtMarFup.toString();
       rprtAprlFup = anualReport.rprtAprlFup.toString();
@@ -558,7 +558,7 @@ class _LeaderReportsState extends State<LeaderReports> {
       rprtSepNop = anualReport.rprtSepNop.toString();
       rprtOctNop = anualReport.rprtOctNop.toString();
       rprtNovNop = anualReport.rprtNovNop.toString();
-      rprtDecNop = anualReport.rprtDecNop.toString();
+      rprtDecNop = anualReport.rprtDecNop.toString(); */
       rprtJanAnbp = (anualReport.rprtJanAnbp * 12).toString();
       rprtFebAnbp = (anualReport.rprtFebAnbp * 12).toString();
       rprtMarAnbp = (anualReport.rprtMarAnbp * 12).toString();
@@ -580,7 +580,7 @@ class _LeaderReportsState extends State<LeaderReports> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.black,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)), //this right here
 
@@ -682,7 +682,7 @@ class _LeaderReportsState extends State<LeaderReports> {
             icon: Icon(
               Icons.menu,
               size: 30,
-              color: Colors.white,
+              color: Colors.black,
             ),
             onPressed: () {}
             // scaffoldKey.currentState.openDrawer(),
@@ -692,7 +692,7 @@ class _LeaderReportsState extends State<LeaderReports> {
               icon: Icon(
                 Icons.home_filled,
                 size: 30,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {
                  Navigator.pushAndRemoveUntil(
@@ -791,7 +791,7 @@ class _LeaderReportsState extends State<LeaderReports> {
                                       anualReport: anualReport,
                                       year: _lodedYear,
                                       name: widget.name,
-                                      company: widget.company,
+                                      //company: widget.company,
                                       phone: widget.contact),
                                 ),
                               );

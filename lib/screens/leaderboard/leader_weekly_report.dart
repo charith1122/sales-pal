@@ -234,7 +234,7 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
       thirdSale = monthReport.thirdSale.toString();
       forthSale = monthReport.forthSale.toString();
       fifthSale = monthReport.fifthSale.toString();
-      firstFup = monthReport.firstFup.toString();
+      /*  firstFup = monthReport.firstFup.toString();
       secondFup = monthReport.secondFup.toString();
       thirdFup = monthReport.thirdFup.toString();
       forthFup = monthReport.forthFup.toString();
@@ -243,7 +243,7 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
       secondNop = monthReport.secondNop.toString();
       thirdNop = monthReport.thirdNop.toString();
       forthNop = monthReport.forthNop.toString();
-      fifthNop = monthReport.fifthNop.toString();
+      fifthNop = monthReport.fifthNop.toString(); */
       firstAnbp = (monthReport.firstAnbp * 12).toString();
       secondAnbp = (monthReport.secondAnbp * 12).toString();
       thirdAnbp = (monthReport.thirdAnbp * 12).toString();
@@ -252,8 +252,8 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
       monthPros = monthReport.monthPros.toString();
       monthApp = monthReport.monthApp.toString();
       monthSale = monthReport.monthSale.toString();
-      monthFup = monthReport.monthFup.toString();
-      monthNop = monthReport.monthNop.toString();
+      //monthFup = monthReport.monthFup.toString();
+      //monthNop = monthReport.monthNop.toString();
       monthAnbp = monthReport.monthAnbp.toString();
     });
   }
@@ -305,7 +305,7 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.black,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)), //this right here
 
@@ -408,7 +408,7 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
             icon: Icon(
               Icons.menu,
               size: 30,
-              color: Colors.white,
+              color: Colors.black,
             ),
             onPressed: () {}
             // scaffoldKey.currentState.openDrawer(),
@@ -418,7 +418,7 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
               icon: Icon(
                 Icons.home_filled,
                 size: 30,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {
                  Navigator.pushAndRemoveUntil(
@@ -549,7 +549,7 @@ class _LeaderWeeklyReportsState extends State<LeaderWeeklyReports> {
                                     year: _lodedYear,
                                     month: _loadMonth,
                                     name: widget.name,
-                                    company: widget.company,
+                                    // company: widget.company,
                                     phone: widget.contact),
                               ),
                             );

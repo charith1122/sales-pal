@@ -1,13 +1,13 @@
 class Plan {
   //modal class for Person object
-  String month, pros, app, sale, follow, nop, anbp;
+  String month, pros, app, sale, /* follow, nop, */ anbp;
   Plan({
     this.month,
     this.pros,
     this.app,
     this.sale,
-    this.follow,
-    this.nop,
+    /* this.follow,
+    this.nop, */
     this.anbp,
   });
 
@@ -16,8 +16,8 @@ class Plan {
     pros = json['pros'];
     app = json['app'];
     sale = json['sale'];
-    follow = json['follow'];
-    nop = json['nop'];
+    /*  follow = json['follow']; */
+    /*  nop = json['nop']; */
     anbp = json['anbp'];
   }
 
@@ -27,8 +27,8 @@ class Plan {
     data['pros'] = this.pros;
     data['app'] = this.app;
     data['sale'] = this.sale;
-    data['follow'] = this.follow;
-    data['nop'] = this.nop;
+    /*  data['follow'] = this.follow;
+    data['nop'] = this.nop; */
     data['anbp'] = this.anbp;
     return data;
   }
@@ -38,8 +38,8 @@ class Plan {
         pros: data['pros'],
         app: data['app'],
         sale: data['sale'],
-        follow: data['follow'],
-        nop: data['nop'],
+        /*  follow: data['follow'],
+        nop: data['nop'], */
         anbp: data['anbp'],
       );
 }

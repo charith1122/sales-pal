@@ -1337,8 +1337,8 @@ class APIs {
           'pros': element.pros,
           'app': element.app,
           'sale': element.sale,
-          'follow': element.follow,
-          'nop': element.nop,
+          /*   'follow': element.follow,
+          'nop': element.nop, */
           'anbp': element.anbp
         });
         prosChildren.add(_plan);

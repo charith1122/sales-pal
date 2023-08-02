@@ -163,96 +163,96 @@ class _AnualPlanState extends State<AnualPlan> {
         pros: janProsController.text != "" ? janProsController.text : "0",
         app: janAppController.text != "" ? janAppController.text : "0",
         sale: janSiController.text != "" ? janSiController.text : "0",
-        follow: janFuController.text != "" ? janFuController.text : "0",
-        nop: janNopController.text != "" ? janNopController.text : "0",
+        /*  follow: janFuController.text != "" ? janFuController.text : "0",
+        nop: janNopController.text != "" ? janNopController.text : "0", */
         anbp: janNopController.text != "" ? janAnbpController.text : "0"));
     plans.add(Plan(
         month: 'February',
         pros: febProsController.text != "" ? febProsController.text : "0",
         app: febAppController.text != "" ? febAppController.text : "0",
         sale: febSiController.text != "" ? febSiController.text : "0",
-        follow: febFuController.text != "" ? febFuController.text : "0",
-        nop: febNopController.text != "" ? febNopController.text : "0",
+        /* follow: febFuController.text != "" ? febFuController.text : "0",
+        nop: febNopController.text != "" ? febNopController.text : "0", */
         anbp: febNopController.text != "" ? febAnbpController.text : "0"));
     plans.add(Plan(
         month: 'March',
         pros: marProsController.text != "" ? marProsController.text : "0",
         app: marAppController.text != "" ? marAppController.text : "0",
         sale: marSiController.text != "" ? marSiController.text : "0",
-        follow: marFuController.text != "" ? marFuController.text : "0",
-        nop: marNopController.text != "" ? marNopController.text : "0",
+        /* follow: marFuController.text != "" ? marFuController.text : "0",
+        nop: marNopController.text != "" ? marNopController.text : "0", */
         anbp: marNopController.text != "" ? marAnbpController.text : "0"));
     plans.add(Plan(
         month: 'April',
         pros: aprlProsController.text != "" ? aprlProsController.text : "0",
         app: aprlAppController.text != "" ? aprlAppController.text : "0",
         sale: aprlSiController.text != "" ? aprlSiController.text : "0",
-        follow: aprlFuController.text != "" ? aprlFuController.text : "0",
-        nop: aprlNopController.text != "" ? aprlNopController.text : "0",
+        /* follow: aprlFuController.text != "" ? aprlFuController.text : "0",
+        nop: aprlNopController.text != "" ? aprlNopController.text : "0", */
         anbp: aprlNopController.text != "" ? aprlAnbpController.text : "0"));
     plans.add(Plan(
         month: 'May',
         pros: mayProsController.text != "" ? mayProsController.text : "0",
         app: mayAppController.text != "" ? mayAppController.text : "0",
         sale: maySiController.text != "" ? maySiController.text : "0",
-        follow: mayFuController.text != "" ? mayFuController.text : "0",
-        nop: mayNopController.text != "" ? mayNopController.text : "0",
+        /* follow: mayFuController.text != "" ? mayFuController.text : "0",
+        nop: mayNopController.text != "" ? mayNopController.text : "0", */
         anbp: mayNopController.text != "" ? mayAnbpController.text : "0"));
     plans.add(Plan(
         month: 'June',
         pros: junProsController.text != "" ? junProsController.text : "0",
         app: junAppController.text != "" ? junAppController.text : "0",
         sale: junSiController.text != "" ? junSiController.text : "0",
-        follow: junFuController.text != "" ? junFuController.text : "0",
-        nop: junNopController.text != "" ? junNopController.text : "0",
+        /*  follow: junFuController.text != "" ? junFuController.text : "0",
+        nop: junNopController.text != "" ? junNopController.text : "0", */
         anbp: junNopController.text != "" ? junAnbpController.text : "0"));
     plans.add(Plan(
         month: 'July',
         pros: julProsController.text != "" ? julProsController.text : "0",
         app: julAppController.text != "" ? julAppController.text : "0",
         sale: julSiController.text != "" ? julSiController.text : "0",
-        follow: julFuController.text != "" ? julFuController.text : "0",
-        nop: julNopController.text != "" ? julNopController.text : "0",
+        /*  follow: julFuController.text != "" ? julFuController.text : "0",
+        nop: julNopController.text != "" ? julNopController.text : "0", */
         anbp: julNopController.text != "" ? julAnbpController.text : "0"));
     plans.add(Plan(
         month: 'August',
         pros: augProsController.text != "" ? augProsController.text : "0",
         app: augAppController.text != "" ? augAppController.text : "0",
         sale: augSiController.text != "" ? augSiController.text : "0",
-        follow: augFuController.text != "" ? augFuController.text : "0",
-        nop: augNopController.text != "" ? augNopController.text : "0",
+        /* follow: augFuController.text != "" ? augFuController.text : "0",
+        nop: augNopController.text != "" ? augNopController.text : "0", */
         anbp: augNopController.text != "" ? augAnbpController.text : "0"));
     plans.add(Plan(
         month: 'September',
         pros: sepProsController.text != "" ? sepProsController.text : "0",
         app: sepAppController.text != "" ? sepAppController.text : "0",
         sale: sepSiController.text != "" ? sepSiController.text : "0",
-        follow: sepFuController.text != "" ? sepFuController.text : "0",
-        nop: sepNopController.text != "" ? sepNopController.text : "0",
+        /* follow: sepFuController.text != "" ? sepFuController.text : "0",
+        nop: sepNopController.text != "" ? sepNopController.text : "0", */
         anbp: sepNopController.text != "" ? sepAnbpController.text : "0"));
     plans.add(Plan(
         month: 'October',
         pros: octProsController.text != "" ? octProsController.text : "0",
         app: octAppController.text != "" ? octAppController.text : "0",
         sale: octSiController.text != "" ? octSiController.text : "0",
-        follow: octFuController.text != "" ? octFuController.text : "0",
-        nop: octNopController.text != "" ? octNopController.text : "0",
+        /* follow: octFuController.text != "" ? octFuController.text : "0",
+        nop: octNopController.text != "" ? octNopController.text : "0", */
         anbp: octNopController.text != "" ? octAnbpController.text : "0"));
     plans.add(Plan(
         month: 'November',
         pros: novProsController.text != "" ? novProsController.text : "0",
         app: novAppController.text != "" ? novAppController.text : "0",
         sale: novSiController.text != "" ? novSiController.text : "0",
-        follow: novFuController.text != "" ? novFuController.text : "0",
-        nop: novNopController.text != "" ? novNopController.text : "0",
+        /* follow: novFuController.text != "" ? novFuController.text : "0",
+        nop: novNopController.text != "" ? novNopController.text : "0", */
         anbp: novNopController.text != "" ? novAnbpController.text : "0"));
     plans.add(Plan(
         month: 'December',
         pros: decProsController.text != "" ? decProsController.text : "0",
         app: decAppController.text != "" ? decAppController.text : "0",
         sale: decSiController.text != "" ? decSiController.text : "0",
-        follow: decFuController.text != "" ? decFuController.text : "0",
-        nop: decNopController.text != "" ? decNopController.text : "0",
+        /* follow: decFuController.text != "" ? decFuController.text : "0",
+        nop: decNopController.text != "" ? decNopController.text : "0", */
         anbp: decNopController.text != "" ? decAnbpController.text : "0"));
 
     // print(plans);
@@ -328,8 +328,8 @@ class _AnualPlanState extends State<AnualPlan> {
           janProsController.text = savedPlans[a].pros;
           janAppController.text = savedPlans[a].app;
           janSiController.text = savedPlans[a].sale;
-          janFuController.text = savedPlans[a].follow;
-          janNopController.text = savedPlans[a].nop;
+          /* janFuController.text = savedPlans[a].follow;
+          janNopController.text = savedPlans[a].nop; */
           janAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'February') {
@@ -337,8 +337,8 @@ class _AnualPlanState extends State<AnualPlan> {
           febProsController.text = savedPlans[a].pros;
           febAppController.text = savedPlans[a].app;
           febSiController.text = savedPlans[a].sale;
-          febFuController.text = savedPlans[a].follow;
-          febNopController.text = savedPlans[a].nop;
+          /*  febFuController.text = savedPlans[a].follow;
+          febNopController.text = savedPlans[a].nop; */
           febAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'March') {
@@ -346,8 +346,8 @@ class _AnualPlanState extends State<AnualPlan> {
           marProsController.text = savedPlans[a].pros;
           marAppController.text = savedPlans[a].app;
           marSiController.text = savedPlans[a].sale;
-          marFuController.text = savedPlans[a].follow;
-          marNopController.text = savedPlans[a].nop;
+          /*  marFuController.text = savedPlans[a].follow;
+          marNopController.text = savedPlans[a].nop; */
           marAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'April') {
@@ -355,8 +355,8 @@ class _AnualPlanState extends State<AnualPlan> {
           aprlProsController.text = savedPlans[a].pros;
           aprlAppController.text = savedPlans[a].app;
           aprlSiController.text = savedPlans[a].sale;
-          aprlFuController.text = savedPlans[a].follow;
-          aprlNopController.text = savedPlans[a].nop;
+          /* aprlFuController.text = savedPlans[a].follow;
+          aprlNopController.text = savedPlans[a].nop; */
           aprlAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'May') {
@@ -364,8 +364,8 @@ class _AnualPlanState extends State<AnualPlan> {
           mayProsController.text = savedPlans[a].pros;
           mayAppController.text = savedPlans[a].app;
           maySiController.text = savedPlans[a].sale;
-          mayFuController.text = savedPlans[a].follow;
-          mayNopController.text = savedPlans[a].nop;
+          /*   mayFuController.text = savedPlans[a].follow;
+          mayNopController.text = savedPlans[a].nop; */
           mayAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'June') {
@@ -373,8 +373,8 @@ class _AnualPlanState extends State<AnualPlan> {
           junProsController.text = savedPlans[a].pros;
           junAppController.text = savedPlans[a].app;
           junSiController.text = savedPlans[a].sale;
-          junFuController.text = savedPlans[a].follow;
-          junNopController.text = savedPlans[a].nop;
+          /* junFuController.text = savedPlans[a].follow;
+          junNopController.text = savedPlans[a].nop; */
           junAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'July') {
@@ -382,8 +382,8 @@ class _AnualPlanState extends State<AnualPlan> {
           julProsController.text = savedPlans[a].pros;
           julAppController.text = savedPlans[a].app;
           julSiController.text = savedPlans[a].sale;
-          julFuController.text = savedPlans[a].follow;
-          julNopController.text = savedPlans[a].nop;
+          /*  julFuController.text = savedPlans[a].follow;
+          julNopController.text = savedPlans[a].nop; */
           julAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'August') {
@@ -391,8 +391,8 @@ class _AnualPlanState extends State<AnualPlan> {
           augProsController.text = savedPlans[a].pros;
           augAppController.text = savedPlans[a].app;
           augSiController.text = savedPlans[a].sale;
-          augFuController.text = savedPlans[a].follow;
-          augNopController.text = savedPlans[a].nop;
+          /* augFuController.text = savedPlans[a].follow;
+          augNopController.text = savedPlans[a].nop; */
           augAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'September') {
@@ -400,8 +400,8 @@ class _AnualPlanState extends State<AnualPlan> {
           sepProsController.text = savedPlans[a].pros;
           sepAppController.text = savedPlans[a].app;
           sepSiController.text = savedPlans[a].sale;
-          sepFuController.text = savedPlans[a].follow;
-          sepNopController.text = savedPlans[a].nop;
+          /* sepFuController.text = savedPlans[a].follow;
+          sepNopController.text = savedPlans[a].nop; */
           sepAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'October') {
@@ -409,8 +409,8 @@ class _AnualPlanState extends State<AnualPlan> {
           octProsController.text = savedPlans[a].pros;
           octAppController.text = savedPlans[a].app;
           octSiController.text = savedPlans[a].sale;
-          octFuController.text = savedPlans[a].follow;
-          octNopController.text = savedPlans[a].nop;
+          /*  octFuController.text = savedPlans[a].follow;
+          octNopController.text = savedPlans[a].nop; */
           octAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'November') {
@@ -418,8 +418,8 @@ class _AnualPlanState extends State<AnualPlan> {
           novProsController.text = savedPlans[a].pros;
           novAppController.text = savedPlans[a].app;
           novSiController.text = savedPlans[a].sale;
-          novFuController.text = savedPlans[a].follow;
-          novNopController.text = savedPlans[a].nop;
+          /* novFuController.text = savedPlans[a].follow;
+          novNopController.text = savedPlans[a].nop; */
           novAnbpController.text = savedPlans[a].anbp;
         });
       } else if (savedPlans[a].month == 'December') {
@@ -427,8 +427,8 @@ class _AnualPlanState extends State<AnualPlan> {
           decProsController.text = savedPlans[a].pros;
           decAppController.text = savedPlans[a].app;
           decSiController.text = savedPlans[a].sale;
-          decFuController.text = savedPlans[a].follow;
-          decNopController.text = savedPlans[a].nop;
+          /*  decFuController.text = savedPlans[a].follow;
+          decNopController.text = savedPlans[a].nop; */
           decAnbpController.text = savedPlans[a].anbp;
         });
       } else {
@@ -520,7 +520,7 @@ class _AnualPlanState extends State<AnualPlan> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
-            backgroundColor: Colors.white,
+            backgroundColor: AppColors.SECONDARY_COLOR,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)), //this right here
 
@@ -622,7 +622,7 @@ class _AnualPlanState extends State<AnualPlan> {
             icon: Icon(
               Icons.menu,
               size: 30,
-              color: Colors.white,
+              color: Colors.black,
             ),
             onPressed: () {}
             // scaffoldKey.currentState.openDrawer(),
@@ -632,7 +632,7 @@ class _AnualPlanState extends State<AnualPlan> {
               icon: Icon(
                 Icons.home_filled,
                 size: 30,
-                color: Colors.white,
+                color: AppColors.SECONDARY_COLOR,
               ),
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
@@ -769,7 +769,7 @@ class _AnualPlanState extends State<AnualPlan> {
                           "Load Data",
                           style: TextStyle(
                             fontSize: 18,
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),

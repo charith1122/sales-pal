@@ -144,7 +144,7 @@ class _ReportsState extends State<Reports> {
   String rprtOctSale = '0';
   String rprtNovSale = '0';
   String rprtDecSale = '0';
-  
+
   String rprtJanAnbp = '0';
   String rprtFebAnbp = '0';
   String rprtMarAnbp = '0';
@@ -265,7 +265,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           janProsController.text = savedPlans[a].pros;
           janAppController.text = savedPlans[a].app;
-          
+
           janNopController.text = savedPlans[a].nop;
           janAnbpController.text = savedPlans[a].anbp;
         });
@@ -273,7 +273,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           febProsController.text = savedPlans[a].pros;
           febAppController.text = savedPlans[a].app;
-          
+
           febNopController.text = savedPlans[a].nop;
           febAnbpController.text = savedPlans[a].anbp;
         });
@@ -281,7 +281,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           marProsController.text = savedPlans[a].pros;
           marAppController.text = savedPlans[a].app;
-          
+
           marNopController.text = savedPlans[a].nop;
           marAnbpController.text = savedPlans[a].anbp;
         });
@@ -289,7 +289,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           aprlProsController.text = savedPlans[a].pros;
           aprlAppController.text = savedPlans[a].app;
-          
+
           aprlNopController.text = savedPlans[a].nop;
           aprlAnbpController.text = savedPlans[a].anbp;
         });
@@ -297,7 +297,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           mayProsController.text = savedPlans[a].pros;
           mayAppController.text = savedPlans[a].app;
-          
+
           mayNopController.text = savedPlans[a].nop;
           mayAnbpController.text = savedPlans[a].anbp;
         });
@@ -305,7 +305,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           junProsController.text = savedPlans[a].pros;
           junAppController.text = savedPlans[a].app;
-          
+
           junNopController.text = savedPlans[a].nop;
           junAnbpController.text = savedPlans[a].anbp;
         });
@@ -313,7 +313,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           julProsController.text = savedPlans[a].pros;
           julAppController.text = savedPlans[a].app;
-          
+
           julNopController.text = savedPlans[a].nop;
           julAnbpController.text = savedPlans[a].anbp;
         });
@@ -321,7 +321,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           augProsController.text = savedPlans[a].pros;
           augAppController.text = savedPlans[a].app;
-          
+
           augNopController.text = savedPlans[a].nop;
           augAnbpController.text = savedPlans[a].anbp;
         });
@@ -329,7 +329,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           sepProsController.text = savedPlans[a].pros;
           sepAppController.text = savedPlans[a].app;
-          
+
           sepNopController.text = savedPlans[a].nop;
           sepAnbpController.text = savedPlans[a].anbp;
         });
@@ -337,7 +337,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           octProsController.text = savedPlans[a].pros;
           octAppController.text = savedPlans[a].app;
-          
+
           octNopController.text = savedPlans[a].nop;
           octAnbpController.text = savedPlans[a].anbp;
         });
@@ -345,7 +345,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           novProsController.text = savedPlans[a].pros;
           novAppController.text = savedPlans[a].app;
-          
+
           novNopController.text = savedPlans[a].nop;
           novAnbpController.text = savedPlans[a].anbp;
         });
@@ -353,7 +353,7 @@ class _ReportsState extends State<Reports> {
         setState(() {
           decProsController.text = savedPlans[a].pros;
           decAppController.text = savedPlans[a].app;
-          
+
           decNopController.text = savedPlans[a].nop;
           decAnbpController.text = savedPlans[a].anbp;
         });
@@ -367,62 +367,62 @@ class _ReportsState extends State<Reports> {
     setState(() {
       janProsController.text = '0';
       janAppController.text = '0';
-      
+
       janNopController.text = '0';
       janAnbpController.text = '0';
       febProsController.text = '0';
       febAppController.text = '0';
-      
+
       febNopController.text = '0';
       febAnbpController.text = '0';
       marProsController.text = '0';
       marAppController.text = '0';
-      
+
       marNopController.text = '0';
       marAnbpController.text = '0';
       aprlProsController.text = '0';
       aprlAppController.text = '0';
-      
+
       aprlNopController.text = '0';
       aprlAnbpController.text = '0';
       mayProsController.text = '0';
       mayAppController.text = '0';
-      
+
       mayNopController.text = '0';
       mayAnbpController.text = '0';
       junProsController.text = '0';
       junAppController.text = '0';
-      
+
       junNopController.text = '0';
       junAnbpController.text = '0';
       julProsController.text = '0';
       julAppController.text = '0';
-      
+
       julNopController.text = '0';
       julAnbpController.text = '0';
       augProsController.text = '0';
       augAppController.text = '0';
-      
+
       augNopController.text = '0';
       augAnbpController.text = '0';
       sepProsController.text = '0';
       sepAppController.text = '0';
-      
+
       sepNopController.text = '0';
       sepAnbpController.text = '0';
       octProsController.text = '0';
       octAppController.text = '0';
-      
+
       octNopController.text = '0';
       octAnbpController.text = '0';
       novProsController.text = '0';
       novAppController.text = '0';
-      
+
       novNopController.text = '0';
       novAnbpController.text = '0';
       decProsController.text = '0';
       decAppController.text = '0';
-      
+
       decNopController.text = '0';
       decAnbpController.text = '0';
     });
@@ -760,9 +760,9 @@ class _ReportsState extends State<Reports> {
                                       TableCell(
                                         child: Center(child: Text('App:')),
                                       ),
-                                      TableCell(
+                                      /*    TableCell(
                                         child: Center(child: Text('S.I:')),
-                                      ),
+                                      ), */
                                       /*  TableCell(
                                         child: Center(child: Text('F.Up')),
                                       ),
@@ -824,7 +824,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: febAppController,
                                               function: () {},
                                               context: context)),
-                                     /*  TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: febSiController,
                                               function: () {},
@@ -1034,7 +1034,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: augAppController,
                                               function: () {},
                                               context: context)),
-                                     /*  TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: augSiController,
                                               function: () {},
@@ -1139,7 +1139,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: novAppController,
                                               function: () {},
                                               context: context)),
-                                     /*  TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: novSiController,
                                               function: () {},
@@ -1174,7 +1174,7 @@ class _ReportsState extends State<Reports> {
                                               txtControl: decAppController,
                                               function: () {},
                                               context: context)),
-                                     /*  TableCell(
+                                      /*  TableCell(
                                           child: reportText(
                                               txtControl: decSiController,
                                               function: () {},
