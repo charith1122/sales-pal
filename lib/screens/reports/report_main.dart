@@ -29,14 +29,14 @@ class ReportMainState extends State<ReportMain> {
           centerTitle: true,
           title: Text('Reports',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.SECONDARY_COLOR_NEW)),
           actions: [
             IconButton(
                 icon: Icon(
                   Icons.home_filled,
                   size: 30,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
@@ -50,11 +50,13 @@ class ReportMainState extends State<ReportMain> {
           ],
         ),
         body: Container(
-          color: AppColors.PRIMARY_COLOR_NEW,
+          color: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.8),
           child: Column(
             children: [
               TabBar(
-                indicatorColor: AppColors.SECONDARY_COLOR_NEW,
+                unselectedLabelColor: AppColors.PRIMARY_COLOR_NEW,
+                labelColor: AppColors.PRYMARY_COLOR2,
+                indicatorColor: AppColors.PRYMARY_COLOR2,
                 tabs: <Widget>[
                   Tab(
                     text: 'Annual',

@@ -357,7 +357,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               centerTitle: true,
               title: Text(
                 "Profile",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.SECONDARY_COLOR_NEW),
               ),
               backgroundColor: AppColors.PRIMARY_COLOR_NEW,
               actions: [
@@ -365,7 +367,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     icon: Icon(
                       Icons.home_filled,
                       size: 30,
-                      color: Colors.white,
+                      color: Colors.black,
                     ),
                     onPressed: () {
                       Navigator.pushAndRemoveUntil(

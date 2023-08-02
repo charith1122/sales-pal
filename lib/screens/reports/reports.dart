@@ -619,7 +619,7 @@ class _ReportsState extends State<Reports> {
             )),
         automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
+      backgroundColor: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.8),
       body: isLoading
           ? Container(
               child: Center(

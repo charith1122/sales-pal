@@ -33,8 +33,12 @@ class MonthlyPrint extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: AppColors.SECONDARY_COLOR_NEW),
         backgroundColor: AppColors.PRIMARY_COLOR_NEW,
-        title: Text('PDF Preview'),
+        title: Text(
+          'PDF Preview',
+          style: TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
+        ),
       ),
       body: PdfPreview(
         build: (context) => makePdfMonth(

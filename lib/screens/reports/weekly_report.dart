@@ -406,7 +406,7 @@ class _WeeklyReportsState extends State<WeeklyReports> {
             )),
         automaticallyImplyLeading: false,
       ), */
-      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
+      backgroundColor: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.8),
       body: isLoading
           ? Container(
               child: Center(
@@ -508,7 +508,7 @@ class _WeeklyReportsState extends State<WeeklyReports> {
                     if (canPrint)
                       IconButton(
                           iconSize: 32,
-                          color: AppColors.SECONDARY_COLOR_NEW,
+                          color: AppColors.PRIMARY_COLOR_NEW,
                           icon: const Icon(Icons.print),
                           onPressed: () {
                             Navigator.of(context).push(

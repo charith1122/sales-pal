@@ -121,24 +121,34 @@ class _LoginPageState extends State<LoginPage> {
                   height: 30,
                 ),
                 Container(
-                  margin: const EdgeInsets.only(
-                      bottom: 50, top: 30, left: 50, right: 50),
-                  decoration: BoxDecoration(
-                      border: Border(bottom: BorderSide(color: Colors.white))),
+                  margin:
+                      EdgeInsets.only(bottom: 50, top: 30, left: 50, right: 50),
+                  /*  decoration: BoxDecoration(
+                      border: Border(bottom: BorderSide(color: Colors.white))), */
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Phone Number',
-                        style: TextStyle(
-                          color: AppColors.SECONDARY_COLOR_NEW,
-                          fontSize: 14,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          'Phone Number',
+                          style: TextStyle(
+                            color: AppColors.SECONDARY_COLOR_NEW,
+                            fontSize: 14,
+                          ),
                         ),
                       ),
                       Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: AppColors.BUTTON_BG.withOpacity(0.8),
+                        ),
                         child: InternationalPhoneInput(
                           decoration: InputDecoration(
-                            focusColor: Colors.transparent,
+                            //focusColor: AppColors.SECONDARY_COLOR_NEW,
+                            labelStyle: TextStyle(
+                              color: AppColors.SECONDARY_COLOR_NEW,
+                            ),
                             border: InputBorder.none,
                           ),
                           onPhoneNumberChange: onPhoneNumberChange,

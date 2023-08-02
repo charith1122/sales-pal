@@ -645,13 +645,16 @@ class _AnualPlanState extends State<AnualPlan> {
               )
         ],
         centerTitle: true,
-        title: Text('Anual Plan',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            )),
+        title: Text(
+          'Anual Plan',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: AppColors.SECONDARY_COLOR_NEW,
+          ),
+        ),
         automaticallyImplyLeading: false,
       ),
-      backgroundColor: AppColors.PRIMARY_COLOR_NEW,
+      backgroundColor: AppColors.SECONDARY_COLOR_NEW.withOpacity(0.8),
       body: isLoading
           ? Container(
               child: Center(
@@ -794,12 +797,11 @@ class _AnualPlanState extends State<AnualPlan> {
                                 color: AppColors.SECONDARY_COLOR_NEW),
                             columnWidths: const <int, TableColumnWidth>{
                               0: IntrinsicColumnWidth(),
-                              // 1: FlexColumnWidth(25),
-                              //1: FixedColumnWidth(40),
-                              //2: FixedColumnWidth(40),
-                              // 3: FixedColumnWidth(40),
-                              //4: FixedColumnWidth(40),
-                              //5: FixedColumnWidth(40),
+                              1: FixedColumnWidth(40),
+                              2: FixedColumnWidth(40),
+                              3: FixedColumnWidth(40),
+                              4: FixedColumnWidth(40),
+                              5: FixedColumnWidth(40),
                             },
                             defaultVerticalAlignment:
                                 TableCellVerticalAlignment.middle,
