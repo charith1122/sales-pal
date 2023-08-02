@@ -58,7 +58,7 @@ class _PrivacyState extends State<Privacy> {
                 height: 7,
               ),
               Text(
-                'Prosbot Company built the Prosbot app as a Free app. This SERVICE is provided by Prosbot Company at no cost and is intended for use as is.\n\nThis page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.\n\nIf you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.\n\nThe terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Prosbot unless otherwise defined in this Privacy Policy.',
+                'salesPal Company built the salesPal app as a Free app. This SERVICE is provided by salesPal Company at no cost and is intended for use as is.\n\nThis page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.\n\nIf you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.\n\nThe terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at salesPal unless otherwise defined in this Privacy Policy.',
                 style: TextStyle(color: Colors.grey[850]),
               ),
               SizedBox(
@@ -72,7 +72,7 @@ class _PrivacyState extends State<Privacy> {
                 height: 7,
               ),
               Text(
-                'For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Prosbot. The information that we request will be retained by us and used as described in this privacy policy.\n\n The app does use third-party services that may collect information used to identify you.',
+                'For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to salesPal. The information that we request will be retained by us and used as described in this privacy policy.\n\n The app does use third-party services that may collect information used to identify you.',
                 style: TextStyle(color: Colors.grey[850]),
               ),
               SizedBox(
@@ -184,7 +184,7 @@ class _PrivacyState extends State<Privacy> {
                 height: 7,
               ),
               Text(
-                'If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at prosbotapp@gmail.com.',
+                'If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at salesPalapp@gmail.com.',
                 style: TextStyle(color: Colors.grey[850]),
               ),
             ],
