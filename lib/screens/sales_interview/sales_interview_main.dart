@@ -35,14 +35,14 @@ class SalesInterviewMainState extends State<SalesInterviewMain> {
           centerTitle: true,
           title: Text('Sales Interviews',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.SECONDARY_COLOR_NEW)),
           actions: [
             IconButton(
                 icon: Icon(
                   Icons.home_filled,
                   size: 30,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(

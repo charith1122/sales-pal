@@ -170,7 +170,9 @@ class _AppointmentState extends State<SalesInterview> {
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             fontSize: 14,
-                                            fontWeight: FontWeight.bold),
+                                            fontWeight: FontWeight.bold,
+                                            color:
+                                                AppColors.SECONDARY_COLOR_NEW),
                                       ),
                                     ),
                                     VerticalDivider(
@@ -188,7 +190,9 @@ class _AppointmentState extends State<SalesInterview> {
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 16,
-                                                fontWeight: FontWeight.bold),
+                                                fontWeight: FontWeight.bold,
+                                                color: AppColors
+                                                    .SECONDARY_COLOR_NEW),
                                           ),
                                         ),
                                         SizedBox(
@@ -206,6 +210,9 @@ class _AppointmentState extends State<SalesInterview> {
                                                               appointments[k]
                                                                   .date))
                                                   : '',
+                                              style: TextStyle(
+                                                  color: AppColors
+                                                      .SECONDARY_COLOR_NEW),
                                             ),
                                             SizedBox(
                                               width: 20,

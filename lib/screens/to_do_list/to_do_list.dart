@@ -79,13 +79,13 @@ class _ToDoListState extends State<ToDoList> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
-              onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
+              primary: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
+              onPrimary: Color.fromARGB(255, 255, 255, 255), // <-- SEE HERE
+              onSurface: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
+                primary: AppColors.SECONDARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -305,7 +305,7 @@ class _ToDoListState extends State<ToDoList> {
                   icon: Icon(
                     Icons.home_filled,
                     size: 30,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   onPressed: () {
                     Navigator.pushAndRemoveUntil(
@@ -320,8 +320,8 @@ class _ToDoListState extends State<ToDoList> {
             centerTitle: true,
             title: Text('To Do List',
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                )),
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.SECONDARY_COLOR_NEW)),
             automaticallyImplyLeading: false,
           ),
           backgroundColor: AppColors.PRIMARY_COLOR_NEW,
@@ -449,7 +449,9 @@ class _ToDoListState extends State<ToDoList> {
                                                                 fontSize: 14,
                                                                 fontWeight:
                                                                     FontWeight
-                                                                        .bold),
+                                                                        .bold,
+                                                                color: AppColors
+                                                                    .SECONDARY_COLOR_NEW),
                                                           ),
                                                         ),
                                                         VerticalDivider(
@@ -478,7 +480,9 @@ class _ToDoListState extends State<ToDoList> {
                                                                         16,
                                                                     fontWeight:
                                                                         FontWeight
-                                                                            .bold),
+                                                                            .bold,
+                                                                    color: AppColors
+                                                                        .SECONDARY_COLOR_NEW),
                                                               ),
                                                             ),
                                                             SizedBox(
@@ -503,13 +507,21 @@ class _ToDoListState extends State<ToDoList> {
                                                                       formatter.format(
                                                                           DateTime.parse(
                                                                               todos[i].date)),
+                                                                  style: TextStyle(
+                                                                      color: AppColors
+                                                                          .SECONDARY_COLOR_NEW),
                                                                 ),
                                                                 SizedBox(
                                                                   width: 20,
                                                                 ),
-                                                                Text('Time : ' +
-                                                                    (todos[i]
-                                                                        .time))
+                                                                Text(
+                                                                  'Time : ' +
+                                                                      (todos[i]
+                                                                          .time),
+                                                                  style: TextStyle(
+                                                                      color: AppColors
+                                                                          .SECONDARY_COLOR_NEW),
+                                                                )
                                                               ],
                                                             ),
                                                             Row(
@@ -734,7 +746,9 @@ class _ToDoListState extends State<ToDoList> {
                                                               fontSize: 16,
                                                               fontWeight:
                                                                   FontWeight
-                                                                      .bold),
+                                                                      .bold,
+                                                              color: AppColors
+                                                                  .SECONDARY_COLOR_NEW),
                                                         ),
                                                       ),
                                                       SizedBox(

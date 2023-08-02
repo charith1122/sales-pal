@@ -601,8 +601,8 @@ class _NewProspectState extends State<NewProspect> {
           centerTitle: true,
           title: Text('New Customer',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.SECONDARY_COLOR_NEW)),
           // automaticallyImplyLeading: false,
         ),
         body: isLoading

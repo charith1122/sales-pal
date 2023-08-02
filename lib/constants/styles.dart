@@ -14,7 +14,7 @@ class AppStyles {
   static const TextStyle floatingLabelStyle = TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.bold,
-      color: AppColors.PRIMARY_COLOR_NEW,
+      color: AppColors.PRIMARY_COLOR,
       backgroundColor: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle errorTextStyle = TextStyle(
       color: /* Color.fromARGB(255, 182, 40, 30), */ AppColors
@@ -41,12 +41,12 @@ class AppStyles {
       color: AppColors.SECONDARY_COLOR_NEW);
   static const TextStyle textFieldHeaderStyle = TextStyle(
     fontSize: 20,
-    color: Colors.white,
+    color: AppColors.SECONDARY_COLOR_NEW,
     fontWeight: FontWeight.normal,
   );
   static const TextStyle textFieldHeaderStyle2 = TextStyle(
     fontSize: 15,
-    color: Colors.white,
+    color: AppColors.SECONDARY_COLOR_NEW,
     fontWeight: FontWeight.bold,
   );
   static const TextStyle subHeader = TextStyle(

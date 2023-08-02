@@ -295,13 +295,13 @@ class _NewAppointmentState extends State<NewAppointment> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
+              primary: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
+              onSurface: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
+                primary: AppColors.SECONDARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -441,8 +441,8 @@ class _NewAppointmentState extends State<NewAppointment> {
           centerTitle: true,
           title: Text('New Appoinment',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.SECONDARY_COLOR_NEW)),
           // automaticallyImplyLeading: false,
         ),
         body: isLoading
@@ -472,7 +472,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                             Container(
                               width: size.width,
                               decoration: BoxDecoration(
-                                  color: AppColors.SECONDARY_COLOR_NEW,
+                                  color: AppColors.PRIMARY_COLOR_NEW,
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(width: 0.5)),
                               padding:
@@ -480,12 +480,12 @@ class _NewAppointmentState extends State<NewAppointment> {
                               child: CustomSearchableDropDown(
                                 dropdownHintText: 'Search For Name Here... ',
                                 showLabelInMenu: false,
-                                primaryColor: AppColors.PRIMARY_COLOR_NEW,
+                                primaryColor: AppColors.SECONDARY_COLOR_NEW,
                                 menuMode: false,
                                 items: prospects,
                                 label: selectedName,
                                 labelStyle: TextStyle(
-                                    color: AppColors.PRIMARY_COLOR_NEW),
+                                    color: AppColors.SECONDARY_COLOR_NEW),
                                 prefixIcon: Padding(
                                   padding: const EdgeInsets.all(0.0),
                                   child: Icon(Icons.search),

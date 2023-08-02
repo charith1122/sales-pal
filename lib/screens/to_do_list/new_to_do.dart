@@ -283,13 +283,13 @@ class _NewToDoState extends State<NewToDo> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
+              primary: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
               onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
+              onSurface: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
+                primary: AppColors.SECONDARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -332,13 +332,13 @@ class _NewToDoState extends State<NewToDo> {
         return Theme(
           data: Theme.of(context).copyWith(
             colorScheme: ColorScheme.light(
-              primary: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
-              onPrimary: Colors.white, // <-- SEE HERE
-              onSurface: AppColors.PRIMARY_COLOR_NEW, // <-- SEE HERE
+              primary: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
+              onPrimary: Colors.black, // <-- SEE HERE
+              onSurface: AppColors.SECONDARY_COLOR_NEW, // <-- SEE HERE
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: AppColors.PRIMARY_COLOR_NEW, // button text color
+                primary: AppColors.SECONDARY_COLOR_NEW, // button text color
               ),
             ),
           ),
@@ -414,7 +414,7 @@ class _NewToDoState extends State<NewToDo> {
                 icon: Icon(
                   Icons.home_filled,
                   size: 30,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
@@ -429,8 +429,8 @@ class _NewToDoState extends State<NewToDo> {
           centerTitle: true,
           title: Text('New To Do',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.SECONDARY_COLOR_NEW)),
           // automaticallyImplyLeading: false,
         ),
         body: isLoading
@@ -462,16 +462,16 @@ class _NewToDoState extends State<NewToDo> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50),
                                   border: Border.all(width: 0.5),
-                                  color: AppColors.SECONDARY_COLOR_NEW),
+                                  color: AppColors.PRIMARY_COLOR_NEW),
                               padding:
                                   const EdgeInsets.only(left: 15.0, right: 15),
                               child: CustomSearchableDropDown(
                                 dropdownHintText: 'Search For Name Here... ',
                                 showLabelInMenu: true,
-                                primaryColor: AppColors.PRIMARY_COLOR_NEW,
+                                primaryColor: AppColors.SECONDARY_COLOR_NEW,
                                 menuMode: false,
                                 labelStyle: TextStyle(
-                                    color: AppColors.PRIMARY_COLOR_NEW),
+                                    color: AppColors.SECONDARY_COLOR_NEW),
                                 items: prospects,
                                 label: selectedName,
                                 prefixIcon: Padding(

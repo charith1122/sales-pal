@@ -135,8 +135,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
     showCountryPicker(
         context: context,
         countryListTheme: CountryListThemeData(
+          searchTextStyle: TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
           flagSize: 25,
-          textStyle: TextStyle(color: AppColors.PRIMARY_COLOR_NEW),
+          textStyle: TextStyle(color: AppColors.SECONDARY_COLOR_NEW),
           backgroundColor: Colors.white,
           // textStyle: AppStyles.countryPickerNames,
           borderRadius: const BorderRadius.only(

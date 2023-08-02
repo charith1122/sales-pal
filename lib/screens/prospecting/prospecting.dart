@@ -101,7 +101,7 @@ class _ProspectingState extends State<Prospecting> {
               icon: Icon(
                 Icons.home_filled,
                 size: 30,
-                color: Colors.white,
+                color: Colors.black,
               ),
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
@@ -116,8 +116,8 @@ class _ProspectingState extends State<Prospecting> {
         centerTitle: true,
         title: Text('Customers',
             style: TextStyle(
-              fontWeight: FontWeight.bold,
-            )),
+                fontWeight: FontWeight.bold,
+                color: AppColors.SECONDARY_COLOR_NEW)),
         automaticallyImplyLeading: false,
       ),
       backgroundColor: AppColors.PRIMARY_COLOR_NEW,
@@ -230,7 +230,9 @@ class _ProspectingState extends State<Prospecting> {
                         Flexible(
                           child: TextFormField(
                             controller: searchController,
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: AppColors.SECONDARY_COLOR_NEW),
                             // obscureText: obsecure,
                             decoration: InputDecoration(
                               hintText: "Search here...",

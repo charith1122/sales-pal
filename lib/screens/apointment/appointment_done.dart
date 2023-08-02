@@ -176,8 +176,9 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                     fontSize: 14,
-                                                    fontWeight:
-                                                        FontWeight.bold),
+                                                    fontWeight: FontWeight.bold,
+                                                    color: AppColors
+                                                        .SECONDARY_COLOR_NEW),
                                               ),
                                             ),
                                             VerticalDivider(
@@ -198,7 +199,9 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                                                     style: TextStyle(
                                                         fontSize: 16,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                            FontWeight.bold,
+                                                        color: AppColors
+                                                            .SECONDARY_COLOR_NEW),
                                                   ),
                                                 ),
                                                 SizedBox(
@@ -216,6 +219,9 @@ class _DoneAppointmentState extends State<DoneAppointment> {
                                                                   appointments[
                                                                           k]
                                                                       .date)),
+                                                      style: TextStyle(
+                                                          color: AppColors
+                                                              .SECONDARY_COLOR_NEW),
                                                     ),
                                                     SizedBox(
                                                       width: 20,
